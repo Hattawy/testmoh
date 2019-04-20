@@ -1,0 +1,21 @@
+100 FT j 2 i 2 k 1 value 1.25374 error 2.06228
+100 FT j 2 i 2 k 2 value 0.445664 error 0.302216
+100 FT j 2 i 2 k 3 value 0.314443 error 0.152299
+100 FT j 2 i 2 k 4 value 0.19509 error 0.0871186
+
+100 FT j 4 i 3 k 1 value -0.651783 error 3.65056
+100 FT j 4 i 3 k 2 value -0.149609 error 1.21246
+100 FT j 4 i 3 k 3 value -0.0107133 error 0.48032
+100 FT j 4 i 3 k 4 value 0.0734417 error 0.228332
+
+100 FT j 2 i 1 k 1 value 0.553715 error 1.83174
+100 FT j 2 i 1 k 2 value 0.343516 error 0.472612
+100 FT j 2 i 1 k 3 value 0.355755 error 0.282046
+100 FT j 2 i 1 k 4 value 0.174571 error 0.161427
+                    
+100 FT j 3 i 2 k 1 value 0.081224 error 2.38515
+100 FT j 3 i 2 k 2 value 0.13545 error 0.714488
+100 FT j 3 i 2 k 3 value 0.203627 error 0.293291
+100 FT j 3 i 2 k 4 value 0.209778 error 0.184876
+                   
+              

@@ -1,0 +1,7 @@
+\contentsline {section}{\numberline {1}Introduction}{2}
+\contentsline {section}{\numberline {2}Technical updates on the CND}{2}
+\contentsline {subsection}{\numberline {2.1}Choice of PMTs}{3}
+\contentsline {subsection}{\numberline {2.2}Tests in magnetic field}{3}
+\contentsline {subsection}{\numberline {2.3}Mechanical integration}{3}
+\contentsline {section}{\numberline {3}Updates on simulation}{3}
+\contentsline {section}{\numberline {4}$\Delta ^+$ background}{3}

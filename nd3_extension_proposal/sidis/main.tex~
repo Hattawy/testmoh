@@ -1,0 +1,326 @@
+%\documentclass[12pt]{article}
+
+%\usepackage[english]{babel}
+%\usepackage[utf8]{inputenc}
+%\usepackage{amsmath}
+%\usepackage{graphicx}
+%\usepackage[colorinlistoftodos]{todonotes}
+%\usepackage{amssymb}
+
+%\title{Semi-Inclusive Deep Inelastic Scattering on a longitudinally polarized deuterium target}
+
+\author{S. Pisano}
+
+%\date{\today}
+
+%\begin{document}
+%\maketitle
+
+%\begin{abstract}
+%Your abstract.
+%\end{abstract}
+
+\section{Toward a multi-dimensional mapping of nucleon structure}
+%
+
+%PROPOSTA DI FRASE INIZIALE, un po' semplificata e senza questa questione delle dimensioni che mi pare un po' spinosa: 
+The Transverse Momentum Dependent distribution functions (TMDs) provide a description of nucleon structure which is complementary to the one that can be obtained measuring Generalized Parton Distributions: the latter describe the correlation between the longitudinal momentum and the transverse position of the parton, while the former encode both the longitudinal and the transverse momenta of the parton. 
+%
+%(Complementary to the $2+1D$ mapping of nucleon structure encoded in the Generalized Parton Distributions, that describe the correlation of the parton transverse position to its momentum fraction, there is the $3D$ description of the nucleon dynamics, that encode both the longitudinal and transverse distribution of parton momenta and it is implemented in the Transverse Momentum Dependent distribution functions (\textbf{TMD}).)
+Thus, the TMDs share with the GPDs the dependence on the parton longitudinal momentum fraction, providing the additional information on its tranverse momentum $k_T$. 
+The TMDs can be accessed through the semi-inclusive electroproduction of hadrons (SIDIS), which is the process where an electron scatters off a nucleon producing a hadron in the final state. In an intuitive picture, the final hadron carries information on the original dynamics of the struck quark, so that mapping the hadron kinematics provides information on the parton motion inside the nucleon.
+The SIDIS cross section depends on different structure functions (SF), and each of them is accessible through a specific combination of the polarizations of beam and target. 
+Any SF contains two non-perturbative objects: the TMDs, encoding the parton dynamics in the nucleon, and the Fragmentation Functions (FF), that describe the transition from the partonic degrees of freedom to the hadronic ones, \textit{i.e.} the hadronization process. 
+FFs and TMDs are coupled in a convolution integral over the quark transverse momentum ($k_T$), which is therefore not measurable, making the extraction of the TMDs from the data model dependent\footnote{This is equivalent to the $x$ dependence of the GPDs when measured via DVCS.}. \\
+
+At leading twist, the dynamics of the partons are described by eight TMDs, each one related to a specific combination of parton/hadron polarizations, as shown in Table~\ref{tab::tmds}. 
+The diagonal elements of the table are the momentum, the longitudinal and transverse spin distributions of partons, and represent well-known parton distribution functions related to the square of the leading-twist, light-cone wave functions. Off-diagonal elements require non-zero orbital angular momentum and are related to the overlap of light-cone wave functions with $\Delta L \neq 0$ ~\cite{Ji:2002xn}.  The parton distributions $f_{1T}^\perp$ and $h_{1L}^\perp$ represent the imaginary parts of the corresponding interference terms, while the functions $g_{1T}$ and $h_{1L}^\perp$ represent their real parts. The TMDs $f_{1T}^\perp$ (chiral-even) and $H_{1}^\perp$ (chiral-odd) are known as the Sivers and Boer-Mulders functions, respectively~\cite{Sivers:1990fh,Anselmino:1998yz,Brodsky:2002rv,
+Collins:2002kn,Ji:2002aa,Belitsky:2002sm}. They describe unpolarized quarks in the transversely polarized nucleon and transversely polarized quarks in the unpolarized nucleon respectively. 
+They vanish at tree level in a $T$-reversal invariant model ($T$-odd), and can only be non-zero when initial or final state interactions cause an interference between different helicity states. These functions parametrize the correlation between the transverse momentum of quarks and the spin of a transversely polarized target or the transverse spin of the quark, respectively. They both require orbital angular momentum, as well as non-trivial phases from the final state interaction, that survive in the Bjorken limit.\\
+%(Therefore, TMDs describe the correlations among the spins and the momenta of the partons and the hadron.) FORSE QUESTA FRASE ORA NON SERVE.
+%
+% TMD table
+\begin{table}
+\centering
+\begin{tabular}{l|c|c|r}
+$N/q$ & U                 & L        & T                 \\\hline\hline
+U     & $f_1$             &          & $h_{1L}^{\perp}$     \\\hline
+L     &                   & $g_1$    & $h_{1 L}^{\perp}$ \\\hline
+T     & $f_{1 T}^{\perp}$ & $g_{1 T}$ & $h_{1L}$ $h_{1 T}^{\perp}$\\\hline\hline
+\end{tabular}
+\caption{\label{tab::tmds} Leading-twist Transverse Momentum Distributions. Different rows and columns correspond, respectively, to different quark and nucleon polarization states.}
+\end{table}
+%
+%
+As for the GPDs, also for the TMDs CLAS12 foresees a comprehensive  program, including measurements of different observables with different targets and polarization degrees of freedom. 
+%QUI SECONDO ME STA BENE LA PARTE SUL PERCHE' FACCIAMO PROTONE E DEUTERIO.
+%QUESTA FRASE NON E' MOLTO LEGATA ALLA PRECEDENTE. FORSE LA PARTE SU CLAS12 VA BENE ALLA FINE DELL'INTRODUZIONE.
+Furthermore, the detection of different hadron channels allows to tag the flavor of the struck quark, opening the avenue to a deeper understanding of the nucleon content and on the hadronization mechanism.\\
+A relevant role in this sense can be played by CLAS12 in unraveling the nucleon strangeness content. This can be performed through the study of SIDIS in kaon-production channels. Presently this is an open field, with relevant unresolved issues. For example, it has been recently shown that the extraction of the helicity distributions for the $s$ quark (achievable in the SIDIS case using a longitudinally-polarized target) provides inconsistent results when accessed through SIDIS kaon electroproduction or through the analysis of hyperon $\beta$ decay \cite{seder_dis2016}.
+In extracting the helicity distribution for $s$ flavor from SIDIS data a full understanding of the strange quark fragmentation is mandatory, since in SIDIS the TMDs are coupled to the Fragmentation Function. Available measurements from HERMES and COMPASS show incompatible results for the multiplicities, to which the Fragmentation Functions are related, in the quark-valence region, as shown in Fig. \ref{fig::delta_s}. In order to shed light on the strange helicity distribution, a full understanding of the fragmentation mechanism for strange quarks in the valence region, which is well covered by CLAS12, is mandatory. 
+%
+% Delta S
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{sidis/delta_s_comparison.png}
+\caption{\label{fig::delta_s} Distribution of the multiplicities as a function of $x_B$ from HERMES and COMPASS. The extracted trends are unconsistent, showing the importance of further high-statistics measurements in the high-$x_B$ region.}
+\end{figure}
+
+\subsection{Scientific case}
+%
+In the experiment proposed here, which requires to extend by 50 days the deuteron-target part of the already approved experiments E12-07-107 and E12-09-009, the simultaneous presence of a longitudinally polarized beam and a longitudinally polarized target allows the measurement of longitudinal target and double spin asymmetries ($A_{UL}$ and $A_{LL}$ respectively). In these asymmetries, a number of relevant TMDs appear:
+%
+\begin{equation}
+\sigma_{UU} \propto F_{UU} \propto f_1(x, k_\perp) D_1(z_h, p_\perp) 
+\end{equation}
+%
+\begin{equation}
+\sigma_{UL} \propto F_{UL} \propto h_{1L}(x, k_\perp) H^\perp_1(z_h, p_\perp) 
+\end{equation}
+%
+\begin{equation}
+\sigma_{LL} \propto F_{LL} \propto g_{1L}(x, k_\perp) D_1(z_h, p_\perp) 
+\end{equation}
+%
+%
+where $z=P_1\cdot P_h/P_1\cdot q$ is the fraction of the virtual photon energy carried by the final hadron, $k_\perp$ and $p_\perp$ are, respectively, the quark transverse momenta before and after the interaction with the virtual photon, and $P_1$ and $P_H$ are the four momenta of the initial nucleon and the observed final-state hadron, respectively. 
+The unpolarized ($D_1$) and polarized ($H^\perp_1$) fragmentation functions depend in general on the transverse momentum of the fragmenting quark.
+For the longitudinal-target spin asymmetry, the leading-twist modulation is a $\sin2\phi$ moment, that provides access to the Kotzinian function $h_{1 L}^{\perp}$, \textit{i.e.} the T-even counterpart of the Boer-Mulders function. 
+The same distribution function is also accessible in double-polarized Drell-Yan production.
+It describes the correlations of the tranverse spin and momentum of quarks in a longitudinally polarized nucleon and, being an off-diagonal element, requires a non-zero orbital angular momentum to be non vanishing.
+%
+\subsubsection{Study of the Collins function through $\sigma_{UL}^{sin2\phi}$}
+%
+Measurements of the $\sin2\phi$ SSA \cite{km_function} allow the study of the Collins effect with no contamination from other mechanisms. The simultaneous measurement for pion and kaon channels can provide an independent measurement of ratios of Collins functions for the latter, providing complementary measurements to $e^{+}e^{-}$ annihilation. Depending on the combination of targets/hadrons considered, different combinations of TMDs and FFs appear in the different $\sin2\phi$ moments ($\sigma_{KM}$):
+%
+\begin{align}
+\sigma_{KM}^{\pi+}(p)&=4h_{1L}^{\perp u}H_1^{\perp(1/2) fav}+h_{1L}^{\perp d}H_1^{\perp(1/2) unfav} \\
+\sigma_{KM}^{\pi-}(p)&=4h_{1L}^{\perp u}H_1^{\perp(1/2) unfav}+h_{1L}^{\perp d}H_1^{\perp(1/2) fav} \\
+\sigma_{KM}^{\pi0}(p)&=4(h_{1L}^{\perp u}+h_{1L}^{\perp d})(H_1^{\perp(1/2) unfav}+H_1^{\perp(1/2) fav}) \\
+\sigma_{KM}^{K+}(p)&=4h_{1L}^{\perp u}H_1^{\perp(1/2) u/K^+}+h_{1L}^{\perp d}H_1^{\perp(1/2) d/K^+}+h_1^{\perp \bar s}H_1^{\perp(1/2) \bar s/K^+}  \\
+\sigma_{KM}^{K-}(p)&=4h_{1L}^{\perp u}H_1^{\perp(1/2) u/K^-}+h_{1L}^{\perp d}H_1^{\perp(1/2) d/K^-}+h_1^{\perp s}H_1^{\perp(1/2) s/K^-}+4h_1^{\perp \bar u}H_1^{\perp(1/2) \bar u/K^-} \\
+\sigma_{KM}^{\pi+}(n)&=4h_{1L}^{\perp d}H_1^{\perp(1/2) fav}+h_{1L}^{\perp u}H_1^{\perp(1/2) unfav} \\
+\sigma_{KM}^{\pi-}(n)&=4h_{1L}^{\perp d}H_1^{\perp(1/2) unfav}+h_{1L}^{\perp u}H_1^{\perp(1/2) fav} \\
+\sigma_{KM}^{\pi0}(n)&=(4h_{1L}^{\perp d}+h_{1L}^{\perp u})(H_1^{\perp(1/2) unfav}+H_1^{\perp(1/2) fav}) \\
+\sigma_{KM}^{K+}(n)&=4h_{1L}^{\perp d}H_1^{\perp(1/2) u/K^+}+h_{1L}^{\perp u}H_1^{\perp(1/2) d/K^+}+h_1^{\perp \bar s}H_1^{\perp(1/2) \bar s/K^+}  \\
+\sigma_{KM}^{K-}(n)&=4h_{1L}^{\perp d}H_1^{\perp(1/2) u/K^-}+h_{1L}^{\perp u}H_1^{\perp(1/2) d/K^-}+h_1^{\perp s}H_1^{\perp(1/2) s/K^-}+h_1^{\perp \bar u}H_1^{\perp(1/2) \bar u/K^-} .
+\label{eq:bm}
+\end{align}
+%
+%
+Assuming that the transverse spin of the sea quarks in an unpolarized nucleon is negligible ($h_{1}^{\perp \bar{q}} = 0$) and ignoring the non-valence quark contributions in $K^+$ production and unfavored fragmentation, the contribution to the $\cos2\phi$ moment arising from fragmentation becomes:
+%
+\begin{equation}
+\label{eq:pi}
+A^{K^+}_{UU} \propto \frac{4h_{1L}^{\perp (1) u}(x)}{4u(x)+\bar{s}(x)}
+\frac{H_1^{\perp u \rightarrow K^+}(z,P_{\perp})}{D_1^{ u \rightarrow K^+}(z,P_{\perp})},
+\end{equation}
+%
+\noindent where $h_{1}^{\perp (1)}$ means integration over the transverse momentum weighted with $k_T^2$. Similar formulas apply to the neutron-target case, replacing $u$ with $d$, and also for the case of $K^-$. For the latter, however, the contribution from unfavored fragmentation will be significant and should be accounted in the extraction.
+%
+Assuming isospin and charge-conjugation relations, there are in principle seven independent Collins fragmentation functions, but based on the observation that the pion favored Collins function is roughly equal and opposite to the unfavored one, the number of independent Collins functions could be reduced to three.
+%
+The asymmetries built from the difference between $\pi^+$ and $\pi^-$  and of
+the $K^+$ and $K^-$ observables give
+\begin{align}
+A^{p/(\pi^+-\pi^-)}(x,y,z) &= 2\frac{B(y)}{A(y)}\,
+\frac{\Bigl(4\,h^{u_v} -h^{d_v}\Bigr)\,H_1^{\perp (1) \rm{f}} }
+{\Bigl(4\,f_1^{u_v} - f_1^{d_v}\Bigr)\,\Bigl(D_1^{\rm{f}}-D_1^{\rm{d}}\Bigr)},
+\\
+A^{n/(\pi^+-\pi^-)}(x,y,z) &= 2\frac{B(y)}{A(y)}\,
+\frac{\Bigl(4\,h^{d_v} -h^{u_v}\Bigr)\,H_1^{\perp (1) \rm{f}} }
+{\Bigl(4\,f_1^{d_v} - f_1^{u_v}\Bigr)\,\Bigl(D_1^{\rm{f}}-D_1^{\rm{d}}\Bigr)},
+\\
+A^{p/(K^+-K^-)}(x,y,z) &= 2\frac{B(y)}{A(y)}\,
+\frac{4\,h^{u_v}\,H_1^{\perp (1) \rm{fd}} -h^{s_v}\,H_1^{\perp (1) \rm{f'}}  }
+{4\,f_1^{u_v}\,\Bigl(D_1^{\rm{fd}} -D_1^{\rm{dd}}\Bigr)
++f_1^{s_v}\,\Bigl(D_1^{\rm{d'}}-D_1^{\rm{f'}}\Bigr)},
+\\
+A^{n/(K^+-K^-)}(x,y,z) &= 2\frac{B(y)}{A(y)}\,
+\frac{4\,h^{d_v}\,H_1^{\perp (1) \rm{fd}} -h^{s_v}\,H_1^{\perp (1) \rm{f'}}  }
+{4\,f_1^{d_v}\,\Bigl(D_1^{\rm{fd}} -D_1^{\rm{dd}}\Bigr)
++f_1^{s_v}\,\Bigl(D_1^{\rm{d'}}-D_1^{\rm{f'}}\Bigr)}.
+\end{align}
+%
+%
+The $s_v$ superscript refers to the difference between $s$ and
+$\bar{s}$. $A(y)$ and $B(y)$ are kinematic factors \cite{Bacchetta:2006tn}.
+%                                                                                                                  %                     
+Neglecting the $s_v$ contributions and  the ``unfavored '' $D_1^{\rm{dd}}$
+fragmentation function (FF), the ``kaon differences'' asymmetries simplify
+to
+\begin{align}
+A^{p/(K^+-K^-)}(x,y,z) &= 2\frac{B(y)}{A(y)}\,
+\frac{h^{u_v}}{f_1^{u_v}}\,\frac{H_1^{\perp (1) \rm{fd}} }
+{D_1^{\rm{fd}}},
+\\
+A^{n/(K^+-K^-)}(x,y,z) &= 2\frac{B(y)}{A(y)}\,
+\frac{h^{d_v}}{f_1^{d_v}}\,\frac{H_1^{\perp (1) \rm{fd}} }
+{D_1^{\rm{fd}}},
+\end{align}
+%
+\noindent where the index ``fd'' indicates favored kaon FFs.
+In the approximation of strangeness contribution being negligible
+in the valence region one can write:
+\begin{equation}
+ \frac{H_1^{\perp u/K+}- H_1^{\perp u/K-}}{H_1^{\perp u/\pi +}- H_1^{\perp u/\pi -}}  = \frac{15}{4}
+\frac{F_p^{K+} - F_p^{K-}}{3(F_p^{\pi +}-F_p^{\pi -}) + (F_d^{\pi +}-F_d^{\pi -})},
+\end{equation}
+%
+\noindent where $F_{target}^{hadron}$ can be any one of four Collins asymmetries
+related to $H_1^\perp$.
+%
+%There are indications from Collins asymmetry measurements \cite{Airapetian:2004tw}
+%that $H_1^{u/\pi +}- H_1^{u/\pi -}$ is large, and that will allow precision
+%measurement of kaon Collins function, under the assumptions discussed above.
+%That measurement will also provide a check of chiral limit prediction, where
+%that ratio is expected to be at unity.
+More ratios could be constructed from other observable moments with pions and kaons on proton and
+deuteron targets. With a given Collins function, one can study all involved TMD distributions.
+Once a given COllins function will be extracted, it will provide access to the different TMDs it couples to in the observables. 
+%Measurements of transverse momenta of final state hadrons in SIDIS with
+%unpolarized targets will thus provide
+%information on the polarized Collins fragmentation of kaons complementary to transverse
+%target and future measurements in $e^+e^-$ by BELLE.
+%
+\subsubsection{Higher-twist observables}
+Moving beyond the leading-twist approximation, a second, twist-3 modulation is expected in $A_{UL}$. It can be accessed as a $\sin\phi$ moment, and provides access to a combination of different TMDs and FFs. The simultaneous extraction of leading and higher-twist modulations in the observables at the CLAS12 kinematics will play an essential role in sizing effects beyond the leading twist. The CLAS12 kinematic coverage, indeed, is characterized by a $Q^2$ value laying in a region where possible higher-twist phenomena are still active.\\ %An example is the measurement performed at 6 GeV (citare misura di Harut), that, for the first time, reported a non-zero $\sin2\phi$ moment for $A_{UL}$, differently from the previous measurement by HERMES that found a $A_{UL}^{\sin2\phi}$ consistent with zero.
+%
+The double-spin asymmetry $A_{LL}$ is proportional to the diagonal TMD $g_1(x, k_\perp)$, that reduces to the 1D helicity distributions once the $k_\perp$ dependence is integrated out. Measurements of the $p_T$ dependence of $A_{LL}$ for different hadron channels will provide access to widths in transverse momentum for different flavors. 
+%
+%
+Also interesting is the exploration of the Collins mechanism, encoded in the FF that appears coupled to $h_{1 L}^{\perp}$ in $A_{UL}$. In the so-called $u$-quark dominance scenario, where the fragmentation is led by the dominant flavor in the nucleon, similar results would be expected from pion and kaon fragmentation. However, the available results from HERMES (and COMPASS) on kaons do not confirm this scenario, with a signal for positive kaons being larger than for pions, while for negative kaons they are compatible. The kaon signals are a challenge for the present understanding of the underlying physics processes. Detailed studies require disentanglement of the different contributions, which is possible only
+with high-precision mapping of the kinematical dependences. The surprising and controversial pattern of azimuthal asymmetries for kaons is an indication of a non trivial role of the sea quarks in the nucleon, or of a peculiar behaviour of the fragmentation mechanism in the presence of strange quark.\\
+
+In order to shed light on the hadronization mechanism, a high-precision mapping of the kinematic dependences, in conjuction with a excellent hadron identification will be mandatory. Furthermore, measurements for {\bf different hadron channels} (that provide a tag for the flavor of the decaying quark) on {\bf different targets} will allow the extraction of different combinations of TMD and favored/unfavored fragmentation functions. 
+%
+%\todo[inline, color=green!40]{Flavor separation.}
+%
+%
+\subsection{Channel selection and data analysis}
+\label{sec::channel_sel}
+%
+%
+The process of interest is the semi-inclusive electroproduction of a single hadron, \textit{i.e.}
+%
+\begin{equation}
+e (k) d (p) \Rightarrow e (k') h (P) X .
+\end{equation}
+%
+%
+% SIDIS process
+\begin{figure}
+\centering
+\includegraphics[width=0.85\textwidth]{sidis/sidis_drawings.png}
+\caption{\label{fig::sidis} Semi-inclusive electroproduction of a hadron $h$. The box labeled $\sigma$ represents the hard part of the cross section, described by quantum electrodynamics. The soft, non-perturbative blob represents the distribution functions (DF) that describe the dynamics of the partons in the nucleon (DF=TMD in the SIDIS case), while FF represent the hadronization of the struck quark into the final hadron.}
+\end{figure}
+%
+The electron scatters off the deuterium through the exchange of a virtual photon. The latter interacts with one of the nucleon partons (a quark, in the CLAS12 kinematics) that eventually hadronizes through a fragmentation process, producing the hadron $h$ in the final state.\\
+The particle identification will mainly exploit the forward detectors of CLAS12. Electrons will be identified through the calorimeter system (PCAL + EC), the time-of-flight and the high-threshold Cherenkov counters, and the tracking information will come from the Drift Chambers. 
+Charged pions will be identified through the combination of tracking, time-of-flight and Cherenkov counter information. The neutral pions will be reconstructed through their two-photon decays, exploiting information from the calorimeters and from the Forward Tagger, at the lowest polar angles. 
+In order to get a reliable particle identification in the kinematical region of interest, the use of the RICH detector will be mandatory, being the complementary PID system of CLAS12 not efficient in the kinematics proper of SIDIS hadrons (see, e.g., Fig.~\ref{fig::kaon_p_theta}). 
+%
+%
+% kaon kinematics
+\begin{figure}
+\centering
+\includegraphics[width=0.85\textwidth]{sidis/kaon_p_theta.pdf}
+\caption{\label{fig::kaon_p_theta} $p$ \textit{v.s.} $\theta$ for positive (top plot) and negative (bottom plot) kaons. The distributions are produced by selecting SIDIS kaons as described in Sec. \ref{sec::channel_sel}.}
+\end{figure}
+%
+%
+
+The final sample will be selected applying deep-inelastic cuts ($Q^2>$ 1 GeV$^2$, $W>$1 GeV) to select a regime where scaling is already at work and to exclude possible contributions from nucleon resonances. 
+Contamination from target-fragmentation hadrons will be removed by applying a cut on the fraction of the virtual photon energy carried by the hadron, $z$, that will also remove contributions from the exclusive channels. At 6 GeV the typical $z$ cuts were 0.4 $<z<$ 0.7, the lower one removing contamination from $\Delta$-mediated decays and the higher one from residual exclusive events. 
+As an example, in Fig.~\ref{fig::mx} the distribution of $m_{e^-K^+X}$ is shown as a function of the $z$ of the positive kaon. The contribution from exclusive events, peaking at the nucleon mass, appears clearly visible in the high-$z$ region and will be removed through the above-mentioned upper cut on $z$.\\
+%
+%
+%
+% SIDIS process
+\begin{figure}
+\centering
+\includegraphics[width=1.0\textwidth]{sidis/mmElKappaPX.pdf}
+\caption{\label{fig::mx} Distribution of the $e^-K^+X$ missing mass as a function of $z$ for positive kaons. The contribution from the exclusive peak appears clearly in the high-$z$ region.}
+\end{figure}
+%
+%
+The relevant variables to map single and double spin asymmetries in SIDIS are the ones describing the electron kinematics, $(x_B, Q^2)$, the hadron tranverse momentum $p_T$ and the fraction of the virtual-photon energy carried by the hadron $z$. The latter appear in the fragmentation functions, and are proper to the hadronization process. 
+Distributions on $p_T$ for positive and negative kaons are shown in Fig.~\ref{fig::phi_pt_kpm}: the left plot refers to the positive kaons, while the right plot to negative. 
+%Furthermore, TMDs and FFs appear in the observables coupled through a convolution integral over the quark tranverse momentum $k_T$. 
+In order to extract the relevant azimuthal modulations, the asymmetries will be measured as a function of the angle $\phi$, formed by the leptonic and hadronic planes, shown in Fig. \ref{fig::phi_angle} and defined according to the Trento Convention.
+%
+%
+% phi angle
+\begin{figure}
+\centering
+\includegraphics[width=1.0\textwidth]{sidis/anglestrento.pdf}
+\caption{\label{fig::phi_angle} Definition of the angle $\phi$, formed by the leptonic and the hadronic planes.}
+\end{figure}
+%
+The acceptance in $\phi$ for charged kaons is shown in of Fig.~\ref{fig::phi_pt_kpm}. There, the two plots show the distribution of the angle $\phi$ between the leptonic and hadronic planes, while the two bottom plots show the distribution of $p_T$. The high-$p_T$ region, where the models differ the most and the count rates drop, will benefit the most from the doubling of the beam time. 
+%
+%
+% phi acceptance for kaons
+\begin{figure}
+\centering
+\includegraphics[width=1.0\textwidth]{sidis/phi_pt_kpm.pdf}
+\caption{\label{fig::phi_pt_kpm} Distributions for charged kaons (left: positive kaons; right: negative kaons) of the transverse momentum $p_T$ (top) and of the angle $\phi$ between the leptonic and the hadronic planes (bottom).}
+\end{figure}
+%
+%
+%
+\subsection{Projections}
+%
+The projections in this section are based on a full simulation of inclusive and semi-inclusive inelastic scattering with the CLAS12 acceptance folded in. Events were generated with the clas12DIS generator \cite{CLAS12DIS}, an implementation of the LUND Monte-Carlo package PEPSI (Polarized Electron-Proton Scattering Interactions)~\cite{Mankiewicz:1991dp}. 
+It is based on polarized and unpolarized parton distribution functions and the LUND string model for hadronization.
+It has been tested successfully against several low-$Q^2$ experiments with a 5.7-GeV beam at Jefferson Lab.\\
+
+A fast Monte Carlo simulation program  has been used to define the acceptance and resolution of the CLAS12 detector with all its base equipment in place. The kaons were assumed to be identified with 100\% efficiency in the sectors covered by the CLAS12 RICH, and also at energies above 5 GeV, where the pions start to fire the High-Threshold Cherekov Counter (HTCC). 
+The events generated by clas12DIS are used as input, and all particles are followed through all detector elements. 
+The results of this simulation have been cross-checked with direct cross-section calculations and a simple geometric acceptance model. The resolution of the detector is simulated by a simple smearing function which modifies a particle's track by a random amount in momentum and angles according to a Gaussian distribution of the appropriate width.
+%The amount of smearing follows the design specifications of the CLAS12 detector. The resolution in $x_B$ varies between $0.01 < \sigma_{x} <  0.035$ and is therefore finer than our planned $x$ bin size of 0.05 in all cases.
+%A full Monte Carlo simulation (GEANT-based) of CLAS12 with all resolution effects will be used to determine the effective mean $x$ (and $Q^2$) for each $x$-bin we will use to bin our data so we can accurately extract the $x$-dependence of the measured asymmetries.
+
+%
+\subsection{Expected results}
+%
+Kaon production being suppressed by an order of magnitude with respect to pion production, observables related to kaon production in DIS will benefit the most from the additional 50 days on a longitudinally polarized deuteron target requested in this proposal. Simultaneous measurements of the Kotzinian-Mulders asymmetry for pions and kaons on proton and deuteron targets will provide an independent measurement of ratios of their Collins functions, providing complementary measurements to the $e^+e^-$ ones. 
+The extracted dependencies on $(x_B, Q^2, P_T, z)$ on both pions and kaons will provide access to widths in the transverse momentum of different underlying partonic distributions, like $g_1$ and $h_{1L}$, and to their flavor dependence. The proposed measurements of single and double target-spin asymmetries can be used to test the evolution properties of the Collins function. They will also provide a check of the chiral limit prediction, where the ratio of pion and kaon fragmentation functions is expected to be at unity. 
+%With the knowledge of the Collins function, one can study all involved TMD distributions.
+Figures~\ref{fig::ALLptcosdeutpionsx2} and \ref{fig::ALLptcosdeutkaonsx2} show the distributions of the constant term for the double-spin asymmetry on deuteron as a function of the hadron $p_T$, for pions and kaons respectively, for a total beam time of 50 days (top) and 100 days (bottom), which includes the 50 already approved for Run Group C plus the 50 more requested in this Run-Group-extension proposal. 
+%The read and blue curves are calculations in constituent quark model [24] using
+%Schlumpf’s wave function [62] and the hypercentral wave function for the momentum
+%dependence of the light-cone wave function [63].
+%\textbf{add description of models}
+The projections for pions show a reasonable discriminating power among the available models already with the statistics corresponding to 50 days. However, a doubling of the running time will improve significantly the high-$p_T$ region, where the acceptance kills the obtainable statistics. Moreover, the different model curves in Fig.~\ref{fig::ALLptcosdeutpionsx2}, corresponding to different $k_T$ widths for the helicity distributions, differ the most in the hight-$p_T$ region. The rightmost bottom plot shows that, in the $\pi^0$ case, the precision on the high-$p_T$ points corresponding to 100 days make CLAS12 data strategic to have a first phenomenological constraint from the neutral pion channel. The inclusion of the Forward Tagger in the 50 days of extension requested by this proposal will bring additional statistics for low-polar-angle $\pi^0$'s. 
+As to kaons, while the projections for 50 days do not have the power to discriminate among the different model curves (especially in the region $p_T$ $>$ 0.5 (GeV$/c$)), the ones obtained for 100 days provide better precision to test the phenomenological accuracy of the models, especially in the high-$p_T$ region where the hadron acceptance drops (see Fig.~\ref{fig::phi_pt_kpm}). This affects in particular $K^-$, the rate of which is suppressed with respect to $K^+$. 
+The high-$p_T$ region is also the one less constrained from other measurements, and it would benefit the most from an increased statistics for the CLAS12 measurement. 
+%
+% pions vs pt x2
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{sidis/allpt11cosdeut-eps-converted-to.pdf}
+\includegraphics[width=0.7\textwidth]{sidis/all_pions_x2.pdf}
+\caption{\label{fig::ALLptcosdeutpionsx2}$\cos\phi$ moment of the longitudinal double spin asymmetry for SIDIS pion electroproduction on the deuteron, as a function of $p_T$. The top plots correspond to the precision expected with the already-approved 50 days of beam time. The bottom plots are obtained for 100 days of beam time. The curves are computed using different $k_T$ widths for the helicity distributions \cite{torino_models}. Left plots: positive pions; central plots: negative pions right plots: neutral pions.}
+\end{figure}
+%
+% ALL kaons vs pt x2
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{sidis/allpt11deutkaonbakur-eps-converted-to.pdf}
+\includegraphics[width=0.7\textwidth]{sidis/all_kaons_x2.pdf}
+\caption{\label{fig::ALLptcosdeutkaonsx2} Longitudinal double-spin asymmetry for SIDIS kaon electroproduction on the deuteron, as a function of $p_T$. The top plots correspond to the precision expected with the already-approved 50 days of beam time. The bottom plots are ontaibed for 100 days of beam time. The biggest impact from the extended beam time is expected in the high-$p_T$ region, where the statistics are poorer and where models differ the most. The curves are calculated using different $k_T$ widths for the helicity distributions \cite{torino_models}. Left plots: positive kaons; right plots: negative kaons.}
+\end{figure}
+%
+%
+The $\sin2\phi$ moment of the longitudinal target-spin asymmetry is shown in Fig.~\ref{fig::AULptcosdeutkaonsx2} as a function of $x_B$, for both positive (left) and negative (right) kaons. Projections in the high-$x_B$ region show the importance of an increased statistics, since it is where the present models are less constrained and differ the most in their prediction. 
+The valence region is the main domain of CLAS12 physics, and it is mandatory to assure a reasonable statistical coverage for the relevant channels - such as the semi-inclusive production of kaons - in this regime, which is not accessible by any of the other experiments. 
+%
+% AUL kaons vs pt x2
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{sidis/aul_kaons.pdf}
+\includegraphics[width=0.7\textwidth]{sidis/aul_kaons_x2.pdf}
+\caption{\label{fig::AULptcosdeutkaonsx2}$\sin 2\phi$ moment of the longitudinal target-spin asymmetry for SIDIS kaon electroproduction on the deuteron, as a function of $x_B$. The top plots correspond to the precision expected with the already-approved 50 days of beam time. The bottom plots are obtained for 100 days of beam time. The colored curves correspond to calculations in the constituent quark model \cite{kaon_aulsin2phi_models} using different wave functions. Left plots: positive kaons; right plots: negative kaons.}
+\end{figure}
+%

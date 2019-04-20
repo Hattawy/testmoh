@@ -1,0 +1,1272 @@
+%%%%%%%%% espcrc1.tex %%%%%%%%%%
+%
+% $Id: espcrc1.tex 1.2 2000/07/24 09:12:51 spepping Exp spepping $
+%
+\documentclass[12pt,oneside]{article}
+\usepackage{graphics}
+\usepackage{epsf}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage{geometry}
+%\geometry{verbose,tmargin=0.7in,bmargin=0.5in,lmargin=0.4in,rmargin=0.4in}
+%\setcounter{secnumdepth}{3}
+%\setcounter{tocdepth}{3}
+\usepackage{graphics}
+\usepackage{setspace}
+\usepackage{epsf}
+%\doublespacing
+\usepackage{rotating}
+\textwidth  6.0 in
+\textheight 8.5 in
+%\oddsidemargin 0.15in
+%\makeatletter
+\begin{document}
+%\pagestyle{plain}
+\begin{flushright}
+\vspace{-1cm}
+\centerline{New Research Proposal to Jefferson Lab PAC 37}
+
+\end{flushright}
+
+\bigskip
+
+{\Large{\centerline {\bf Deeply Virtual Compton Scattering on the Neutron}}}
+{\Large{\centerline {\bf with CLAS12 at 11 GeV}}}
+
+\vskip 0.5cm
+
+\centerline{A. Fradi, B. Guegan, M. Guidal, S. Niccolai\footnote{co-spokesperson} $^,$\footnote{contact person, email: silvia@jlab.org}, S. Pisano, D. Sokhan}
+\centerline{\it Institut de Physique Nucl\'eaire d'Orsay, 91406 Orsay, France}
+\vskip 0.4cm
+\centerline{A. Avakian, V. Baturin, V.D. Burkert, L. Elouadrhiri, T. Kageya, V. Kubarovsky\footnotemark[1]}
+\centerline{\it Jefferson Lab, Newport News, VA 23606, USA}
+\vskip 0.4cm
+\centerline{A. El Alaoui\footnotemark[1]}
+\centerline{\it Argonne National Laboratory, Argonne, IL 60439, USA}
+\vskip 0.4cm
+\centerline{M. Aghasyan, S. Anefalos Pereira, E. De Sanctis, D. Hasch, V. Lucherini, M. Mirazita, S. Pisano\footnotemark[1], P. Rossi}
+\centerline{\it INFN, Laboratori Nazionali di Frascati, 00044 Frascati, Italy}
+\vskip 0.4cm
+\centerline{M. Battaglieri, R. De Vita, M. Osipenko, G. Ricco, M. Ripani, M. Taiuti}
+\centerline{\it INFN, Sezione di Genova, 16146 Genova, Italy}
+\vskip 0.4cm
+\centerline{C. Maieron, Y. Perrin, E. Voutier}
+\centerline{\it LPSC Grenoble, 38025 Grenoble, France}
+\vskip 0.4cm
+\centerline{J. Ball, M.~Gar\c con, P. Konczykowski, B. Moreno, H. Moutarde, S. Procureur, F. Sabati\'e}
+\centerline{\it SPhN-CEA Saclay, 91191 Gif-sur-Yvette, France}
+\vskip 0.4cm
+\centerline{A. D'Angelo, C. Schaerf, V. Vegna}
+\centerline{\it Universit\`a di Roma 2 - Tor Vergata, 00173 Roma, Italy}
+\vskip 0.4cm
+\centerline{J. Annand, M. Hoek, D. Ireland, R. Kaiser, K. Livingston, D. MacGregor, G. Rosner, B. Seitz, G. Smith}
+\centerline{\it University of Glasgow, Glasgow G12 8QQ, United Kingdom}
+\vskip 0.4cm
+\centerline{A. Kubarovsky, N. Saylor, P. Stoler}
+\centerline{\it Renesslaer Polytechnic Institute, Troy, NY 12180-3590, USA}
+\vskip 0.4cm
+\centerline{A. Biselli}
+\centerline{\it Fairfield University, Fairfield Connecticut 06824}
+\vskip 0.4cm
+\centerline{M. Ungaro}
+\centerline{\it University of Connecticut, Storrs, Connecticut 06269}
+\centerline{L. Barion, M. Contalbrigo, G. Ciullo, P. Lenisa, L. Pappalardo}
+\centerline{\it INFN Sezione di Ferrara, 44100 Ferrara, Italy}
+\vskip 0.4cm
+\centerline{F. Meddi, G.M. Urcioli}
+\centerline{\it INFN Sezione di Roma, 00185 Roma, Italy}
+\vskip 0.4cm
+\centerline{D.M. Castelluccio, E. Cisbani, F. Garibaldi, S. Frullani}
+\centerline{\it INFN Roma - Sanit\`a, 00161 Roma, Italy}
+\vskip 0.4cm
+\centerline{M. Capogni}
+\centerline{\it INFN Roma and ENEA Casaccia, 00123 S. Maria di Galeria - Roma, Italy}
+\vskip 0.4cm
+\centerline{V. Bellini, A. Giusa, F. Mammoliti, G. Russo, L. Sperduto, C. Sutera}
+\centerline{\it INFN Sezione di Catania, 95123 Catania, Italy}
+\vskip 0.4cm
+\centerline{R. De Leo}
+\centerline{\it Universit\`a di Bari, 70121 Bari, Italy}
+\vskip 0.4cm
+\centerline{R. Perrino}
+\centerline{\it INFN Sezione di Lecce, 73100 Lecce, Italy}
+%\maketitle
+\vskip 0.5cm
+{\large{\centerline{\bf A CLAS Collaboration proposal}}
+\newpage
+\abstract{}
+Measuring Deeply Virtual Compton Scattering on a neutron target is one of the necessary steps to complete our understanding of the structure of the nucleon in terms of Generalized Parton Distributions (GPDs). DVCS on a neutron target allows to operate a flavor decomposition of the GPDs and plays a complementary role to DVCS on a transversely polarized proton target in the determination of the GPD $E$, the least known and least constrained GPD that enters Ji's angular momentum sum rule. To start the experimental program of DVCS on the neutron, we propose to measure beam-spin asymmetries for n-DVCS ($ed\to e'n\gamma(p)$) with the upgraded 11-GeV CEBAF polarized-electron beam and the CLAS12 detector. For the detection of the recoil neutron, necessary to ensure the exclusivity of the reaction after having detected the scattered electron and the DVCS photon, we will construct a scintillator-barrel detector to be placed in the Central Detector, between the CTOF and the solenoid magnet. This Central Neutron Detector (CND) will be made of three layers of scintillator paddles (48 paddles per layer), coupled two-by-two at the front with semi-circular light guides and read at the back by photomultipliers placed outside of the high magnetic-field region and connected to the bars via 1-meter-long bent light guides. Simulations and measurements on a prototype, covering one radial layer and two azimuthal bins, have proven the feasibility of this project. In order to provide an accurate mapping of the n-DVCS beam-spin asymmetry over the available 4-dimensional ($Q^2$, $x_B$, $-t$, $\phi$) phase space, we request 90 days of running on a deuterium target with the maximum available beam energy, 11 GeV. 
+
+\setcounter{page}{1}
+\newpage
+\tableofcontents{}
+\newpage
+\listoftables{} 
+\listoffigures{}
+\newpage
+\section{Introduction}
+
+Generalized Parton Distributions are nowadays the object of an intense 
+effort of research, in the perspective of understanding nucleon structure.
+They describe the correlations between the longitudinal momentum and transverse spatial position 
+of the partons inside the nucleon, they give access to
+the contribution of the orbital momentum of the quarks to the nucleon spin, 
+they are sensitive to the correlated $q-\bar{q}$ components, etc.
+The original articles and general reviews on GPDs and
+details on the formalism can be found in Refs.~\cite{muller,ji,rady,collins,goeke,revdiehl,
+revrady}.
+
+The nucleon GPDs are the structure functions
+which are accessed in the measurement of the exclusive 
+leptoproduction of a photon (DVCS, which stands for Deeply Virtual Compton Scattering) or of a meson on the nucleon, at 
+sufficiently large $Q^2$, where $Q^2$ is the virtuality of 
+the photon emitted by the initial lepton. Figure~\ref{fig:dvcs}
+illustrates the leading process for DVCS. Considering only helicity-conserving 
+quantities and the quark sector, there are four GPDs, $H, \tilde H, E, 
+\tilde E$, which depend, in leading-order and leading-twist QCD,
+upon three variables: $x$, $\xi$ and $t$. 
+$x-\xi$ and $x+\xi$ are the longitudinal momentum fractions of the 
+quarks, respectively, coming out and going back into the nucleon and $t$ is the squared 
+four-momentum transfer between the final and initial nucleon.
+
+\begin{figure}[hb]
+\begin{center}
+\epsfxsize=10 cm
+\epsffile{plots/dvcs2.eps}
+%\epsffile{plots/figure1.eps}
+%\vspace{-8.2cm}
+%\vskip -4cm
+\caption{The handbag diagram for the DVCS process on a nucleon $eN\to e'N'\gamma'$. 
+Here $x+\xi$ and $x-\xi$ are the longitudinal momentum fractions of the 
+initial and final quark, respectively, and $t=(p-p')^2$ is the squared momentum 
+transfer between the initial and final protons (or equivalently between the two
+photons). There is also a crossed diagram which is not shown here.}
+\label{fig:dvcs}
+\end{center}
+\end{figure}
+
+Among the three variables, $x$, $\xi$ and $t$, only two, $\xi$ and $t$, are accessible 
+experimentally. In the Bjorken limit, $\xi =\frac{x_B/2}{1-x_B/2}$,
+where $x_B$ is the standard Bjorken variable. Formally, the DVCS 
+amplitude is proportional to: 
+\begin{eqnarray}\label{dvcs-ampl}
+\int_{-1}^{+1}d x {{H(\mp x,\xi,t)} \over {x \pm \xi \mp i \epsilon}}+... 
+\end{eqnarray}
+where the ellipsis stands for 
+similar terms for $E$, $\tilde{H}$ and $\tilde{E}$.
+
+Decomposing this expression into its real and imaginary parts, 
+it is found that the maximum information that can be extracted from the experimental 
+data at a given ($\xi,t$) point is $H(\pm\xi,\xi,t)$, when measuring an 
+observable sensitive to the imaginary part of the DVCS amplitude, 
+and $\int_{-1}^{+1}d x {H(\mp x,\xi,t) \over {x \pm \xi}}$, when measuring 
+an observable sensitive to the real part of the DVCS amplitude.
+Knowing the GPDs at some particular point $(\pm\xi,\xi,t)$ and
+their weighted integral over $x$ does not, of course, uniquely define them. A model input will be required, to make the interpolation over the variable $x$.
+
+The DVCS process is accompanied by the Bethe-Heitler 
+(BH) process, in which the final-state photon is radiated by the incoming 
+or scattered electron and not by the nucleon itself. The BH process, 
+which is not sensitive to GPDs, is indistinguishable from 
+the DVCS and interferes with it, complicating the matter. However, considering 
+that the nucleon form factors are well known at small $t$, the BH process 
+is precisely calculable theoretically.
+
+It is clearly a highly non-trivial task to actually measure the GPDs. It calls for a long-term experimental program comprising the measurement of different observables: cross sections,
+beam-, longitudinal and transverse target- single polarization observables,
+double polarization observables and also possibly beam-charge asymmetries,
+timelike Compton scattering, etc. ~Refs.~\cite{fitmick,belitski} show 
+the information brought by the various observables.
+
+Such dedicated experimental program, concentrating on a proton
+target, has started worldwide in these past few years. JLab 
+has provided the first measurement, 
+in the valence region, of beam-polarized and unpolarized DVCS cross 
+sections, in a limited phase-space domain, with the Hall A~\cite{franck}, and several beam-spin and target-spin asymmetries (BSA, TSA), over a large kinematic range, obtained with the CLAS 
+detector~\cite{fx},~\cite{shifeng}. Beam-charge asymmetries, BSAs, 
+longitudinally and transversely-polarized target-spin asymmetries, as well 
+as double-spin asymmetries, have also been measured by the HERMES 
+collaboration~\cite{hermes}.
+These first data will soon be completed with a series of new experiments 
+ongoing and planned at JLab and aimed to measure accurately longitudinally~\cite{E05114} and 
+transversely~\cite{E08021} polarized target-spin asymmetries and cross 
+sections (along with double-polarization observables) and new precise 
+unpolarized and beam-polarized cross sections at new 
+kinematics~\cite{E06003,E07007}. Measurements of DVCS cross sections, BSA and longitudinal TSA with JLab at 12 GeV have also been approved~\cite{E1206114,E1206119}.
+
+\section{Physics motivation: neutron GPDs}
+
+The aim of this proposal is to start a similar experimental program with a neutron target. The importance of neutron targets in the DVCS phenomenology was clearly established in the pioneering Hall A experiment, where the polarized-beam cross section difference off a neutron, from a deuterium target, was measured~\cite{malek} (see Section~\ref{halla_sec}). 
+
+Measuring neutron GPDs is highly complementary to measuring
+proton GPDs. Neutron and proton GPDs are independent quantities,
+like neutron and proton form factors. Measuring both GPDs allows to carry 
+out a flavor separation. For instance, 
+
+\begin{eqnarray}
+H^p(\xi , \xi, t)=\frac{4}{9}H^u(\xi , \xi, t)+\frac{1}{9}H^d(\xi , \xi, t)
+\end{eqnarray}
+and
+\begin{eqnarray}
+H^n(\xi , \xi, t)=\frac{1}{9}H^u(\xi , \xi, t)+\frac{4}{9}H^d(\xi , 
+\xi, t)  
+\end{eqnarray}
+(and similarly for $E$, $\tilde H$ and $\tilde E$), from which one can obtain
+
+\begin{eqnarray}
+H^u(\xi , \xi, t)=\frac{9}{15}(4 H^p(\xi , \xi, t)-H^n(\xi , \xi, t))
+\end{eqnarray}
+and
+\begin{eqnarray}
+H^d(\xi , \xi, t)=\frac{9}{15}(4 H^n(\xi , \xi, t)-H^p(\xi , \xi, t)).  
+\end{eqnarray}
+
+
+Concerning the BSA, which is the main goal of this proposal,
+it can be shown that, in the case of DVCS on the neutron,
+its amplitude is mainly governed by the GPD $E$, the least
+known of the GPDs. In particular, $E$ is one of the two GPDs
+entering Ji's sum rule:
+\begin{equation}
+J_q \,=\, {1 \over 2} \, \int_{-1}^{+1} d x \, x \, 
+\left[ H^{q}(x,\xi,t = 0) + E^{q}(x,\xi,t = 0) \right],
+\label{eq:dvcs_spin}
+\end{equation}
+which links the total angular momentum ($J_q$) carried by each quark $q$ to the sum of the second moments over $x$ of the GPDs $H$ and $E$.
+It is therefore crucial to obtain experimental constraints
+on $E$ in order to make some first steps towards the estimation
+of the contribution of the orbital momentum of the quarks to the nucleon spin. 
+In order to make a quark-flavor separation, both
+$E^n$ and $E^p$ are needed: this proposal mainly aims
+at determining $E^n$. $E^p$ can be accessed through transverse-target polarization
+or double (beam-target) polarization observables on the proton \cite{fitmick},
+which are, as previously mentioned, the goals of experiments already planned at 
+JLab.
+
+Hereafter, the VGG model~\cite{vgg1,vgg2}, which parametrizes 
+GPDs and calculates the associated DVCS observables, has been adopted, in order to 
+quantify (albeit in a model-dependent way) the sensitivity of 
+the neutron-DVCS BSA to the GPD $E$. An interesting feature of the VGG model 
+is that the parametrization of the GPD $E$ is dependent on
+the two parameters $J_u$ and $J_d$, i.e. the total spin (orbital 
+momentum+intrinsic spin) contributions of the $u$ and $d$ quarks 
+respectively. The idea is that a given shape in $x$ for the GPD $E^q$ is
+assumed, and then the overall normalization is proportional to $J_q$
+(see ref.~\cite{goeke} for more details).
+Figure~\ref{bsa_ndvcs} shows the BSA for n-DVCS as a function of the four independent variables describing the DVCS process, $\phi$, $-t$, $x_B$ and $Q^2$, 
+for different values of $J_u$ and $J_d$, as predicted by the VGG model.
+The kinematics for Fig.~\ref{bsa_ndvcs} are $E_e$=11 GeV,
+$x_B$=0.17, $Q^2$=2 GeV$^2$, $-t$=0.4 GeV$^2$ and $\phi$=60$^o$.
+Although some of the $J_u$, $J_d$ values are unlikely (for instance $J_d$=0.8), nevertheless this shows the strong sensitivity of this BSA to $E$ and,
+in the framework of the VGG model, to $J_q$.
+One sees that these BSAs can extend from 10 up to 50\%, with
+spectacular changes of sign depending on the relative signs of 
+$J_u$ and $J_d$, and therefore they can be as large, in magnitude, as the 
+proton-DVCS beam-spin asymmetries that have been recently measured~\cite{fx}. 
+However, it is important to notice that these
+``large'' neutron-DVCS asymmetries are obtained only in a
+specific phase space region, i.e. only around $x_B$=0.1
+or 0.15. To reach such ``low'' values of $x_B$, at sufficiently
+large $Q^2$, an 11-GeV electron beam is needed. The current 6-GeV beam
+allows to explore mainly the $x_B\approx$0.35 region where the
+BSA far from its maximum. This is confirmed by the exploratory measurement
+of the JLab Hall A collaboration~\cite{malek} where neutron-DVCS BSAs
+essentially consistent with zero were obtained and for which the sensitivity to $J_q$ was therefore minimal. 
+
+\begin{figure} 
+\begin{center}
+\vspace{-2cm}
+\epsfxsize=14 cm
+\epsffile{plots/asym12_n.ps}
+\caption {Beam-spin asymmetry for DVCS on a neutron target, 
+plotted as a function of (from left to right) $\phi$, $-t$, $x_B$, 
+and $Q^2$, as predicted by the VGG model. The kinematics are: $E_e$=11 GeV,
+$x_B$=0.17, $Q^2$=2 GeV$^2$,
+$-t$=0.4 GeV$^2$ and $\phi$=60$^o$. All distributions have been
+calculated at these kinematics, except for the variable
+against which each distribution is plotted.
+The curves are obtained for different combinations of values 
+of $J_u$ and $J_d$: ($J_u=0.3$,$J_d=0.1$) - solid curve, 
+($J_u=0.8$,$J_d=0.1$) - thin dashed curve, ($J_u=-0.5$,$J_d=0.1$) - thin 
+dash-dotted curve, ($J_u=0.3$,$J_d=0.8$) - thick dashed curve,
+($J_u=0.3$,$J_d=-0.5$) - thick dash-dotted curve.}
+\label{bsa_ndvcs}
+\end{center}
+\end{figure}
+
+Figure~\ref{bsa_pdvcs} shows the corresponding 
+BSAs, at approximatively the same kinematics, for the proton case. It is clear that the 
+sensitivity to $E$ or, alternatively to $J_u$ and $J_d$, is much less.
+This is mainly due to the fact that the proton-DVCS BSA is mostly
+sensitive to the $H$ GPD, the weight of the $E$ GPD being suppressed
+by kinematical factors.
+ 
+\begin{figure} 
+\begin{center}
+\vspace{-2cm}
+\epsfxsize=14 cm
+\epsffile{plots/asym12_p.ps}
+\caption {Beam-spin asymmetry for DVCS on a proton target, as predicted by the VGG model, plotted as a function of (from left to right) $\phi$, $-t$, $x_B$ 
+and $Q^2$. 
+$E_e$=11 GeV, $x_B$=0.2, $Q^2$=2 GeV$^2$, $-t$=0.2 GeV$^2$ and 
+$\phi$=60$^o$. Otherwise, same conditions and conventions as for 
+Fig.~\ref{bsa_ndvcs}.}
+\label{bsa_pdvcs}
+\end{center}
+\end{figure}
+
+Finally, Fig.~\ref{cs_pndvcs} shows the comparison of the unpolarized cross
+sections for DVCS on the proton and on the neutron at approximately
+the same kinematics, as a function of $\phi$, $-t$ and $x_B$, according
+to the VGG model with $J_u=0.3$ and $J_d=0.1$. One sees that the neutron-DVCS
+cross sections are, depending on the kinematics, a factor 3 to 5
+below the proton-DVCS cross sections. 
+
+\begin{figure}  
+\begin{center}
+\vspace{-2cm}
+\epsfxsize=14 cm
+\epsffile{plots/pn_comp.ps}
+\caption {VGG-model prediction for the unpolarized cross section for DVCS on a proton target (solid curves) and on a neutron target (dashed curve), 
+plotted as a function of (from left to right) $\phi$, $-t$ and $x_B$.
+Same kinematics as for Fig.~\ref{bsa_pdvcs} (for the proton)
+and Fig.~\ref{bsa_ndvcs} (for the neutron).}
+\label{cs_pndvcs}
+\end{center}
+\end{figure}
+
+\section{First n-DVCS experiment: JLab Hall A}\label{halla_sec}
+
+The neutron DVCS channel was explored for the first time in the E03-106 experiment \cite{bertin} performed in the Hall A of Jefferson Lab. The polarized-beam cross section difference was measured on deuterium and hydrogen targets, and the neutron DVCS and deuteron DVCS signals were extracted from the comparison of experimental yields within the impulse approximation (Fig.~\ref{fig1_halla}). On the one hand, this pioneering work did experimentally establish the importance of the measurement of the n-DVCS reaction for the investigation or quark angular momentum \cite{malek}. On the other hand, these data are limited to one specific region of the physics phase space and suffer from significant statistic and systematic errors originating from the correlation of the neutron and deuteron moments, the relative calibration of the photon calorimeter between hydrogen and deuterium targets, and the neutral pion contamination. The experiment proposed here aims at investigating the n-DVCS reaction in a wide phase space, providing a systematic study of the beam-spin asymmetry. The detection of the struck neutron will insure the full exclusivity of the reaction and well-established techniques, common to all DVCS measurements performed with CLAS and proposed for CLAS12, will allow for a precise subtraction of the neutral pion background (see Section \ref{pi0_sec}). While the neutron detection was also implemented in the Hall A n-DVCS experiment, it was never successfully used in the data analysis, presumably because of the effects of a large neutral low energy background at forward angles \cite{malek_phd}. Because of the actual location of our neutron detector at large angles (motivated in Section \ref{cnd-section}) and the additional boost from the increased beam energy, these effects are expected to be highly suppressed in the proposed experiment (see Section \ref{elec_back}).
+
+\begin{figure}  
+\begin{center}
+\vspace{-2cm}
+\epsfxsize=11 cm
+\epsffile{plots/fig2_halla.eps}
+\caption {n-DVCS analysis results from the Hall A experiment \cite{malek}. Top: helicity signal (defined as $S_h = \int_0^{\pi}{(N^+ - N^-)d^5\Phi}-\int_{\pi}^{2\pi}{(N^+ - N^-)d^5\Phi}$), for $D(e,e',\gamma)$ and $H(e,e',\gamma)$ events; $H_2$ data are folded with a momentum distribution of the proton in deuterium and scaled to the $D_2$ data luminosity; the simulation curve is for the Fermi-broadened $H(e,e',\gamma)p$ reaction. Bottom: residual helicity signal after $H_2$ subtraction; the arrows indicate the $M^2_X$ average position of n-DVCS and d-DVCS events for $<t>=-0.3$ GeV$^2$; the simulation curves are integrated over the acceptance and obtained for the arbitrary values $Im[C^I_n]^{exp}=-Im[C^I_d]^{exp}=-1$, where $C^I_n$ and $C^I_d$ depend on the interference of the BH amplitude with the twist-2 Compton form factors.}.
+\label{fig1_halla}
+\end{center}
+\end{figure}
+\begin{figure}  
+\begin{center}
+\vspace{-2cm}
+\epsfxsize=11 cm
+\epsffile{plots/fig3_halla.eps}
+\caption {n-DVCS results from the Hall A experiment \cite{malek}: $t$ dependence of the extracted $\sin(\phi_{\gamma\gamma})$ moments for coherent d-DVCS (top) and incoherent n-DVCS (bottom). Error bars show statistical uncertainties; systematical uncertainties are indicated by the shaded bands.}
+\label{fig2_halla}
+\end{center}
+\end{figure}
+
+\section{Central Neutron Detector: motivation and requirements}\label{cnd-section}
+
+An event generator for DVCS/BH and exclusive $\pi^0$ electroproduction on the neutron inside a deuterium target has been developed \cite{ahmed}. The DVCS amplitude is calculated according to the BKM formalism \cite{belitski}, while the GPDs have been taken from the standard CLAS DVCS generator \cite{harut}. The Fermi-motion distribution is calculated with the Paris potential \cite{paris}.
+
+The output of the event generator was fed through CLAS12 FASTMC, to simulate the acceptance and resolutions of electrons and photons in the Forward Detector. For the detection of photons with polar angles between $2.5^o$ and $4.5^o$, two options have been studied: the current Inner Calorimeter (IC), which should be used in the approved CLAS12 experiment for DVCS on the proton \cite{E1206119}, and its possible upgrade, currently being proposed, the Forward Tagger (FT) \cite{batta}. Kinematic cuts to ensure the applicability of the GPD formalism ($Q^2>1$ GeV$^2$/c$^2$, $t>-1.2$ GeV$^2$/c$^2$, $W>2$ GeV/c$^2$) have been applied. Figure~\ref{kine_vars} shows the coverage in $Q^2$, $x_B$ and $t$ that is obtained from the event generator for the n-DVCS/BH reaction, with an electron-beam energy of 11 GeV. 
+
+ Figures~\ref{e_th_p},~\ref{g_th_p}, and~\ref{n_th_p} show $\theta$ as a function of momentum in the lab frame for, respectively, the electron, the photon and the neutron. The two panels of Fig.~\ref{n_th} are one-dimensional plots, showing, respectively, the momentum and the polar angle of the recoil neutron. As expected, the electron and the photon are mostly emitted at forward angles, while the recoil neutron is going at backwards angles.
+
+\begin{figure}  
+\begin{center}
+\epsfxsize=9 cm
+\epsffile{New_silvia/Q2_Vs_xbj_2.eps}
+\epsfxsize=9 cm
+\epsffile{plots/t_Vs_xbj.eps}
+\epsfxsize=9 cm
+\epsffile{plots/t_Vs_Q2.eps}
+\caption {Distributions of kinematic variables for n-DVCS events. Forward-CLAS12 acceptance cuts and physics cuts are included. Top: $Q^2$ as a function of $x_B$. Middle: $t$ as a function of $x_B$. Bottom: $t$ as a function of $Q^2$.}
+\label{kine_vars}
+\end{center}
+\end{figure}
+
+\begin{figure}  
+\begin{center}
+\epsfxsize=12 cm
+\epsffile{plots/pe_thetae.eps}
+\caption {Electron energy as a function of electron polar angle, for n-DVCS events. Forward-CLAS12 acceptance cuts and physics cuts are included.}
+\label{e_th_p}
+\end{center}
+\end{figure}
+
+\begin{figure}  
+\begin{center}
+\epsfxsize=12 cm
+\epsffile{plots/e_vs_th_gamma.eps}
+\caption {Photon energy as a function of photon polar angle, for n-DVCS events. Forward-CLAS12 acceptance cuts and physics cuts are included. The two zones correspond to the IC/Forward tagger (from $2.5^o$ to $4.5^o$) and to the FEC (from $5^o$ onwards).}
+\label{g_th_p}
+\end{center}
+\end{figure}
+
+\begin{figure}  
+\begin{center}
+\epsfxsize=12 cm
+\epsffile{New_silvia/pn_thetan.eps}
+\caption {Neutron momentum as a function of neutron polar angle, for n-DVCS events. Forward-CLAS12 acceptance cuts and physics cuts are included.}
+\label{n_th_p}
+\end{center}
+\end{figure}
+
+\begin{figure}  
+\begin{center}
+\epsfxsize=10 cm
+\epsffile{New_silvia/Pn.eps}
+\epsfxsize=10 cm
+\epsffile{New_silvia/Thetan.eps}
+\caption {Neutron momentum (top) and polar angle (bottom), for n-DVCS events. Forward-CLAS12 acceptance cuts and physics cuts are included. The drop at $p_n\sim1.3$ is due to the $t<-1.2$ GeV/c$^2$ cut, applied to ensure the applicability of the GPD formalism.}
+\label{n_th}
+\end{center}
+\end{figure}
+
+In the hypothesis of absence of Final State Interactions (FSI), the minimal requirement to ensure the exclusivity of the n-DVCS reaction from a deuterium target and to determine the final and initial state is to fully detect (PID, angles and momentum) the scattered electron, the photon, and the neutron. 
+In fact, using four-vectors, the energy-momentum conservation for the n-DVCS reaction can be written as:
+\begin{eqnarray}\label{en_cons}
+p^{\mu}_e + p^{\mu}_n + p^{\mu}_p = p^{\mu}_{e'} + p^{\mu}_{n'} + p^{\mu}_{p'} + p^{\mu}_{\gamma}.
+\end{eqnarray}
+
+The absence of FSI implies that the kinematics of the initial and final spectator proton are equal: 
+
+\begin{eqnarray}\label{equalp}
+p^{\mu}_p= p^{\mu}_{p'}.
+\end{eqnarray}
+
+Substituting Eq.~\ref{equalp} in Eq.~\ref{en_cons} one obtains:
+\begin{eqnarray}\label{en_cons_clean}
+p^{\mu}_e + p^{\mu}_n = p^{\mu}_{e'} + p^{\mu}_{n'} + p^{\mu}_{\gamma}.
+\end{eqnarray}
+
+Knowing the beam energy, if one identifies the final electron, photon and neutron and measures their angles and momenta, four unknowns (the components of the initial-neutron four vector) and four equations remain. The spectator proton kinematics can then be retrieved using the fact that, since the deuteron target is at rest:
+
+\begin{eqnarray}
+\vec{p}^{\mu}_n + \vec{p}^{\mu}_p = 0,
+E_n + E_p = m_d.
+\end{eqnarray}
+
+As shown in the previous section, the electron and the DVCS photon will be emitted at small angles, and thus will be detected in the forward part of CLAS12 (with the photon either in the EC or in the IC/FT), while the neutron will be emitted predominantly (for $\sim 80$\% of the events) at $\theta> 40^o$ in the laboratory frame, with average momentum around 0.4 GeV/c. This points to the necessity to add a neutron detector (hereafter named Central Neutron Detector, or CND) to the Central Detector of CLAS12, that in the present design has very limited detection efficiency for neutrons --- they can be detected in the CTOF, with about 2-3\%  of efficiency. 
+
+With the aid of the CLAS12 FASTMC tool, the requirements in terms of angular and momentum resolutions on the detected neutrons were determined. The kinematical variables of the scattered electron ($e$) and of the DVCS photon ($\gamma$), computed by the n-DVCS generator described in the previous section, were ``smeared'' using the values of resolutions produced by FASTMC. 
+As mentioned ealier on, for the photon detection at low angles ($2.5^o-4.5^o$), two options were studied: the ``standard'' Inner Calorimeter (IC) and the upgraded proposed one, or ``Forward Tagger'' (FT). The energy and angular resolutions were parametrized, respectively, as:
+\begin{itemize}
+\item{for the IC case: $\sigma_{E}/E=\sqrt{(0.034/E)^2 +(0.021/\sqrt{E})^2+0.019^2}$ \cite{fxnote} and $\sigma_{\theta}=\frac{0.2}{186 \cdot \sqrt{E}}$ (taking the spatial angular resolution of the current IC --- $\sigma_{x}=\frac{0.2 \rm{cm}}{\sqrt{E}}$ --- and assuming a target-IC distance of 186 cm) \cite{E1206119}}
+\item{for the FT case: $\sigma_{E}/E=\sqrt{(0.02/E)²+0.01²}$ and the same angular resolution as for the IC case.}
+\end{itemize} 
+
+The CND requirements were determined by looking at the missing mass of the $en\gamma$ system, which is the only quantity one can ``cut'' on, in this detection topology, to ensure exclusivity for the n-DVCS channel by minimizing the $en\pi^0$ contamination. First of all, without applying any resolutions on the electron and photon kinematical variables, and varying instead the ``smearing'' on the neutron kinematical variables, it was shown that the resolution on the neutron momentum plays the major role in determining the width of $MM(en\gamma)$, while the effect of the angular resolutions is less important. This can be seen comparing the three panels of Fig.~\ref{Deltas}, where the missing mass is computed varying, respectively, the neutron momentum, the polar and the azimuthal angle, while keeping the other two variables constant \footnote{For these figures, the fixed values of the resolutions ($\sigma_P/P=5\%$, $\sigma_{\theta} = 2.5^o$, $\sigma_{\phi}=3.75^o$) are an average of the ``realistic'' ones, obtained from the GEANT4 simulation of the CND --- see Section \ref{sim_sec}. However, as it will be explained in the following, the conclusions of the study do not depend on these particular values.}. Varying either $\sigma_{\theta}$ or $\sigma_{\phi}$ by a factor 200 (from $0.1^o$ to $20^o$) increases the width of $MM(en\gamma)$ by only 6-8 MeV in absolute (corresponding to about 30\% more), while the same increase by a factor of 200 (from 0.1\% to 20\%) on the neutron momentum resolution $\sigma_P/P$ worsens the resolution of the missing mass by a factor of 40 (its width passes from 2 MeV to 86 MeV). 
+
+\begin{figure}  
+\begin{center}
+\epsfxsize=9.5 cm
+\epsffile{New_silvia/Last_plots/MM_deltaP.eps}
+\epsfxsize=9.5 cm
+\epsffile{New_silvia/Last_plots/MM_deltaTheta.eps}
+\epsfxsize=9.5 cm
+\epsffile{New_silvia/Last_plots/MM_deltaPhi.eps}
+\caption {Missing mass squared of the $en\gamma$ system, for the n-DVCS channel, simulated with our event generator, assuming absolute precision on the photon and electron kinematic variables. Top: fixed neutron $\theta$ and $\phi$ resolutions, momentum resolution varying between $0.1\%$ and $20\%$. Middle: fixed neutron momentum and $\phi$ resolutions, $\theta$ resolution varying between $0.1^o$ and $20^o$.Bottom: fixed neutron momentum and $\theta$ resolutions, $\phi$ resolution varying between $0.1^o$ and $20^o$.}
+\label{Deltas}
+\end{center}
+\end{figure}
+
+Introducing the realistic resolutions on the electron and photon calculated by FASTMC, it appears (Figs.~\ref{Delta_p_for_all_smearing} and \ref{delta_mm_real_smearings}) that if the neutron momentum resolution is kept up to 10\% its effect is negligeable with respect to the other particles. In particular (two panels of Fig.~\ref{delta_mm_real_smearings}, green curve), the photon resolutions is responsible of 94\% of the width of the missing mass for the FT case (top figure) and 97\% for the IC case (bottom figure). 
+
+\begin{figure}  
+\begin{center}
+\epsfxsize=12 cm
+\epsffile{plots/MM2_smear_dependence_with_e_photon_FT.eps}
+\epsfxsize=12 cm
+\epsffile{New_silvia/Last_plots/MM_Smearing_avec_e_photon_rebiner.eps}
+\caption {Missing mass squared of the $en\gamma$ system, for the n-DVCS channel, simulated with our event generator, assuming the nominal CLAS12 resolutions on the photon and electron kinematic variables, fixing the neutron $\theta$ and $\phi$ resolutions and varying the momentum resolution, between 0.1\% and 20\%. Top plot: photon resolutions for the Forward-Tagger option. Bottom plot: photon resolutions for the IC option. }
+\label{Delta_p_for_all_smearing}
+\end{center}
+\end{figure}
+
+\begin{figure}  
+\begin{center}
+\epsfxsize=12 cm
+\epsffile{plots/MM2_smear_dependence_FT.eps}
+\epsfxsize=12 cm
+\epsffile{New_silvia/Last_plots/MM_variation_smearing_rebiner.eps}
+\caption {Missing mass squared of the $en\gamma$ system, for the n-DVCS channel, simulated with our event generator. The different colors correspond to different combinations of choices of particles being detected with absolute precision or with realistic resolutions. Top plot: photon resolutions for the Forward-Tagger option. Bottom plot: photon resolutions for the IC option.}
+\label{delta_mm_real_smearings}
+\end{center}
+\end{figure}
+
+Therefore, considering that the detection capabilities of CLAS12 for electrons and high-energy photons are fixed, the requirements of the CND will be:
+\begin{itemize}
+\item{good neutron identification capabilities for the kinematic range of interest ($0.2<p_n<1.2$ GeV/c, $40^o<\theta_n<80^o$)} and
+\item{neutron momentum resolution $\sigma_P/P$ within 10\%.}
+\end{itemize}
+
+\section{CND: R \& D studies and final detector design}\label{rd_sec}
+
+The available space in the CLAS12 Central Detector is limited by the presence of the CTOF and of the magnet, which leave about 10 cm free (Fig.~\ref{cnd4}).
+However, the CTOF can also be used to detect neutrons, adding a couple of percent of efficiency. 
+The central tracker will be used as a veto for charged particles.
+Finally, it is important to remind that there will be a surrounding magnetic field of 5 T, which complicates the issue of light collection. 
+
+\begin{figure} 
+\begin{center}
+\epsfxsize=12 cm
+%\epsffile{plots/cnd4.eps}
+\epsffile{plots/newcnd.eps}
+\caption {Drawing of the Central Detector: the red area represents the free space between the magnet (shaded area) and the CTOF (represented by the bar and its bent light guides).}
+\label{cnd4}
+\end{center}
+\end{figure}
+
+More than one year of simulations and R\&D studies have been devoted to studying the various options for the CND and its possible photodetectors. After considering and then rejecting the option of a  ``spaghetti calorimeter'' made of lead and scintillating fibers - it has a too high efficiency for photons with respect to neutrons - the retained design for the detector is a barrel of standard plastic scintillator bars of trapezoidal shape, all with their long sides parallel to the beam direction (Fig.~\ref{geom_scint}). This geometry is similar to the one of the CTOF. 
+
+\begin{figure}
+\begin{center}
+\epsfxsize=10 cm
+\epsffile{plots/Geometriescintillateurs.eps}
+\caption {Geometry of the scintillator barrel for the Central Neutron Detector. The current design consists of 3 radial layers each made of 48 trapezoidal scintillator paddles.}
+\label{geom_scint}
+\end{center}
+\end{figure}
+
+As stated in the previous section, one of the two requirements of the CND is good neutron identification capabilities. If the charged particles are vetoed by the central tracker, the only particles left that can be mistaken for neutrons are the photons. Using plastic scintillators, the most straightforward way to distinguish neutrons from photons is by measuring their time of flight (TOF) and compare their $\beta$'s. $\beta$ is defined as
+\begin{eqnarray}
+\beta= \frac{l}{TOF\cdot c},
+\end{eqnarray}
+where $c$ is the speed of light and $l$ is flight path of the particle from the target to the scintillator bar, that can be obtained, in our geometry, as
+\begin{eqnarray}
+l= \sqrt{z^2+h^2},
+\end{eqnarray}
+where $z$ and $h$ are the hit position along the z axis (oriented, in our geometry, with the beam direction) and in the radial direction. Measuring the time of the hit at both sides of the scintillator bar gives access to $z$ 
+\begin{eqnarray}
+z=\frac{1}{2} \cdot v_{eff}\cdot(t_{left}-t_{right})
+\end{eqnarray}
+where $v_{eff}$ is the effective velocity of light propagation in the scintillator material, and to know $h$ it is necessary to have radial segmentation (thus $h$ will be given by the distance between the target and the middle of the hit paddle).
+   
+Early simulation studies \cite{silvia_loi} had shown that to ensure a good photon/neutron separation for the neutron momentum range of the n-DVCS reaction the CND had to be equipped with photodetectors ensuring a time resolution of about 150 ps. 
+
+\subsection{Summary of early R\&D studies}
+The first part of our R\&D studies had been focused on studying the timing performances of various magnetic-field resistant photodetectors, to be placed at the two ends of the scintillator bars, in the high-magnetic-field region of the Central Detector. Measurements of time resolution with cosmic rays have been carried out using silicon photomultipliers (SiPMs), avalanche photo-diodes (APDs), and micro-channel-plate photomultipliers (MCP-PMTs). None of these devices has been retained. A 1x1mm$^2$ SiPM was tested, and it was rejected because, due its small active surface, it had a too small number of photelectrons ($\sim 1$) and hence yielded a too big time resolution ($\sim 1$ ns). Matrices of SiPM (matrices 4x4 of 3x3mm$^2$ chips) have also been tested, giving promising results in terms of time performances \cite{raffa_wiki}, but they would require a very complex customized read-out electronics, calling for a couple of years of dedicated R\&D. The APD gave too high time resolution ($\sigma_t\simeq 1.4$ ns), due to its big rise time. Good timing performances ($\sigma_t\simeq 130$ ps) were obtained for the MCP-PMTs in the measurement without magnetic field, but when tested in a 5T magnetic field they displayed a too strong loss of gain \cite{thi}. Another reason to abandon the micro-channel-PMTs option was lifetime: we computed the expected flux of optical photons on the CND photodetectors due to electromagnetic background produced over the duration of our experiment, and it turned out to be more than a factor of magnitude higher than the limit quoted in the literature \cite{MCPPMT_paper} after which the quantum efficiency of the MCP-PMT drops \cite{silvia_wiki2}. 
+
+\subsection{Final design and performances}
+As the magnetic-field-resistant photodetectors proved to be not suited for the requirements of the CND, another solution was found: reading the light only at the backward end of each scintillator bar, with an ordinary PMT placed in the low-field region (Fig.~\ref{bfield}) and connected to the bar by a 1-m-long bent light guide, while the front end of the bar is connected via a ``u-turn'' light guide to the neighboring paddle. The light emitted at the front end of one scintillator is therefore fed through its neighboring paddle and read by the PMT connected to its end (Fig.~\ref{cnd_nice}). 
+
+\begin{figure}
+\begin{center}
+\epsfxsize=14 cm
+\epsffile{plots/Champmagnetique.eps}
+\caption {Magnetic field map for the Central Detector (radial component on the top, axial component on the bottom). The black semi-circle in the top plot shows the position of the PMTs of the Central Neutron Detector.}
+\label{bfield}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\epsfxsize=12 cm
+\epsffile{plots/cnd_nice.eps}
+\caption {Design of the Central Neutron Detector.}
+\label{cnd_nice}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\epsfxsize=12 cm
+\epsffile{plots/Angleouverture.eps}
+\caption {Drawing (side cut view) of the CND, placed into the solenoid magnet.}
+\label{angleouverture}
+\end{center}
+\end{figure}
+
+The current plan for the detector segmentation is to have 48 azimuthal segments and 3 layers in the radial direction, for a total of 144 scintillator bars, coupled two-by-two (Fig.~\ref{cnd_nice}). This choice has been made to optimize the light collection by matching the surfaces of the scintillator and of the photocathode of the PMT. 
+
+This configuration has been tested with measurements of time resolution with cosmic rays. A one-layer prototype has been built for this goal at the IPN Orsay (Fig.~\ref{testbench}). It consists of two scintillator bars (BC408), each 66 cm long, 3 cm thick and 3.5 cm wide, joined at one end by a ``u-turn'' light guide and each connected at the other end to a 1-m-long bent light guide coupled to two ordinary PMTs (Hamamatsu R2083, at this stage\footnote{The PMT Hamamatsu R7997, costing about a third of R2083,  will be tested in the next weeks.}) (Fig.~\ref{prototype}). A semi-circular shape for the u-turn light guide has been chosen, as it gave a lower loss of light than the other solution tested (triangular shape). For the wrapping, aluminum foil has been preferred to Mylar or VM2000 for its better timing performances and for its higher opacity, which minimizes ``cross talk'' between adjacent paddles \cite{giulia}. In the middle of one of the two bars, above and below it, are placed two smaller scintillators (1 cm thick, having 3x3 cm$^2$ of surface), each read by a fast PMT (Hamamatsu R2282), which are used to trigger the data acquisition and to ensure that the position of the hit is known. 
+
+\begin{figure}
+\begin{center}
+\epsfxsize=14 cm
+\epsffile{568_0555.eps}
+\caption {The one-layer prototype of the CND during the timing resolution measurements with cosmic rays carried out at Orsay. }
+\label{testbench}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\epsfxsize=12 cm
+\epsffile{plots/prototypebloc6.eps}
+\caption {Drawing of the three-layer prototype of the CND, under construction.}
+\label{prototype}
+\end{center}
+\end{figure}
+
+The output signals of the ``top'' (T) and ``bottom'' (B) trigger PMTs, as well as the ones from the ``direct'' (D, the PMT of the bar where the hit takes place) and ``neighbor'' (N, the PMT of the adjacent bar) one, are fed to ADCs and to TDCs (after discrimination). B and T are also averaged with a ``mean-timer'' (MT), which gives the start to the DAQ. The timing resolution for the D or N PMTs is given by \cite{giulia}:
+\begin{eqnarray}
+\sigma_{D(N)} = \sqrt{\sigma^2_{D(N)-TRG}-\sigma^2_{TRG}}
+\end{eqnarray}
+where $\sigma^2_{D(N)-TRG}$  is the resolution of the time between the trigger and the Direct (Neighbor) signal, and 
+\begin{eqnarray}
+\sigma_{TRG} = t_{MT}-t_{T}=t_{MT}-t_{B}
+\end{eqnarray}
+is the time resolution of the trigger. 
+
+The results of the timing measurements with cosmic rays, performed varying the position of the trigger PMTs throughout the length of the scintillator bar, are shown in Fig.~\ref{misure_giulia}. Position ``0'' corresponds to the center of the bar, ``2'' is close to the PMT, and ``-2'' is near the u-turn. From these figures, one can infer that:
+\begin{itemize}
+\item{the ``u-turn'' brings about a factor of 2 of loss of collected charge}
+\item{the average timing resolutions for the two PMTs are: $\sigma_D\simeq 120$ ps and $\sigma_N\simeq 200$ ps.}
+\end{itemize}
+These experimental results have been used in the simulation and the reconstruction for the CND --- see Section~\ref{sim_sec} and Appendix~\ref{sec_rec}. 
+
+\begin{figure}
+\begin{center}
+\epsfxsize=10 cm
+\epsffile{plots/charge.eps}
+\epsfxsize=10 cm
+\epsffile{plots/time_res.eps}
+\caption {Results of the cosmic rays measurements on the one-layer prototype. Top: charge collected by the two PMTs as a function of the hit position. Bottom: time resolution of each PMT as a function of the hit position.}
+\label{misure_giulia}
+\end{center}
+\end{figure}
+
+\subsection{Costs and financial support for the CND}
+A significant part of the R\&D on the photodetectors of the Central Neutron Detector and the tests on the prototype, leading to the positive results presented in this proposal, have been supported by the EU Framework Program 7 through the Integrating Activity HadronPhysics2 and the Joint Research Activity "Hardex''.
+The financing of the full CND, estimated to amount to roughly $300$ kEuros (without salaries), is anticipated to stem mostly from the funding agencies of the European groups signing this proposal --- upon approval of this proposal.
+
+\section{Simulation and reconstruction}\label{sim_sec}
+
+In order to study the performances of this detector, its geometry has been added to the CLAS12 GEANT4-based simulation package, GEMC \cite{mauri}. As respect to earlier studies \cite{silvia_loi} now the Birks effect, for which the amount of optical photons produced after a certain energy deposition in the scintillator depends on the particle losing that energy, and the hit digitization for the CND have been introduced in GEMC \cite{daria_wiki}. The timing resolution and the energy loss due to the u-turn geometry have been included in the simulation using the values measured in the cosmic-rays tests. Details on the digitization and on the hit and event reconstruction are explained in the Appendix (Sections~\ref{sec_digi} and \ref{sec_rec}). The main points of the neutron reconstruction are the following:
+\begin{itemize}
+\item{if no hits are recorded in the Central Tracker, a hit in the CND is considered a neutral (neutron or photon);}
+\item{among all reconstructed ``neutral hits'' in the CND, only those passing a certain threshold on the energy deposition are kept;}
+\item{among these surviving hits, only those for which the hit position --- reconstructed from the Direct and Neighbor PMTs timings --- is within the length of the paddle are kept;}
+\item{$\beta$ is calculated for each selected hit, to exclude photons;}
+\item{the angles $\theta$ and $\phi$ and the momentum are computed (see Section \ref{resolution-section} and Appendix~\ref{sec_rec}) for the identified neutrons.}
+\end{itemize}
+Simulations, which included all the components of the Central Detector, have been run to evaluate the efficiency of the CND for neutrons, its ability to discriminate between neutrons and photons, and its angular and momentum resolutions. Neutrons and photons of momenta varying between 0.1 and 1 GeV/c and having polar angles $\theta$ varying between $50^o$ and $70^o$ have been generated at fixed azimuthal angle ($\phi = 0^o$), pointing to the center of one of the scintillator bars. The results obtained with these simulations are described in Sections \ref{efficiency-section}, \ref{resolution-section} and \ref{pid-section}.
+
+\subsection{Efficiency}\label{efficiency-section}
+
+ The detection efficiency is defined here as the ratio between the number of events for which a ``good hit'' (see Appendix~\ref{sec_rec}) was reconstructed in the correct azimuthal bin of the CND and the total number of neutrons generated. 
+Several values of energy thresholds, between 1 and 5 MeV, have been tested. Figure~\ref{eff_vs_thr} shows the efficiency as a function of the threshold, for neutrons with momentum of 0.4 GeV/c. The different colors correspond to 3 different values of the neutron polar angle, $\theta_n$.
+The efficiency, which decreases with increasing threshold, ranges between 12\% at the lowest thresholds and 7\% at the highest ones. This can also be seen in Fig.~\ref{eff_vs_thr_mom}, where the efficiency for neutrons emitted at $60^o$ is plotted as a function of momentum, for various values of the threshold on the energy deposition.  
+Figure~\ref{eff_vs_mom} shows instead the efficiency as a function of the momentum of the neutron, at a fixed energy threshold of 2 MeV, and for different values of $\theta_n$. 
+All of these plots have been done with a cut rejecting hits with time of flight larger than 8 ns. This cut has been applied to suppress the events in which the neutrons interact in the magnet (without depositing energy in the CND) and rescatter or produce secondary particles hitting the CND at a later time, compromising the PID and the determination of the angles. This cut, along with a choice of threshold on the reconstructed deposited energy of a few MeV (2 is the value chosen at the present stage), is effective in removing these secondary hits (more details on this aspect can be found at \cite{daria_wiki,silvia_wiki}). 
+
+\begin{figure}  
+\begin{center}
+\epsfxsize=12 cm
+\epsffile{plots/eff_vs_thresh_diff_theta_II.eps}
+\caption {Efficiency for the detection of neutrons having 0.4 GeV/c of momentum, as a function of the threshold on the deposited energy. The efficiency is shown for 3 different values of $\theta_n$, between $50^o$ and $90^o$.
+}
+\label{eff_vs_thr}
+\end{center}
+\end{figure}
+
+\begin{figure}  
+\begin{center}
+\epsfxsize=12 cm
+\epsffile{plots/eff_vs_mom_diff_thresh_II.eps}
+\caption {Efficiency for the detection of neutrons emitted at $60^o$, as a function of momentum, for 7 different values of the threshold on the deposited energy, from 1 to 5 MeV.
+}
+\label{eff_vs_thr_mom}
+\end{center}
+\end{figure}
+
+\begin{figure}  
+\begin{center}
+\epsfxsize=12 cm
+\epsffile{plots/eff_vs_mom_diff_theta_II.eps}
+\caption {Efficiency for the detection of neutrons, as a function of neutron momentum, for a 2-MeV threshold on the deposited energy. The efficiency is shown for three different values of $\theta_n$, between $50^o$ and $70^o$.
+}
+\label{eff_vs_mom}
+\end{center}
+\end{figure}
+
+\subsection{Angular and momentum resolutions}\label{resolution-section}
+
+The resolutions on the polar angle $\theta$ of the neutron that can be obtained with the CND are strongly linked to its TOF resolution. The angle $\theta$ is in fact given by
+
+\begin{eqnarray} 
+\theta = (180/\pi)\cdot \arccos (\frac{z_{ave}}{l})
+\end{eqnarray}
+
+where $l$ and $z_{ave}$, defined in Appendix~\ref{sec_rec}, both depend on the time measurement. Using the value $A=0.24$ ns$\cdot$MeV$^{-1/2}$, deduced from the measurements on the propototype, for the gaussian smearing on the timing (see Appendix~\ref{sec_rec}), the $\theta$ resolution was studied with GEMC, as a function of neutron momentum and $\theta$ itself. The results are shown in Fig.~\ref{theta_n_tofcut5}, where the angular resolution $\sigma_\theta$, obtained via gaussian fits of the simulated $\theta$ distributions, is plotted as a function of  $\theta$, for a particular value of neutron momentum (0.4 GeV/c). $\sigma_\theta$ increases slightly with the angle and also is fairly constant as a function of neutron momentum, and its value is between $1.5^o$ and $3.5^o$. 
+
+The resolution on the azimuthal angle is directly connected to the total number of scintillator bars along $\phi$. In fact, the bin size $\Delta\phi$ is given by
+
+\begin{eqnarray} 
+\Delta\phi = \frac{360Â°}{N}=7.5Â°
+\end{eqnarray}
+
+where $N_{paddle}$ is the ID number of the paddle where the hit took place, and $N$ is the total number of paddles in $\phi$ (48 for the current design of the CND). $\sigma_\phi$ can be taken as half of $\Delta\phi$, therefore $3.75^o$.
+
+The resolution on the neutron momentum, which is obtained knowing $\beta$ and having performed the particle identification, according to the formula
+
+\begin{eqnarray}
+p = \frac{\beta\cdot m_n}{\sqrt{1-\beta^2}},
+\end{eqnarray}
+
+is also strictly connected to the TOF resolution. Figure \ref{p_n_tofcut5} shows the momentum resolution $\sigma_p/p$ as a function of momentum for neutrons emitted with $\theta=60^o$: it increases with increasing momentum, and ranges between 4\% and 11\%. No appreciable variations of momentum resolution are observed by varying the neutron polar angle.
+
+\begin{figure}  
+\begin{center}
+\epsfxsize=12 cm
+\epsffile{plots/sigma_theta_vs_theta_diff_layer.eps}
+\caption {Angular resolution $\sigma_\theta$ as a function of $\theta$ for neutrons of momentum 0.4 GeV/c, for a 2-MeV threshold on the deposited energy. The three colors of the points correspond to the three radial layers of the CND.}
+\label{theta_n_tofcut5}
+\end{center}
+\end{figure}
+
+\begin{figure}  
+\begin{center}
+\epsfxsize=12 cm
+\epsffile{plots/mom_res_vs_mom_diff_layers.eps}
+\caption {Momentum resolution $\sigma_p/p$ as a function of $p$ for neutrons having $\theta=60^o$, for a 2-MeV threshold on the deposited energy. The three colors of the points correspond to the three radial layers of the CND.}
+\label{p_n_tofcut5}
+\end{center}
+\end{figure}
+
+\subsection{Particle Identification}\label{pid-section}
+
+Since the charged particles passing through the CND will be vetoed by the Central Tracker, the only particles that could be mistaken for neutrons in the CND are the photons. The efficiency of the CND for photons has been estimated by simulations, and it is comparable to the one for neutrons (of the order of 10\%, see Fig.~\ref{eff_photons}, for photon energies down to 0.2 GeV, while it drops to zero for lower energies). Neutrons can be discriminated from photons by means of their $\beta$.
+\begin{figure}  
+\begin{center}
+\epsfxsize=12 cm
+\epsffile{plots/efficiency_photons_60deg_new.eps}
+\caption {Efficiency for the detection of photons, as a function of photon momentum, for a 2-MeV threshold on the deposited energy. The efficiency is shown for $\theta_{\gamma}=60^o$. Below $E_\gamma=0.15$ GeV, the photon efficiency drops to zero.}
+\label{eff_photons}
+\end{center}
+\end{figure}
+Therefore, the $\beta$ distributions that can be obtained with the CND for neutrons and photons have been studied with the help of the GEMC simulation. After chosing a ``good hit'' as described in Appendix~\ref{sec_rec}, $\beta$ is computed as 
+
+\begin{eqnarray}\label{beta_def}
+\beta = \frac{l}{TOF_{true}\cdot c},
+\end{eqnarray}
+
+where 
+\begin{eqnarray}\label{l_def} 
+l = \sqrt{h^{2}+z_{ave}^{2}},
+\end{eqnarray}
+
+$h$ is the distance from the vertex to the middle of the layer where the hit took place, $TOF_{true}$ is the reconstructed time of flight and $z_{ave}$ is the reconstructed position of the hit (see Appendix~\ref{sec_rec} for more details on how the latter two quantities are obtained for the ``u-turn'' design of the CND).
+
+Figure~\ref{beta_n_g} shows the comparison, for each of the 3 radial layers and integrating over the azimuthal angle, between the $\beta$ distributions obtained for neutrons of various momenta (0.2, 0.4, 0.7 and 1 GeV/c) and for 1-GeV photons (in black). All particles in this plot are emitted at $\theta = 60^o$. Neutrons of momentum of 0.9-1 GeV/c can be taken as photons, as their $\beta$ distributions begin to overlap, while the n/$\gamma$ separation is clear for lower momenta --- which correspond to most of the range of interest for n-DVCS, as only about 8\% of the events are expected to have $p_n>0.9$ GeV/c. This is evident also from Fig.~\ref{fig_beta_res}, where the error bars correspond actually to $3 \sigma$, where $\sigma$ is the gaussian width of each $\beta$ distribution. Equal neutrons and photon yields have been assumed for this study. This assumption is addressed and justified in Sections~\ref{phys_back} and \ref{elec_back}.
+
+\begin{figure}  
+\begin{center}
+\epsfxsize=9 cm
+\epsffile{plots/beta_comp_layer_1_II.eps}
+\epsfxsize=9 cm
+\epsffile{plots/beta_comp_layer_2_II.eps}
+\epsfxsize=9 cm
+\epsffile{plots/beta_comp_layer_3_II.eps}
+\caption {$\beta$ distributions for neutrons with $p_n=0.2$ GeV/c (green), $p_n=0.4$ GeV/c (purple), $p_n=0.7$ GeV/c (blue), $p_n=1$ GeV/c (red), and photons with $E=1$ GeV. Each box shows the results for one of the three radial layers that compose the CND (the innermost is on the top, the outermost is on the bottom). The threshold on the deposited energy is 2 MeV. The plots show all hits, integrated over $\phi$. Equal neutron and photon yields have been assumed here.
+}
+\label{beta_n_g}
+\end{center}
+\end{figure}
+
+\begin{figure}  
+\begin{center}
+\epsfxsize=12 cm
+\epsffile{plots/beta_res_n_g_comp_L1.eps}
+\epsfxsize=12 cm
+\epsffile{plots/beta_res_n_g_comp_L2.eps}
+\epsfxsize=12 cm
+\epsffile{plots/beta_res_n_g_comp_L3.eps}
+\caption {$\beta$ versus momentum for neutrons (red) and photons (blue) with momenta between 0.2 and 1 GeV.  The error bars are defined as $3\sigma$, where $\sigma$ is the fitted width of each $\beta$ peak. The threshold on the deposited energy is 2 MeV.}
+\label{fig_beta_res}
+\end{center}
+\end{figure}
+
+\section{Backgrounds on the CND}
+
+As described earlier, photons are the main source of background for the CND, as they can be mistaken for neutrons. Charged particles, instead, will be vetoed by the Central Tracker. 
+Two kinds of photons can contribute to this background: physical events, for instance $\pi^0$ production where one of the two decay photons is emitted at backwards angles, and photons produced by electromagnetic reactions of the electron beam in the target.
+
+\subsection{Physics background}\label{phys_back}
+An estimate of the hadronic background has been deduced, using the clasDIS event generator (based upon PYTHIA).
+The background events that could mimic a n-DVCS event are those having: 
+\begin{itemize}
+\item{one energetic photon ($E_{\gamma}>1$ GeV) in the forward direction, and}
+\item{one photon in the central detector.}
+\end{itemize}
+
+For these kinds of events, the estimated rate at full luminosity ($10^{35}$ cm$^{-2}$s$^{-1}$ per nucleon) in the DIS kinematics is 2.4 KHz.
+If one also requires the missing mass for the $e\gamma$ system (calculated on a neutron target) to be below 1 GeV/c$^2$, the rate drops to 10 Hz. Assuming a 60\% acceptance for the electrons and for the photons detected in the forward detector, the rate goes down to about 4 Hz. Figure~\ref{bck_eg_th} shows the $\theta$ distribution as a function of the energy for the remaining photons in the CND. They are mostly emitted at energies below 200 MeV. Finally, keeping into account 10\% of efficiency of the CND for photons --- and this is an upper limit, considering that the CND efficiency for photons drops to zero for $E_{\gamma}<0.15$ GeV ---, the resulting rate is about 0.6 hz. This should be compared to the one of neutrons from n-DVCS, which, as is reported in Section~\ref{sec_countrate}, is about 4 Hz. 
+
+\begin{figure}  
+\begin{center}
+\epsfxsize=8 cm
+\epsffile{plots/ethgamma.eps}
+\caption {$\theta$ versus energy for the photons emitted at backward angles associated to an electron $e$ and an energetic photon $\gamma$ detected in the forward part of CLAS12. The cut $MM(e{\gamma})<1$ GeV/c$^2$ is applied.}
+\label{bck_eg_th}
+\end{center}
+\end{figure}
+
+The assumption of equal rates, made when studying the photon/neutron separation capabilities of the CND (see Section~\ref{pid-section}), is therefore a very conservative one. Under this assumption, it was shown that in the CND photons can be distinguished from neutrons provided that the latter have momenta below 1 GeV. This corresponds to the majority of the n-DVCS events, for which neutrons are mostly emitted with momentum around 0.4 GeV. 
+
+\subsection{Electromagnetic background}\label{elec_back}
+In order to evaluate the effects of the electromagnetic background on the Central Neutron Detector, in particular to estimate the actual rates seen by the CND due to the background and the energy and timing distributions of the background hits, GEMC simulations have been run in the following conditions \cite{raffa}: the primary electron has been generated going forward (to simulate the real hadronic event), plus roughly 58000 other electrons have been thrown, distributed in a 124 ns window in bunches 2 ns apart, originating 10 cm upstream the target. 58000 is approximately the number of beam electrons that would pass through the target in a 124 ns time window at the nominal CLAS12 luminosity. 124 ns is the typical time window of the DAQ expected for CLAS12, which corresponds to one event in CLAS12. These electrons then interact with the target itself, producing an electromagnetic background hitting the neutron detector. 
+Figure~\ref{bck-hits}, produced with the interactive version of GEMC, shows one typical ``background event'' in the Central Detector: the red tracks correspond to negatively charged particles (electrons) while the green ones are neutrals (mostly photons). The hits in the CND, in green/blue-ish, are mainly due to photons.
+
+\begin{figure}  
+\begin{center}
+\epsfxsize=12 cm
+\epsffile{plots/bgevent.eps}
+\caption {View (from the beam's perspective) of the Central Detector, for one simulated ``background event''. Red tracks correspond to negatively charged particles, green tracks correspond to neutrals. This picture has been obtained for a luminosity $L=10^{33}$ cm$^{-2}$s$^{-1}$, corresponding to 1/100 of the nominal luminosity, for practical reasons related to the graphical interface. }
+\label{bck-hits}
+\end{center}
+\end{figure}
+
+The output of these simulations has been analyzed using the event-reconstruction algorithm adopted to reconstruct neutrons in the CND. 
+In general, the energy deposited in the CND by the electromagnetic-background photons is quite small, as it can be seen in Fig.~\ref{bck-edep-nocut}, where the energy deposition in the whole CND is plotted, before any reconstruction cuts are applied. These photons tend to release their energy mainly in the first radial layers of the CND, as shown in Figure~\ref{bck-xy-nocut}. If no threshold on the deposited energy or timing cuts are applied, the total rate on the CND due to the electromagnetic background is about 2 GHz.
+\begin{figure}  
+\begin{center}
+\epsfxsize=12 cm
+\epsffile{plots/edep_background.eps}
+\caption {Distribution of the energy deposit in the CND, integrated over all the azimuthal and radial bins, of the hits coming from the generated electromagnetic background. The majority of the events corresponds to an energy deposition below 1 MeV.}
+\label{bck-edep-nocut}
+\end{center}
+\end{figure}
+\begin{figure}  
+\begin{center}
+\epsfxsize=12 cm
+\epsffile{plots/xy_background.eps}
+\caption {Event distribution for the electromagnetic background in the CND, as a function of the $x$ and $y$ coordinates in the lab frame ($z$ being the beam direction), without any cut on the deposited energy. It can be seen that the majority of the events are concentrated in the innermost layer of the CND.}
+\label{bck-xy-nocut}
+\end{center}
+\end{figure}
+Cutting on the deposited energy at 2 MeV and on the time at 9 ns, values which has been chosen to optimize the PID and angular resolution (Section~\ref{efficiency-section}), the rate drops to about 30 KHz. 
+These hits can mimic a fake n-DVCS event by accidental coincidence with hadronic events where an electron and a photon are detected in the forward part of CLAS12. Assuming a rate for such events of the order of 1 KHz, the accidental coincidence rate is or the order of 0.05 Hz, which is almost two orders of magnitude less than the rate of n-DVCS neutrons (see Section~\ref{sec_countrate}). Also for this type of background, the assumption of equal rates between neutrons and photons, made in Section~\ref{pid-section}, is quite conservative. 
+
+\section{$en\pi^0(p)$ background }\label{pi0_sec}
+
+Once the events containing one electron, one neutron and one photon are selected, the n-DVCS/BH final state can be isolated by cutting on the $en\gamma$ missing mass. However, due to the finite resolutions on the various kinematic variables measured, the final event sample will still be contaminated by $en\gamma$ events coming from the $en\pi^0(p)$ channel, where one photon from the $\pi^0$ decay is detected in the forward part of CLAS12 while the other escapes detection. This contamination will be evaluated and subtracted as done in previous DVCS CLAS analyses \cite{fx}, by extracting exclusive $en\pi^0(p)$ events --- detecting both decay photons --- from the data, and using Monte Carlo simulations to evaluate the ratio of acceptances of $\pi^0$ events with 1 and 2 photons detected. The final number of n-DVCS/BH events, in each 4-dimensional bin, will be obtained as:
+
+\begin{eqnarray}
+N_{DVCS}(Q^2,x_B,-t,\phi)=N_{en\gamma X}(Q^2,x_B,-t,\phi)-N_{\pi^0 1\gamma}(Q^2,x_B,-t,\phi)
+\end{eqnarray}
+where
+\begin{eqnarray}\label{pi0_formula}
+N_{\pi^0 1\gamma}(Q^2,x_B,-t,\phi)=N^{data}_{\pi^0}(Q^2,x_B,-t,\phi)\cdot \frac{N^{MC}_{\pi^0 1\gamma}(Q^2,x_B,-t,\phi)}{N^{MC}_{\pi^0 2\gamma}(Q^2,x_B,-t,\phi)}
+\end{eqnarray}
+
+With the aid of our event generators, we have estimated the expected level of $\pi^0$ contamination for the proposed experiment. 
+Both the angular and momentum resolutions for neutrons obtained with the simulation of the CND, as well as the resolutions on electrons and photons coming from CLAS12 FASTMC, have been implemented in the n-DVCS/BH and $en\pi^0(p)$ event generators. Fiducial cuts have been applied on all the three final-state particles. For the $en\pi^0(p)$ cross section, we have used the model for exclusive $\pi^0$ electroproduction on the nucleon developed by J.M. Laget \cite{laget}. This model is based on Regge theory with the inclusion of rescattering processes. It provides estimations of cross sections which are in agreement with the ones measured by the JLab collaborations of Hall A \cite{fuchey} and Hall B \cite{kuba} on the proton. In this model, in the kinematical domain explored in this proposal, the exclusive $\pi^0$ cross section on the proton is basically equal to the one on the neutron.
+
+The two plots of Fig.~\ref{ndvcs-pi0} show, superimposed, the $en\gamma$ missing mass squared for n-DVCS/BH (red) and  $en\pi^0(p)$ (black) events, produced by our event generators, integrated over the full kinematic range of interest. The top plot shows the expected distribution if the low-angle photons are detected in the Forward Tagger. Applying the cut $MM^2<1.05$ GeV$^2$ the $\pi^0$ contamination is around 15\%. The bottom plot is done assuming that the DVCS photon is detected with the current IC. In this case, given the larger width of the proton-mass peak, in order to keep roughly the same amount of DVCS events, the cut $MM^2<1.2$ GeV$^2$ is applied. Below this cut, about 19\% of the events come from the $en\pi^0(p)$ reaction. 
+
+\begin{figure}  
+\begin{center}
+\epsfxsize=10 cm
+\epsffile{plots/MM2_comparaison_dvcs_pi0_resolution_FT_GOOD.eps}
+\epsfxsize=10 cm
+\epsffile{plots/MM2_comparaison_dvcs_pi0_resolution_IC_GOOD.eps}
+\caption {Missing mass of the $en\gamma$ system, for the n-DVCS/BH channel (in red), and the $ed\to e'n\pi^0(p)$ channel (in black), both simulated with our event generator. CLAS12 and CND resolutions are applied. Top plot: photon resolutions for the Forward-Tagger option. Bottom: photon resolutions for the IC option.}
+\label{ndvcs-pi0}
+\end{center}
+\end{figure}
+
+\section{Count-rate estimate}\label{sec_countrate}
+
+The n-DVCS/BH final state will be reconstructed by detecting the scattered electron and the DVCS/BH photon in the forward part of CLAS12 and the recoil neutron mostly in the CND, as very few neutrons are emitted in the forward direction with enough momentum to be detected in EC with appreciable efficiency.
+The expected number of reconstructed events for n-DVCS/BH has been calculated, as a function of the kinematics, with the event generator described in Section~\ref{cnd-section}. The forward-CLAS12 fiducial cuts have been included, and an overall 10\% neutron-detection efficiency (keeping into account the few percents of efficiency that can be obtained with the CTOF) for neutrons with $\theta>40^o$ has been assumed. %At this stage, the forward CLAS12 neutron-detection efficiency has been neglected. 
+The electron and photon-detection efficiencies for the Forward Detector have been assumed to be 100\%, within the fiducial cuts. The calculation has been done for a luminosity $L=10^{35}$ cm$^{-2}$s$^{-1}$ per nucleon and for 80 days of running time. The following 4-dimensional grid of bins has been adopted here:
+\begin{itemize}
+\item{4 bins in $Q^2~[1, 2, 3.5, 5, 10$ GeV$^2$/c$^2]$}
+\item{4 bins in $-t~ [0 ,0.2 ,0.5 ,0.8 , 1.2$ GeV$^2$/c$^2]$}
+\item{4 bins in $x_B~ [0.05,0.15,0.3,0.45,0.7]$} 
+\item{12 bins in $\phi$, each $30^o$ wide.}
+\end{itemize}
+The number of events, for each 4-dimensional bin ($Q^2$, $x_B$, $t$ and $\phi$), has been computed as:
+
+\begin{eqnarray}
+N = \frac{d\sigma}{dQ^2dx_Bdtd\phi}\cdot \Delta t\cdot \Delta Q^2 \cdot\Delta x_B\cdot \Delta\phi\cdot L\cdot T\cdot Acc \cdot Eff,
+\end{eqnarray}
+
+ where $\frac{d\sigma}{dQ^2dx_Bdtd\phi}$ is the 4-fold differential cross section, $T$ is the running time, $L$ the luminosity, $Acc$ is the bin-by-bin acceptance and $Eff$ is the neutron-detection efficiency.
+
+In Table~\ref{table-rate} the expected 4-fold differential cross sections, the 4-dimensional acceptance (times the neutron detection efficiency) and the corresponding number of events are listed for one particular kinematic bin ($<t>=-0.35$ GeV$^2$, $<Q^2>=2.75$ GeV$^2$, $<x_B>=0.275$) as a function of $\phi$. These yields have statistical errors between 0.3\% (for the lowest and highest $\phi$ bins, where Bethe-Heitler dominates) and 2\%. The quantities listed in Table~\ref{table-rate} are also shown in Fig.~\ref{ndvcs-acc}. 
+
+\begin{table}
+\begin{center}
+\caption{Expected 4-fold differential cross sections, 4-dimensional acceptance times neutron detection efficiency and number of events for n-DVCS/BH with CLAS12 and the CND, as a function of $\phi$. $<t>=-0.35$ GeV$^2$, $<Q^2>=2.75$ GeV$^2$, $<x_B>=0.275$, $\Delta\phi=30^o$, $\Delta Q^2 = 1.5$ GeV$^2$, $\Delta x_B = 0.15$, $\Delta t = 0.3$ GeV$^2$. The calculation was done for a luminosity $L=10^{35}$ cm$^{-2}$s$^{-1}$ per nucleon and for 80 days of running time.}
+
+\begin{tabular}{||c|c|c|c||}
+\hline
+$\phi(^{\circ}$) & $\frac{d\sigma}{dQ^2dx_Bdtd\phi}$(nb/GeV$^4$) & $Acc\cdot Eff$ & Nb events \\
+\hline
+15 & 0.138 & 2.6$\%$ & 87924\\
+\hline
+45 & 0.027 & 2.1$\%$ & 13491\\
+\hline
+75 & 0.015 & 2.0$\%$ & 7414\\
+\hline
+105 & 0.011 & 2.8$\%$ & 7248\\
+\hline
+135 & 0.009 & 4.0$\%$ & 8473\\
+\hline
+165 & 0.008 & 4.0$\%$ & 7643\\
+\hline
+195 & 0.008 & 3.1$\%$ & 5691\\
+\hline
+225 & 0.008 & 1.8$\%$ & 3610\\
+\hline
+255 & 0.011 & 1.1$\%$ & 2730\\
+\hline
+285 & 0.015 & 1.0$\%$ & 3719\\
+\hline
+315 & 0.028 & 1.1$\%$ & 7567\\
+\hline
+345 & 0.297 & 1.8$\%$ & 128645\\
+\hline
+\end{tabular}\label{table-rate}
+\end{center}
+\end{table}
+
+\begin{figure}  
+\begin{center}
+\epsfxsize=18 cm
+\epsffile{plots/results_cr_newcuts_newbin.eps}
+\caption {Top: cross section for n-DVCS/BH. Middle: acceptance for the $e\gamma(p)$ final state, including only the forward part of CLAS12, computed with our event generator and FASTMC. Bottom: expected count rate for 80 days of beam time. All three plots are produced for the kinematic bin of Table~\ref{table-rate}.}
+\label{ndvcs-acc}
+\end{center}
+\end{figure}
+
+The statistical errors on the beam-spin asymmetries will then depend on the values of the BSA itself ($A$) and of the beam polarization ($P$), through the formula:
+\begin{eqnarray}
+\sigma_A = \frac{1}{P}\cdot \frac{\sqrt{(1-P\cdot A)^2}}{\sqrt{N}}.
+\end{eqnarray}
+Figure~\ref{asym_ndvcs} shows the expected accuracy on the n-DVCS/BH beam-spin asymmetry, computed using the VGG model and assuming $J_u=.3$ and $J_d=.1$, for the kinematic bin of Table~\ref{table-rate}. A beam polarization of 85\% has been assumed. The error bars are in average of the order of 20\% in relative. The projections for the count rates and for the BSAs over the whole grid of bins are shown in Appendix~\ref{app_cr}. However, as the statistical error depends on the value of the asymmetry, we will be able to optimize the bin size of the 4-dimensional grid only after having extracted experimentally the BSA. 
+
+\begin{figure}  
+\begin{center}
+\epsfxsize=12 cm
+\epsffile{plots/asym_ndvcs_newcuts.eps}
+\caption {Beam-spin asymmetry for n-DVCS/BH as predicted by the VGG model (for $J_u=.3$ and $J_d=.1$), plotted as a function of $\phi$ for the kinematic bin $t=-0.35$ GeV$^2$, $Q^2=2.75$ GeV$^2$, $x_B=0.275$. The error bars reflect the expected uncertainties for our experiment, corresponding to 80 hours of beam time at a luminosity of $10^{35}$ cm$^{-2}$s$^{-1}$ per nucleon.}
+\label{asym_ndvcs}
+\end{center}
+\end{figure}
+
+By summing on all the count rates obtained for the full grid of bins, we can have an estimate of the total expected count rate. Overall, roughly 25 million of n-DVCS/BH events are expected to be collected over the full kinematic range of interest, corresponding to an integrated rate of 4 Hz for the 80 days of running time.  
+
+\section{Systematic uncertainties}
+
+The goal of this experiment is to extract beam-spin asymmetries, which are ratios of polarized cross sections. In the ratio, helicity-independent terms, such as acceptances, efficiencies, radiative corrections and luminosity, cancel out, in a first approximation. One of the main sources of systematic uncertainty for the proposed experiment will be the $\pi^0$ background estimation, which --- due to the finite size of our bins --- will depend on the accuracy of the description of the detector acceptance and efficiency and on the model used in the Monte-Carlo simulation to describe the $en\pi^0(p)$ reaction (see Eq.~\ref{pi0_formula}). We estimate this source to contribute with 5\% to the overall systematic uncertainties. A similar contribution will come from neutron/photon misidentification. Due to its strong variations as a function $\phi$ and to the size of our bins, the acceptance will bring an additional 3\% systematic error. The measurement of the beam polarization will introduce 2\% of systematic uncertainties. A summary of the uncertainties induced by these various sources can be found in Table~\ref{table_syst}. The total systematic uncertainty will be therefore of the order of 8\%, averaged over all the kinematics (the $\pi^0$-background uncertainty will actually vary depending on the bin).  
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+Source of error & $\Delta$BSA \\
+\hline
+\hline
+Beam polarization & 2\%  \\
+\hline
+$\pi^0$ contamination & 5\%  \\
+\hline
+Acceptance & 3\%  \\
+\hline
+Radiative corrections & 1\%  \\
+\hline
+n-$\gamma$ misidentification & 5\%  \\
+\hline
+\hline
+Total & 8\%  \\
+\hline
+\end{tabular}
+\caption{Expected systematic uncertainties on the proposed measurement.}
+\label{table_syst}
+\end{center}
+\end{table}
+
+\section{Summary of experimental setup and trigger configuration}
+
+We plan to measure beam-spin asymmetries for the DVCS/BH reaction on the neutron using a liquid deuterium target and an 11-GeV highly polarized electron beam. To detect the scattered electron and photon we will use the CLAS12 detector in its baseline configuration plus, at small angles, a forward electromagnetic calorimeter --- either the IC or the Forward Tagger (the second option being preferable for its better resolution performances). For the detection of the recoil neutron we will add our neutron detector to the CLAS12 Central Detector. 
+
+To define the trigger for the data acquisition, we plan to make use of the experience with CLAS at 6 GeV. The current CLAS electron trigger is based on the coincidence between Low Threshold Cherenkov Counter (LTCC) and EC calorimeter with an energy threshold in the region of 500-600 MeV. The coincidence scheme works at the sector level: 
+
+$$Trigger=\sum_{sector=1}^6  (LTCC_{sector}\cdot EC_{sector})$$
+
+The trigger rate at $L=2 \cdot10^{34}$ s$^{-1}$cm$^{-2}$ was around 4 kHz in the e1-dvcs experiment at 6 GeV.  Due to the low thresholds in LTCC ($N_{photoelectrons}>0.2$) and in the EC calorimeter, only 10\% of the events were identified as real electrons in the off-line analysis. Detailed studies of the trigger events showed that increasing the threshold in the Cherenkov Counter up to 2 photoelectrons makes the electron trigger much more selective. However this method was not implemented in the CLAS trigger due to the limited average number of photoelectrons in the LTCC. 
+
+The CLAS12 trigger system will be significantly improved. It will be flexible enough to include different types of detectors and even spatial correlations of the trigger elements. First of all the High Threshold Cherenkov Counter (HTCC), with expected extraordinary performances, will participate in the electron trigger. It was shown by Monte-Carlo simulations that even at threshold $N_{photoelectrons}>3$ the electrons will be identified with almost 100\% efficiency and the pion-rejection factor will be much better than for the present CLAS.
+
+The Preshower Calorimeter can be included into the trigger scheme in case the trigger rate will be unacceptably high. It will improve the pion rejection factor keeping the electron efficiency at high level even with low energy threshold.  
+The level-2 CLAS12 trigger will give us the possibility to geometrically match the electron candidate track with the signals from different detectors: HTCC, LTCC, Preshower Calorimeter and EC calorimeter.  The CLAS experience tells us that level-2 trigger is a very powerful tool to suppress random coincidences between CC and EC.
+
+In summary we can say that the selectivity of the electron trigger will be much better in comparison to the current CLAS.
+Taking into account the improved performance of the CLAS12 DAQ we hope that the trigger rate will be at the acceptable level at design luminosity  $L=10^{35}$ s$^{-1}$cm$^{-2}$ per nucleon. However if the background level will be higher than expected we can  add additional detectors for the trigger logic. 
+The trigger for exclusive reactions may be enforced by including the energy deposition in the IC calorimeter ($E_{\gamma}>1$ GeV) that will significantly reduce the trigger rate as we learned from the CLAS/e1-dvcs experiments. 
+As we plan to use the Central Tracker as veto for neutrons, we will possibly introduce this detector in the trigger logic as well.
+
+\section{Beam-time request}
+
+In order to collect good statistics on the BSAs over the wide phase space covered by CLAS12 for n-DVCS (see Appendix~\ref{app_cr}), we request 90 days of beam time, 7 of which will be spent testing the apparatus and in the commissioning of the experiment, while 80 will be devoted to production data taking at a luminosity of $10^{35}$ cm$^{-2}$s$^{-1}$ per nucleon. Moeller runs to measure and monitor the beam polarization will take 3 additional days. Table~\ref{beam_time} summarizes our request.
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+Testing and commissioning & 7 days\\
+\hline
+Production data taking at $L=10^{35}$ cm$^{-2}$s$^{-1}$/nucleon & 80 days\\
+\hline
+Moeller polarimeter runs & 3 days\\
+\hline
+\end{tabular}
+\caption{Beam-time request.}
+\label{beam_time}
+\end{center}
+\end{table}
+
+\section{Conclusions}
+The strong sensitivity to the GPD $E$ of the beam-spin asymmetry for DVCS on a neutron target makes the measurement of this observable very important for the experimental GPD program of Jefferson Lab. This sensitivity is maximal for values of $x_B$ which are attainable only with a 11-GeV beam. Model predictions show that for kinematics that will be available with CLAS12 this asymmetry can be comparable in size to the one obtained for proton DVCS. In order to measure this reaction ensuring its exclusivity, the detection of the recoil neutron, which will be mostly emitted at backwards angles, is necessary. We plan to construct a neutron detector --- that will fit in the CLAS12 Central Detector in the free space between the CTOF and the solenoid ---, consisting of a barrel of three layers of scintillators coupled at their front ends with u-turn light guides and read out at their back sides by ordinary PMTs connected to the bars via 1-m-long bent light guides and placed in the low-field region of the CND. Our GEANT4-based simulations, calibrated with measurements carried out on a prototype, show that the efficiencies obtainable with this detector and its photon-rejection capabilities will be sufficient to collect good statistics on the BSAs for the n-DVCS reaction over a wide phase space, using a total of 90 days of beam time. Although this is out of the scope of this proposal, this detector could also be used in other experiments requiring the detection of the recoil neutron ($N^*$ program, for instance, or all the deeply-virtual meson production reactions on a neutron), and it can also be useful for the PID of charged particles via measurement of $dE/dx$ and time of flight. 
+
+\newpage
+\appendix
+\section{Details on simulation and reconstruction}
+\subsection{Digitisation of signals from CND paddles in GEMC}\label{sec_digi}
+
+GEMC currently accumulates all energy-loss steps within a 4 ns time-window into one hit. The digitisation of the signals from the CND paddles follows the following procedure. 
+
+For the energy digitisation (ADCs), the calculation of the deposited energy which will be converted into light, $E_b$, for EACH STEP $s$ in the hit is done as follows: 
+
+\begin{eqnarray}
+E_b = \frac{E_{dep}}{( 1 + B \cdot E_{dep} / step_l)}
+\end{eqnarray}
+
+where $E_{dep}$ is the deposited energy, $B$ is Birk's constant (which depends on the material), and $step_l$ is the length of the step --- calculated from the difference of the vectors of the current and previous step positions (except for the first step, where the first and second step positions are taken).
+
+The attenuated energies arriving at the PMTs attached to the ends of the scintillator paddles, $E_l$, $E_r$ (for left and right ends of paddle), $E_d$ (where $d$ stands for ``direct''), $E_n$ (``neighbor'', for the u-turn configuration) are summed, for each hit, over the deposit from each step making up the hit: 
+
+The calculation for $E_l$, $E_r$ and $E_d$ follows the same formula, e.g., for $E_r$ we have:
+\begin{eqnarray}
+  E_r = \sum_s { E_b/2 \cdot e^{(-d_r/l_{att})} } \cdot L_{coll}
+\end{eqnarray}
+where $s$ is the index of the particular step, $d_r$ is the distance from the step position to the end of the scintillator, $l_{att}$ is the attenuation length in the material ($l_{att}=3$ m) and $L_{coll}$ is the light collection efficiency (fraction of photons which make it into the PMT). $L_{coll}$ is calculated as the cross-sectional area of the PMT divided by the cross-sectional area of the paddle, and therefore varies for each radial layer. 
+
+For the case of $E_{n}$:
+\begin{eqnarray}
+  E_n = \sum_s { E_b/2 \cdot e^{(-(d_r + l)} / l_{att}) } \cdot L_{bend} \cdot L_{coll}
+\end{eqnarray}
+
+where $l$ is the whole length of the paddle and $L_{bend}$ is the energy fraction lost at the u-turn bend connecting the neighbouring paddles. Its values, 0.5, is deduced from the measurements on the one-layer prototype carried out in Orsay (see Fig.~\ref{misure_giulia}, top plot).
+
+The conversion of the energy into ADC values follows the same method for all four ADC readings (ADCl, ADCr, ADCd, ADCn): 
+\begin{eqnarray}
+ ADC = P(E \cdot yield \cdot Q_{eff})  \cdot gain \cdot C_{ADC}  + ped
+\end{eqnarray}
+where $E$ is one of $E_r$, $E_l$, $E_d$ or $E_n$, $yield$ is the light yield (number of photons produced in the scintillator per unit of deposited energy, namely 10000/MeV), $Q_{eff}$ (=0.2) is the quantum efficiency of the PMT (fraction of photoelectrons produced per photon), $gain$ is the PMT gain (=0.08 pC/photoelectron), $C_{ADC}$ (=10/pC) is the conversion factor from charge to ADC channels, $ped$ is the ADC pedestal (currently set to 0) and $P(m)$ is the Poisson distribution function with mean $m$, that smears the number of photoelectrons produced by each hit. 
+
+The original treatment of time of the hit in GEMC was to take an average of the signal time from all the steps. Since a TDC will trigger when the analogue signal reaches a particular level, the mean over all times overestimates the actual time. Without knowing the shape of the total signal from all the steps in a hit as it arrives at the TDC we cannot deduce the time precisely, but we have chosen to set it to the time of the first step in the hit passing a given energy deposition threshold, as this may be closer to the true time the TDC will trigger at than the mean. 
+
+The time of arrival of the signal at the PMT is calculated in a similar way for $l$, $r$ and $d$, taking the time of the first step in the hit above a 100-keV threshold. For $r$, for example: 
+\begin{eqnarray}
+  t_r = T + d_r / v_{eff}
+\end{eqnarray}
+where $T$ is the time the first energy deposit (first step) in the hit happened (with respect to the event start time), $d_r$ is as before the distance from the first step energy deposit to the right end of the paddle and $v_{eff}$ is the effective velocity of light in the scintillator material.
+
+For $t_n$, the calculations is:
+\begin{eqnarray}
+  t_n = T + (d_r + l) / v_{eff}  + d_u / v_{eff}
+\end{eqnarray}
+where $d_u$ is the effective distance through the u-turn light guide.
+
+The time is then digitised (in the same way for all four TDC branches, TDCl, TDCr, TDCd, TDCn). For TDCr for example: 
+\begin{eqnarray}
+  TDCr =  { t_r + G(0, A/\sqrt{E_r}) } \cdot C_{TDC} 
+\end{eqnarray}
+where $G$(mean,sigma) is a Gaussian distribution function, $A$ is a constant which determines the smearing in the timing. The value chosen for $A$ ($A = 0.24$ ns$\cdot$MeV$^{-1/2}$) is deduced from the time resolution cosmic-rays measurements on the CND one-layer prototype described in Section \ref{rd_sec} \cite{giulia}. $C_{TDC}$ (=20/ns) is the conversion factor from time to TDC channels. 
+
+\subsection{Hit reconstruction}\label{sec_rec}
+
+The algorithm for the choice of the ``good hit'' is here described. 
+
+Let us assume paddle 1 is optically coupled to paddle 2. We get N1 signals in TDC of paddle 1 and N2 signals in TDC of paddle 2. The possible combinations one can have are: 
+
+\begin{itemize}
+\item{Case A: a signal from a "direct" hit in paddle 1 is reconstructed along with a signal from a "direct" hit in paddle 2 (Fig.~\ref{hits_cases}, top image). This is wrong.} 
+\item{Case B: a signal from a "direct" hit in paddle 1 is reconstructed along with a signal from another "direct" hit in the same paddle, propagated to paddle 2. (Fig.~\ref{hits_cases}, second image from the top). This is also wrong.}
+\item{Case C: a signal from a "direct" hit in paddle 1 is reconstructed along with a signal from the same hit propagated to paddle 2 (Fig.~\ref{hits_cases}, bottom). This is right.}
+\item{Case D: a signal registered in paddle 1, but it actually propagated from "direct" hit in paddle 2, which was then reconstructed with a signal registered in paddle 2 which had propagated from "direct" hit in paddle 1 (Fig.~\ref{hits_cases}, third image from the top). This is obviously also wrong.}
+\end{itemize}
+
+\begin{figure}  
+\begin{center}
+\epsfxsize=9 cm
+\epsffile{plots/Image6.eps}
+\epsfxsize=9 cm
+\epsffile{plots/Image5.eps}
+\epsfxsize=9 cm
+\epsffile{plots/Image4.eps}
+\epsfxsize=9 cm
+\epsffile{plots/Image7.eps}
+\caption {Schematic drawings of the cases the reconstruction deals with when signals are collected at both $D$ and $N$ PMTs.}
+\label{hits_cases}
+\end{center}
+\end{figure}
+
+If only one hit was registered in paddle 1, and no hits in its neighbour paddle, then cases A, B and D are not an issue. However, it is possible that the reconstruction will fail anyway if the signal from the "direct" hit was registered but its propagation to neighbour wasn't (because of energy attenuation perhaps it just didn't make it past the threshold, for example). Those hits are lost.
+
+For each ``decent hit'' (having energy deposit above zero and the time in its "direct" paddle's TDC reading something physical, not zero or an unstopped TDC value), one needs to determine whether its coupled neighbour is to its left or right. Then an array is filled with all the physical hits in the neighbour and in the same paddle (discarding those that have 0 energy deposit or unphysical TDC times (zero or unstopped TDC)). These hits are called "partners". 
+
+Next, for each hit, one iterates through the array of partners. If a partner is a neighbour, one has to take its "direct" TDC time $tp$ (as recorded in its paddle). If a partner is from the same paddle as the hit in question, one must take its propagated time $tp$ to neighbour. 
+
+We are now working with two time values -- the one just selected from the partner, $tp$, and the hit's "direct" time, $th$ (for cases A, and B). 
+For case D, one takes the propagated time from the hit to the neighbour's paddle ($th$), and the partner's propagated time to the hit's paddle ($tp$). One then labels each of the two times as either "time in the paddle where hit happened" or "time propagated to neighbour's paddle", based upon which one is smaller. The z-position of the hit is reconstructed follozing this assumption. If $z$ is out of the dimension of the paddle (-33cm to 33cm), the chosen combination was obviously wrong, so it is discarded and one moves to the next partner. This is what mostly happens for cases A, B and D above. Once one has exhausted all partners, also case C (the real answer) is processed. One reconstructs the hit based on its "direct" time and its propagated time to neighbour. If that gives an unphysical result for $z$ (or maybe the propagated signal was missing), then that combination is discarded. 
+
+After processing all the possible combinations, $goodcomb$ is the number of good combinations for that hit, i.e.: possible combinations of signals which yield physical values of $z$. If $goodcomb$ > 1 we have an ambiguity on how to reconstruct the hit. The hit is discarded. If $goodcomb$ = 0, there is no good combination,the hit is also discarded. A hit is kept only if $goodcomb$ = 1. One then iterates through such hits, reconstructing $z$, TOF and energy deposited for all the unambiguous cases. Next, all these remaining good reconstructed hits are put in order of ascending TOF. The "best hit" is the first ``good'' hit over an energy threshold, below a time cut. From this hit one gets the TOF, $z$ and energy deposit of the event. 
+
+To obtain the TOF, we calculate $T_{adjusted}$ as:
+\begin{eqnarray}
+T_{nadj} = T_n - (p_l + d_u) / v_{eff};
+\end{eqnarray}
+
+where $d_u$ is the path length through the u-turn bit (estimate of 8cm),
+$v_{eff}$ is effective velocity, $p_l$ is the length of the paddle, and 
+\begin{eqnarray}
+T_n = \frac{TDCn}{C_{TDC}}.
+\end{eqnarray}
+
+Then we can extract $z$ as:
+\begin{eqnarray}
+z_{ave} = (T_d - T_{nadj}) \cdot v_{eff} / 2
+\end{eqnarray}
+The value of the TOF is then calculated based on info from both sides:
+\begin{eqnarray}
+TOF_{dtrue} = T_d - (p_l / 2 + z_{ave}) / v_{eff}
+\end{eqnarray}
+\begin{eqnarray}
+TOF_{nadjtrue} = T_{nadj} - (p_l / 2 - z_{ave}) / v_{eff}
+\end{eqnarray}
+Get an average TOF of these:
+\begin{eqnarray}
+TOF_{true} =  (T_{dtrue} + T_{nadjtrue}) / 2
+\end{eqnarray}
+This quantity is then used to compute $\beta$, the momentum and $\theta$ for the event (see Sections \ref{pid-section} and \ref{resolution-section}).
+
+To obtain the energy deposited in the event, one uses the ADC value as follows:
+\begin{eqnarray}
+E_d = \frac{ADCd}{C_{ADC} \cdot gain \cdot yield \cdot Q_{eff} \cdot L_{coll}.}
+\end{eqnarray}
+
+\newpage
+\section{Projected results}\label{app_cr}
+The two panels of Figs.~\ref{counts_1} and ~\ref{counts_2} show the expected count rates for n-DVCS events in the proposed experiment.
+
+The corresponding BSAs are shown in Figs.~\ref{asym_1} and ~\ref{asym_2}. The VGG model has been used to compute the absolute value of the asymmetries, setting $J_u=.3$ and $J_d=.1$. Apart from the bottom panel of Fig.~\ref{asym_1}, where the y axis is fixed from -0.08 to 0.08, for all the other plots the y axis range is -0.12/0.12. The kinematic bins for which the predicted asymmetry is zero, as well as the ones for which the maximum asymmetry is below 0.1\%, have not been plotted. 
+
+\begin{figure}
+\begin{center}
+\vspace{-1cm}
+\epsfxsize=13 cm
+\epsffile{plots/plot_counts_1_newcuts.eps}
+\epsfxsize=13 cm
+\epsffile{plots/plot_counts_2_newcuts.eps}
+\caption {Projected count rates for n-DVCS/BH, as a function of $\phi$, for each $Q^2$, $x_B$ bin and for $0.<-t<0.2$ GeV$^2$ (top) and $0.2<-t<0.5$ GeV$^2$ (bottom).}
+\label{counts_1}
+\end{center}
+\end{figure}
+
+\begin{figure} 
+\begin{center}
+\vspace{-1cm}
+\epsfxsize=13 cm
+\epsffile{plots/plot_counts_3_newcuts.eps}
+\epsfxsize=13 cm
+\epsffile{plots/plot_counts_4_newcuts.eps}
+\caption {Projected count rates for n-DVCS/BH, as a function of $\phi$, for each $Q^2$, $x_B$ bin and for $0.5<-t<0.8$ GeV$^2$ (top) and $0.8<-t<1.2$ GeV$^2$ (bottom).}
+\label{counts_2}
+\end{center}
+\end{figure}
+
+\begin{figure}  
+\begin{center}
+\vspace{-1cm}
+\epsfxsize=13 cm
+\epsffile{plots/asym_1_newcuts.eps}
+\epsfxsize=13 cm
+\epsffile{plots/asym_2_newcuts.eps}
+\caption {Projected BSAs for n-DVCS/BH, as a function of $\phi$, for each $Q^2$, $x_B$ bin and for $0.<-t<0.2$ GeV$^2$ (top) and $0.2<-t<0.5$ GeV$^2$ (bottom).}
+\label{asym_1}
+\end{center}
+\end{figure}
+
+\begin{figure}  
+\begin{center}
+\vspace{-1cm}
+\epsfxsize=13 cm
+\epsffile{plots/asym_3_newcuts.eps}
+\epsfxsize=13 cm
+\epsffile{plots/asym_4_newcuts.eps}
+\caption {Projected BSAs for n-DVCS/BH, as a function of $\phi$, for each $Q^2$, $x_B$ bin and for $0.5<-t<0.8$ GeV$^2$ (top) and $0.8<-t<1.2$ GeV$^2$ (bottom).}
+\label{asym_2}
+\end{center}
+\end{figure}
+
+\newpage
+\begin{thebibliography}{999}
+\bibitem{muller}
+D. M\"uller, D. Robaschik, B. Geyer, F.-M. Dittes, and J. Horejsi, Fortschr. Phys. {\bf 42} (1994) 101.
+\bibitem{ji} X. Ji, Phys. Rev. Lett. {\bf 78} (1997) 610;
+Phys. Rev. D {\bf 55} (1997) 7114.
+\bibitem{rady} A.V. Radyushkin, Phys. Lett. B {\bf 380} (1996) 417; Phys. Rev. D {\bf 56} (1997) 5524.
+\bibitem{collins} J.C. Collins, L. Frankfurt and M. Strikman, Phys. Rev. D {\bf 56} (1997) 2982.
+\bibitem{goeke} K. Goeke, M. V. Polyakov and M. Vanderhaeghen, Prog.\ Part.\ Nucl.\ Phys. {\bf 47} (2001) 401.
+\bibitem{revdiehl} M. Diehl, Phys.  Rept. {\bf 388} (2003) 41.
+\bibitem{revrady} A.V. Belitsky, A.V. Radyushkin, Phys. Rept. {\bf 418} (2005) 1.
+\bibitem{fitmick} M. Guidal, Eur. Phys. J. A {\bf 37} (2008) 319.
+\bibitem{belitski} A.V. Belitsky, D. M\"uller, A. Kirchner, Nucl. Phys. B {\bf 629} (2002) 323-392.
+\bibitem{franck} C. Mu\~noz Camacho et al., Phys. Rev. Lett. {\bf 97}, 262002 (2006).
+\bibitem{fx} F.-X. Girod et al., Phys. Rev. Lett. {\bf 100}, 162002 (2008).
+\bibitem{shifeng} S. Chen, et al., Phys. Rev. Lett. {\bf 97}, 072002 (2006).
+\bibitem{hermes} A. Airapetian et al, arXiv:0802.2499; A. Airapetian et al., JHEP {\bf1006}, 019 (2010).
+\bibitem{E05114} JLab approved experiment E-05-114: ``Deeply Virtual Compton Scattering at 6 GeV with polarized target and polarized 
+beam using the CLAS detector"; spokespersons: A. Biselli, L. Elhouadrhiri,
+K. Joo and S. Niccolai.
+\bibitem{E08021} JLab (conditionally) approved experiment E-08-021: 
+``Deeply Virtual Compton Scattering at 6 GeV with transversely polarized 
+target using the CLAS detector"; spokespersons: H. Avakian, V. Burkert,
+M. Guidal, R. Kaiser and F. Sabati\'e.
+\bibitem{E06003} JLab approved experiment E-06-003: ``Deeply Virtual Compton Scattering 
+with CLAS at 6 GeV"; spokespersons: V. Burkert, L. Elhouadrhiri, 
+M. Gar\c{c}on, R. Niyazov and S. Stepanyan.
+\bibitem{E07007} JLab approved experiment E-07-007: ``Complete separation
+of Deeply Virtual Photon and $\pi^0$ electroproduction observables
+of unpolarized protons"; spokespersons:  C. Munoz Camacho, J. Roche,
+C. Hyde-Wright and P.-Y. Bertin.
+\bibitem{E1206114} JLab approved experiment E-12-06-114:
+``Measurements of Electron-Helicity Dependent Cross Sections 
+of Deeply Virtual Compton Scattering with CEBAF at 12 GeV", 
+spokespersons: C. Hyde-Wright, B. Michel, C. Munoz Camacho and J. Roche.
+\bibitem{E1206119} JLab approved experiment E-12-06-119:
+``Deeply Virtual Compton Scattering with CLAS at 11 GeV", 
+spokespersons:  V. Burkert, L. Elouadrhiri, M. Gar\c{c}on, M. Holtrop,
+D. Ireland, K. Joo, W. Kim, F. Sabati\'e.
+\bibitem{malek} M. Mazouz et al., Phys.\ Rev.\ Lett. {\bf 99}, 242501 (2007).
+\bibitem{vgg1} M. Vanderhaeghen, P.A.M. Guichon, M. Guidal, Phys. Rev. D {\bf 60}, 094017 (1999).
+\bibitem{vgg2} M. Guidal, M. V. Polyakov, A. V. Radyushkin and 
+M. Vanderhaeghen, Phys.\ Rev. D {\bf 72}, 054013 (2005).
+\bibitem{bertin} P.-Y. Bertin, C.E. Hyde-Wright, F. Sabatié, E. Voutier et al.,  JLab Proposal E03-106 (2003).
+\bibitem{malek_phd} M. Mazouz, Doctorat Thesis, Université Joseph Fourier, Grenoble (2006)
+\bibitem{ahmed} A. El Aloui and E. Voutier, private communication.
+\bibitem{harut} H. Avakyan, private communication.
+\bibitem{paris} M. Lacombe et al., Phys. Rev C {\bf 21} (1980) 861.
+\bibitem{batta} M. Battaglieri, R. De Vita, S. Stepanyan, D. Weygand et al., ``Meson Spectroscopy with low $Q^2$ electron scattering in CLAS12'', proposal for Jefferson Lab PAC37. 
+\bibitem{fxnote} F.X. Girod and M. Gar\c con, CLAS-NOTE 2005-001. 
+\bibitem{silvia_loi} S. Niccolai et al., JLab letter of intent LOI12-09-001.
+\bibitem{raffa_wiki} R. De Vita, http://g3wiki.ge.infn.it/jlab12/. 
+\bibitem{thi} T. Nguen Trung (IPN Orsay), private communication.
+\bibitem{MCPPMT_paper} N. Kishimoto et al., NIM {\bf A 564} (2006) 204-211.
+\bibitem{silvia_wiki2}http://clasweb.jlab.org/rungroups/e1-dvcs/wiki/index.php/CLAS12 neutron detector: update 28 October 2009 Lifetime of MCP PMTs.
+\bibitem{giulia} G. Hull (IPN Orsay), private communication.
+\bibitem{mauri} M. Ungaro, private communication.
+\bibitem{daria_wiki} D. Sokhan, http://clasweb.jlab.org/wiki/index.php/Daria .
+\bibitem{silvia_wiki} S. Niccolai, http://clasweb.jlab.org/rungroups/e1-dvcs/wiki/index.php/CLAS12 neutron detector:update on simulation (September 2008).
+%\bibitem{raffa-marco} M. Mirazita and R. De Vita, private communication.
+%\bibitem{stepan} E. Skau and S. Stepanyan, CLAS-NOTE 020-2007.
+\bibitem{raffa} R. De Vita, private communication.
+\bibitem{laget} J.M. Laget, arXiv:1004.1940 [hep-ph].
+\bibitem{fuchey} E. Fuchey et al., arXiv:1003.2938 [nucl-exp].
+\bibitem{kuba} I. Bedlinski, V. Kubarovsky, private communication.
+%\bibitem{glasgow} M. Hoek and B. Seitz (Glasgow), private communication.
+\end{thebibliography}
+
+\end{document}

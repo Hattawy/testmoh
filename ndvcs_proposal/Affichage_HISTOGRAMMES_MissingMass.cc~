@@ -1,0 +1,90 @@
+void Affichage_HISTOGRAMMES_MissingMass(){
+
+//Inputs:
+//ana_phi=0.0523_theta=0.0227_P=0.001_newsmearIC.root
+//ana_phi=0.0523_theta=0.0227_P=0.01_newsmearIC.root
+//ana_phi=0.0523_theta=0.0227_P=0.04_newsmearIC.root
+//ana_phi=0.0523_theta=0.0227_P=0.1_newsmearIC.root
+//ana_phi=0.0523_theta=0.0227_P=0.2_newsmearIC.root
+
+//ana_phi=0.0017_theta=0.0227_P=0.04_newsmearIC.root
+//ana_phi=0.0174_theta=0.0227_P=0.04_newsmearIC.root
+//ana_phi=0.0523_theta=0.0227_P=0.04_newsmearIC.root
+//ana_phi=0.1745_theta=0.0227_P=0.04_newsmearIC.root
+//ana_phi=0.3490_theta=0.0227_P=0.04_newsmearIC.root
+
+//ana_phi=0.0523_theta=0.0017_P=0.04_newsmearIC.root
+//ana_phi=0.0523_theta=0.0227_P=0.04_newsmearIC.root
+//ana_phi=0.0523_theta=0.0872_P=0.04_newsmearIC.root
+//ana_phi=0.0523_theta=0.1745_P=0.04_newsmearIC.root
+//ana_phi=0.0523_theta=0.3490_P=0.04_newsmearIC.root
+
+
+//Histo à afficher:
+//MissingMass_Mesresolutions_CLAS12_CUTS_1
+//MissingMass_MES_CUTS_1
+//Delta_t
+//MissingMass_SmearClas12_CLAS12_CUTS_2
+
+//MissingMass_SmearClas12_CLAS12_CUTS_6
+//MissingMass_SmearClas12_CLAS12_CUTS_2
+
+  Float_t theta[5]={0.0017,0.0227,0.0872,0.1745,0.349};
+  Float_t phi[5]={0.0017,0.0174,0.0523,0.1745,0.349};
+  Float_t mom[5]={0.001,0.01,0.04,0.1,0.2};
+  char filename[300];
+
+  for(Int_t i=0;i<3;i++);
+  {    
+    Float_t sigma[5];
+    Float_t sigma_err[5];
+    Float_t x_err[5]={0.,0.,0.,0.,0.};
+    char canvas[30];
+    Float_t var[5];
+    char filename[300];
+
+    for(Int_t r=0;r<5;r++)
+      {    
+	if(i==0)
+	  {
+	    sprintf(filename,"ana_phi=%g_theta=%g_P=%g_newsmearIC.root",phi[2],theta[r],mom[2]);
+	    cout<<filename<<endl;
+	    var[r]=theta[r];
+	  }
+	if(i==1)
+	  {
+	    sprintf(filename,"ana_phi=%g_theta=%g_P=%g_newsmearIC.root",phi[r],theta[1],mom[2]);
+	    var[r]=phi[r];
+	  }
+	if(i==2)
+	  {
+	    sprintf(filename,"ana_phi=%g_theta=%g_P=%g_newsmearIC.root",phi[2],theta[1],mom[r]);
+	    var[r]=mom[r];
+	  }
+	//    f= TFile::Open("/projet/nucleon/Baptiste/genepi/baptiste_code/ana_phi=0.0523_theta=0.0017_P=0.04_newsmearIC.root");
+	cout<<filename<<endl;
+	TFile *f = new TFile(filename);
+	f->cd();    	
+	gStyle->SetOptStat("em");   
+	gStyle-> SetLineColor(kRed);
+	//   Float_t rightmaxh5 = 1*FIG02->GetMaximum();
+	//   Float_t scaleh5 = gPad->GetUymax()/rightmaxh5;
+	//   FIG05-> Scale(scaleh5);
+	MissingMass_SmearClas12_CLAS12_CUTS_6-> SetLineColor(kRed);
+	MissingMass_SmearClas12_CLAS12_CUTS_6-> Draw("");
+	//MissingMass_Mesresolutions_CLAS12_CUTS_1-> Fit("gaus","","same");
+	MissingMass_SmearClas12_CLAS12_CUTS_6-> Fit("gaus","0","");
+	sigma[r] = gaus->GetParameter(2);    
+	sigma_err[r] = gaus->GetParError(2);	
+      }
+    
+    sprintf(canvas,"g%d",i);
+    TCanvas *c= new TCanvas(canvas,canvas,1000,800);
+    TGraphErrors *l;
+    l=new TGraphErrors(5,var,sigma,x_err,sigma_err);
+    l->Draw("AP");    
+    
+  }
+}
+
+

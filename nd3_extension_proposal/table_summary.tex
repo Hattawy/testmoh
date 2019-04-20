@@ -1,0 +1,139 @@
+%%%%%%%%% espcrc1.tex %%%%%%%%%%
+%
+% $Id: espcrc1.tex 1.2 2000/07/24 09:12:51 spepping Exp spepping $
+%
+\documentclass[12pt, letterpaper]{article}
+\usepackage{footnote}
+\usepackage{graphics}
+\usepackage{sidecap}
+\usepackage{layouts}
+\usepackage{epsf}
+\usepackage[font={small}, margin=0.625in]{caption}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[verbose, paperwidth=8.5 in, width=6 in, left=1.25 in]{geometry}
+%\geometry{verbose,tmargin=0.7in,bmargin=0.5in,lmargin=0.4in,rmargin=1in}
+%\setcounter{secnumdepth}{3}
+%\setcounter{tocdepth}{3}
+%\geometry{verbose,letterpaper,tmargin=1in,bmargin=1in,lmargin=.75 in,rmargin=.75 in}
+%\geometry{verbose, letterpaper, width=6 in, left=1.25 in}
+%\pagestyle{plain}
+\usepackage{fullpage}
+\usepackage{graphicx,psfrag}
+\usepackage{setspace}
+\usepackage{epsf}
+\usepackage{amssymb}
+\usepackage{bm}
+%\doublespacing
+\usepackage{rotating}
+\raggedbottom
+%\textwidth  6 in
+%\textheight 8.5 in
+%\oddsidemargin 0.15in
+%\makeatletter
+\newcommand{\plus}{\raisebox{.3\height}{\scalebox{.6}{+}}}
+\newcommand{\minus}{\raisebox{0\height}{\scalebox{1}{-}}}
+\setlength{\belowcaptionskip}{-5pt}
+\begin{document}
+%\pagestyle{plain}
+%\begin{flushright}
+%\vspace{-1cm}
+
+\section{Experimental situation}\label{sec_exp_situation}
+
+
+\begin{table}[t]
+   \centering
+   \begin{tabular}{|c|c|c|c|c|} 
+\hline
+Observable & Target type & Sensitivity & Completed & 12-GeV \\
+(target) & to CFFs & experiments & experiments \\
+\hline
+\hline
+    $\Delta\sigma_{beam}$(p) & Unpolarized LH2 & $\Im{\rm m}{\cal H}_p$ & Hall A \cite{carlos},\cite{E07007}, CLAS \cite{hs} &   Hall A \cite{E1206114}, CLAS12 \cite{E1206119}\\ 
+& & &Hall C \cite{E1213010}\\
+
+\hline
+    BSA(p)     &  Unpolarized H &  $\Im{\rm m}{\cal H}_p$       & HERMES \cite{hermes}, CLAS \cite{stepan,fx,pisano}   & CLAS12 \cite{E1206119} \\
+\hline 
+   TSA(p)   &  Long. pol. NH3 &  $\Im{\rm m}\widetilde{\cal H}_p,\Im{\rm m}{\cal H}_p,$     &  HERMES \cite{hermes}, CLAS \cite{shifeng,erin,pisano} & CLAS12 \cite{E1206119}\\
+\hline 
+    DSA(p)    &  Long. pol. NH3 &  $\Re{\rm e}\widetilde{\cal H}_p,\Re{\rm e}{\cal H}_p$     &  HERMES \cite{hermes}, CLAS \cite{pisano}& CLAS12 \cite{E1206119}\\
+\hline 
+    tTSA(p)    &   Transv. pol. protons & $\Im{\rm m}{\cal H}_p,\Im{\rm m}{\cal E}_p$               &  HERMES \cite{hermes} &  CLAS12 \cite{E1212010}\\
+\hline
+    $\Delta\sigma_{beam}$(n)    &  Unpolarized D & $\Im{\rm m}{\cal E}_n$       &  Hall A \cite{malek},\cite{E08025}\footnotemark[\value{footnote}] & \\
+\hline
+    BSA(n)    &   Unpolarized D & $\Im{\rm m}{\cal E}_n$       &   & CLAS12 \cite{proposal}\\
+\hline
+   \end{tabular}
+   \caption[Summary of existing and proposed DVCS experiments]
+   {Summary of all existing data on proton and neutron DVCS spin observables, along with their sensitivity to the various GPDs. The ``t'' prefix indicates transversely polarized target.}\label{dvcs_exp_summary}
+\end{table}
+
+%
+
+\newpage
+\begin{thebibliography}{999}
+\bibitem{muller}
+D. M\"uller, D. Robaschik, B. Geyer, F.-M. Dittes, and J. Horejsi, Fortschr. Phys. {\bf 42} (1994) 101.
+\bibitem{ji} X. Ji, Phys. Rev. Lett. {\bf 78} (1997) 610;
+Phys. Rev. D {\bf 55} (1997) 7114.
+\bibitem{rady} A.V. Radyushkin, Phys. Lett. B {\bf 380} (1996) 417; Phys. Rev. D {\bf 56} (1997) 5524.
+\bibitem{collins} J.C. Collins, L. Frankfurt and M. Strikman, Phys. Rev. D {\bf 56} (1997) 2982.
+\bibitem{goeke} K. Goeke, M. V. Polyakov and M. Vanderhaeghen, Prog.\ Part.\ Nucl.\ Phys. {\bf 47} (2001) 401.
+\bibitem{revdiehl} M. Diehl, Phys.  Rept. {\bf 388} (2003) 41.
+\bibitem{revrady} A.V. Belitsky, A.V. Radyushkin, Phys. Rept. {\bf 418} (2005) 1.
+\bibitem{proposal} S. Niccolai, V. Kubarovsky, S. Pisano, and D. Sokhan, JLab experiment E12-11-003.
+\bibitem{belitski} A.V. Belitsky, D. M\"uller, A. Kirchner, Nucl. Phys. B {\bf 629} (2002) 323-392.
+\bibitem{fitmick} M. Guidal, Eur. Phys. J. A {\bf 37} (2008) 319; M. Guidal, H. Moutarde, Eur. Phys. J. A 42 (2009) 71.
+\bibitem{mick_herve} M. Guidal, H. Moutarde, M. Vanderhaeghen, Rep. Prog. Phys. {\bf 76}, 066202 (2013).
+\bibitem{vgg} M. Vanderhaeghen, P.A.M. Guichon, M. Guidal, Phys. Rev. D {\bf 60}, 094017 (1999).
+\bibitem{vgg1} M. Guidal, M. V. Polyakov, A. V. Radyushkin and 
+M. Vanderhaeghen, Phys.\ Rev. D {\bf 72}, 054013 (2005).
+\bibitem{pisano} S. Pisano {\it et al.}, Phys. Rev. {\bf D91}, 052014 (2015).
+\bibitem{erin} E. Seder {\it et al.}, Phys. Rev. Lett. {\bf 114}, 032001 (2015).
+\bibitem{fx} F.-X. Girod {\it et al.}, Phys. Rev. Lett. {\bf 100}, 162002 (2008).
+\bibitem{shifeng} S. Chen {\it et al.}, Phys. Rev. Lett. {\bf 97}, 072002 (2006).
+\bibitem{malek} M. Mazouz et al., Phys.\ Rev.\ Lett. {\bf 99}, 242501 (2007).
+\bibitem{carlos} C. Mu\~noz Camacho {\it et al.} (Hall-A Collaboration), Phys. Rev. Lett. {\bf 97}, 262002 (2006).
+\bibitem{stepan} S. Stepanyan {\it et al.} (CLAS Collaboration), Phys. Rev. Lett. {\bf 87}, 182002 (2001).
+\bibitem{hermes} A. Airapetian {\it et al.} (HERMES Collaboration), JHEP06 {\bf 0806}, 066 (2008); A. Airapetian {\it et al.} (HERMES Collaboration), JHEP {\bf 06}, 019 (2010).
+\bibitem{hs} H.-S. Jo {\it et al.}, arXiv:1504.02009 [hep-ex].
+\bibitem{E1206114}  C. Hyde-Wright, B. Michel, C. Munoz Camacho and J. Roche, JLab experiment E12-06-114.
+\bibitem{E1206119} F. Sabati\'e, A. Biselli, V. Burkert, L. Elouadrhiri, M. Gar\c{c}on, M. Holtrop, D. Ireland, K. Joo, W. Kim, JLab experiment E12-06-119.
+\bibitem{E1212010}  L. Elouadrhiri, H. Avakian, V. Burkert, M. Guidal, M. Lowry, L. Pappalardo, and S. Procureur, JLab experiment E-12-12-010, conditionally approved.
+\bibitem{E07007} C. Munoz Camacho, C. Hyde-Wright, P.-Y. Bertin, JLab experiment E07-007.
+\bibitem{E1213010} C. Munoz Camacho, R. Paremuzyan, T. Horn, JLab experiment E12-13-010. 
+\bibitem{E08025} C.H. Hyde, P.-Y. Bertin, A. Camsonne, JLab Experiment E08-025.
+\bibitem{batta} Technical Design Report of the CLAS12 Forward Tagger, {\rm http://www.ge.infn.it/\textasciitilde batta/jlab/ft-tdr.2.0.pdf}.
+\bibitem{Goertz2002} St. Goertz, W. Meyer, and G. Reichertz, Progress in Particle and Nuclear Physics {\bf 49} (2002) 403.
+\bibitem{Court1993} G.R. Court, D.W. Gifford, P. Harrison, W.G. Heyes, and M.A. Houlden, Nucl. Instr. Meth. {\bf A 324}, 433 (1993). 
+\bibitem{Court2004} G.R. Court, {\it et al.}, Nucl. Instr. Meth. {\bf A 527}, 253 (2004).
+\bibitem{Dulya1997}  C. Dulya, {\it et al}, Nucl. Instr. and Meth. A \textbf{398} (1997) 109.
+\bibitem{Kwaltine2013} N. D. Kwaltine, PhD thesis, University of Virginia, 2013.
+\bibitem{Slifer2007} K. Slifer, ``Proceedings of the 12th International Workshop on Polarized Ion Sources, Targets, and Polarimetry'', Upton, NY (2007) 330.
+\bibitem{McKee2004} P. McKee, Nucl. Instr. Meth. {\bf A 526}, 60 (2004).
+\bibitem{giles} R.T. Giles {\it et al.}, Nucl. Instr. Meth. {\bf A 252}, 41 (1986).
+\bibitem{elton_paper} E. Smith {\it et al.}, Nucl. Instr. Meth. {\bf A 432}, 265 (1999).
+\bibitem{vitali} V. Baturin {\it et al.}, Nucl. Instr. Meth. {\bf A 562}, 327 (2006).
+\bibitem{mauri} M. Ungaro, private communication.
+\bibitem{birks} J.B. Birks, Proc. Phys. Soc. {\bf A64}, 874 (1951).
+\bibitem{daria_wiki} D. Sokhan, http://clasweb.jlab.org/wiki/index.php/Daria .
+\bibitem{silvia_wiki} S. Niccolai, {\rm http://clasweb.jlab.org/rungroups/e1-dvcs/wiki/index.php/CLAS12 neutron detector:update on simulation (September 2008)}.
+\bibitem{ahmed} A. El Aloui and E. Voutier, CLAS-NOTE 2009-024.
+\bibitem{harut} H. Avakyan, private communication.
+\bibitem{paris} M. Lacombe et al., Phys. Rev C {\bf 21} (1980) 861.
+\bibitem{daria_eg1dvcs} D. Sokhan, analysis underway. 
+\bibitem{peter_exclusive} P. Bosted {\rm https://www.jlab.org/Hall-B/secure/eg1-dvcs/bosted/Exclusive/exclnote.pdf}.
+\bibitem{raffa}  R. De Vita, private communication.
+\bibitem{sidis_prop} A. Avakian {\it et al.}, JLab conditionally approved proposal C12-11-111. 
+\bibitem{procureur} S. Procureur, private communication.  
+\bibitem{afanasev} A.V. Afanasev {\it et al.}, J. Exp. Theor. Phys. {\bf 102}, 220 (2006).
+\bibitem{kuhn} S. Kuhn, A. Deur, V. Dharmawardane, K. Griffioen, D. Crabb, Y. Prok, T. Forest, Jefferson Lab Experiment E12-06-109.
+\bibitem{schedule} {\rm https://www.jlab.org/Hall-B/clas12-web/clas12-expt1.jpg}.
+
+\end{thebibliography}
+
+\end{document}

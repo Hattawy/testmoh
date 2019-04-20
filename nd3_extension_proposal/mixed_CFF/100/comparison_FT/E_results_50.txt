@@ -1,0 +1,19 @@
+50 j 4 i 3 k 1 value -0.65625 error 3.6629
+50 j 4 i 3 k 2 value -0.15419 error 1.24012
+50 j 4 i 3 k 3 value 0.0184981 error 0.527372
+50 j 4 i 3 k 4 value 0.092428 error 0.266119
+                   
+50 j 3 i 2 k 1 value -100 error 0
+50 j 3 i 2 k 2 value 0.270933 error 0.839063
+50 j 3 i 2 k 3 value 0.993656 error 0.393873
+50 j 3 i 2 k 4 value 0.923304 error 0.104735
+                   
+50 j 2 i 1 k 1 value -1.68222 error 4.77284
+50 j 2 i 1 k 2 value 0.405564 error 0.769076
+50 j 2 i 1 k 3 value 0.383481 error 0.333224
+50 j 2 i 1 k 4 value 0.174094 error 0.166677
+                   
+50 j 2 i 2 k 1 value 1.1891 error 2.58138
+50 j 2 i 2 k 2 value 0.507446 error 0.349792
+50 j 2 i 2 k 3 value 0.322086 error 0.220915
+50 j 2 i 2 k 4 value 0.198576 error 0.110974

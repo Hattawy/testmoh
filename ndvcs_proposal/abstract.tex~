@@ -1,0 +1,33 @@
+%%%%%%%%% espcrc1.tex %%%%%%%%%%
+%
+% $Id: espcrc1.tex 1.2 2000/07/24 09:12:51 spepping Exp spepping $
+%
+\documentclass[12pt,oneside]{article}
+\usepackage{graphics}
+\usepackage{epsf}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=0.7in,bmargin=0.5in,lmargin=0.4in,rmargin=0.4in}
+%\setcounter{secnumdepth}{3}
+%\setcounter{tocdepth}{3}
+\usepackage{graphics}
+\usepackage{setspace}
+\usepackage{epsf}
+\doublespacing
+\usepackage{rotating}
+\begin{document}
+\pagestyle{plain}
+
+\title{Deeply Virtual Compton Scattering on the Neutron
+\\
+ with CLAS at 11 GeV}
+
+\maketitle
+\noindent\author{A. Fradi, B. Guegan, M. Guidal, S. Niccolai\footnote{contact person, email: silvia@jlab.org}, S. Pisano, D. Sokhan (IPN Orsay)\\A. El Alaoui\footnote{co-spokesperson} (Argonne National Laboratory)\\M. Battaglieri, R. De Vita, M. Osipenko, G. Ricco, M. Ripani, M. Taiuti (INFN Genova)\\ E. De Sanctis, M. Mirazita\footnote{co-spokesperson}, S. Anefalos Pereira, P. Rossi (INFN Frascati)\\ E. Voutier (LPSC Grenoble)\\  J. Ball, M.~Gar\c con, H. Moutarde, S. Procureur, F. Sabati\'e (SPhN-CEA Saclay) \\ A. D'Angelo, C. Schaerf, V. Vegna (Universit\`a di Roma 2 - Tor Vergata) \\ J. Annand, D. Ireland, R. Kaiser, \\K. Livingston, G. Rosner, B. Seitz, G. Smith (University of Glasgow)}
+\abstract{}
+
+Measuring Deeply Virtual Compton Scattering on a neutron target is one of the necessary steps to complete our understanding of the structure of the nucleon in terms of Generalized Parton Distributions. Neutron targets play a complementary role to transversely polarized proton targets in the determination of the GPD $E$, the least known and constrained GPD that enters Ji's angular momentum sum rule. We propose to measure beam-spin asymmetries for neutron DVCS ($ed\to e'n\gamma(p)$) with the upgraded 11-GeV CEBAF polarized-electron beam and the CLAS12 detector. For the detection of the recoil neutron, necessary to ensure the exclusivity of the reaction after having detected the scattered electron and the DVCS photon, we will construct a scintillator-barrel detector to be placed in the Central Detector, between the CTOF and the solenoid magnet. This Central Neutron Detector (CND) will be made of three layers of scintillator paddles (48 paddles per layer), coupled two-by-two at the front with semi-circular light guides and read at the back by photomultipliers placed outside of the high magnetic-field region and connected to the bars via 1-meter-long bent light guides. Simulations and R\&D studies have proven the experimental feasibility of this project. A prototype of the CND, covering two of the 48 azimuthal bins, is under construction. In order to achieve average statistical errors of about 15\% on 780 4-dimensional ($Q^2$, $x_B$, $-t$, $\phi$) kinematic bins, we request 80 days of running on a deuteron target. 
+
+\end{document}

@@ -1,0 +1,8 @@
+void plot_shields()
+{
+  gSystem->Load("libPhysics");
+  gROOT->SetStyle("Plain");
+  gStyle->SetPalette(1);
+  gStyle->SetOptStat(0);
+  gStyle->SetOptFit(111);
+

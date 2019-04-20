@@ -1,0 +1,15 @@
+Updates since last CLAS12 workshop:
+- new solenoid magnet design (symmetric, cryo pipe on top)
+- solved mechanical interference with CTOF
+- tested shielding for PMTs in magnetic field
+
+Plan for next months:
+- build one sector (2 phi bins, 3 radial layers) 
+- tests of DAQ configuration and timing performances in cosmic rays for this sector
+- finalizing mechanical design for the whole detector
+- October 2011: request of funds to IN2P3 to build the whole detector (300 keuros/3 years)
+
+Longer term plan:
+- purchase of scintillators, light guides and materials for mechanical structure in 2012
+- purchase of PMTs and associated equipment in 2013
+- ready for installation in 2014

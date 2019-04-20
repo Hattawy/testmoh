@@ -1,0 +1,50 @@
+\section{Motivation for the run-group extension request}
+This proposal is being submitted in response to the specific requests made by PAC43 in the report motivating the conditional approval of Experiment C12-15-004. 
+Here we request the extension to 110 days, plus overhead, of the existing CLAS12 run-group Cb, which currently has 50 approved days of running of 11 GeV electron beam on a longitudinally polarized ND$_3$ target. 
+The physics topics that will be studied thanks to this extensions cover two categories of the experimental program for the 12-GeV upgrade of Jefferson Lab: 
+\begin{itemize}
+\item{``The longitudinal structure of the hadrons (Unpolarized and polarized parton distribution functions - PDFs)'', with the measurement of deep inelastic scattering on longitudinally polarized deuterium (this proposal extends the already approved CLAS12 experiment E12-06-109);}
+\item{``The 3D structure of the hadrons (Generalized Parton Distributions - GPDs - and Transverse Momentum Distributions - TMDs)'', with the measurement of deeply virtual Compton scattering (DVCS) and semi-inclusive deep inelastic scattering (SIDIS) on longitudinally polarized neutron (for the SIDIS case, this proposal extends the already approved CLAS12 experiments E12-07-107 and E12-09-009).}
+\end{itemize}
+For both of these two categories, which are the main focus of the experimental program of CLAS12, the issue of quark-flavor separation of the three kinds of parton distributions extracted from the data (PDFs, GPDs, and TMDs) is fundamental. From the experimental point of view, flavor separation requires to take data to measure DIS, SIDIS and DVCS on both hydrogen and deuterium targets. Ideally, the statistical weight of proton and neutron data should be equal. The currently approved experimental program of CLAS12 foresees, on the one hand, an almost equal number of allocated days for unpolarized proton and deuterium targets (100 for the former, 80 for the latter). On the other hand, in the case of longitudinally polarized targets hydrogen has an allocated beam time (120 days) which is more than twice the one currently approved for deuterium (50 days). This discrepancy becomes even bigger considering that the polarization of the neutrons in ND$_3$ ($\sim 40$\%) is half of that of protons in NH$_3$ ($\sim 80$\%), and that the cross sections on the neutron are typically about half of those on the proton. Doubling the currently approved run-time on ND$_3$ will bring the deuteron statistics closer to that of the proton. 
+
+In the case of DIS, increasing the statistics on polarized deuteron by a factor of two will reduce the uncertainty on polarized parton distributions for $d$ quarks, in the large-$x$ region, as well as for gluons and the strange quark sea at moderate-to-large $x$. This will be important to understand nuclear effects on the extraction of $\Delta d$ at high $x$, and to map out the asymptotic behavior of all quark distributions provided by Jefferson Lab's 12-GeV beam. 
+
+In the case of SIDIS, the benefits of an increased statistics on ND$_3$ will be mostly evident in the high-$p_T$ region, where the existing TMD-based models are less constrained and their predictions for the SIDIS single and double target-spin asymmetries differ the most. Such benefits will be particularly important for the kaon channels, for which the statistics are considerably smaller than for pions. Moreover, the use of the Forward Tagger, for a subset of the running time, will impact very favorably the $\pi^0$ channel, increasing the coverage in the forward region. 
+
+As far as DVCS is concerned, the neutron sector is basically unexplored, so far. An experiment to measure beam-spin asymmetries for neutron-DVCS with an unpolarized deuterium target is currently approved for CLAS12 (and labeled ``high impact'' by the PAC), but no measurements of single and double target-spin asymmetries exist nor are planned, as of today, for longitudinally polarized deuterium target. Combining DVCS observables measured at the same kinematic points allows to extract, in a model-independent way, the Compton Form Factors (CFFs), which are linked to the GPDs. 80 days are currently approved for unpolarized deuteron. In the polarized-target case, the maximum neutron luminosity achievable with CLAS12 is about an order of magnitude (3/20) smaller than for the unpolarized-target case, and the neutron polarization is $\sim 40$\%, but, on the plus side, the expected size of the target-spin asymmetry (TSA) for nDVCS is, on average, about a factor of 5 bigger than the beam-spin asymmetry (BSA): this means that matching the running time of unpolarized and polarized deuterium will lead to relative errors for the BSA and the TSA not too far off from each other (roughly a factor of 2 bigger relative errors for the TSA than for the BSA), and improve the coverage and precision on the extracted neutron CFFs. The utilization of the Forward Tagger in the 50 days of the extension, moreover, would permit to improve the $\phi$ coverage of the asymmetries, and thus the statistical precision on the CFFs, especially for the low-$t$ kinematics, which are the most crucial for Ji's sum rule. The latter relates the total angular momentum of the quarks to the second $x$-moments of the sum of two of the GPDs, at $t=0$.
+
+\section{Running conditions and beam-time request}
+This extension request aims to reach a total of 100 days of production running on ND$_3$, plus a 25 days of ``overhead'' runs, which includes polarized-target maintenance, runs on carbon target for background studies, and Moeller runs to measure the beam polarization. 
+
+The beam current will be of 10 nA, corresponding to a total luminosity on ND$_3$ of $10^{35}$ cm$^{-2}$s$^{-1}$ and to a luminosity per neutron of $1.4 \cdot 10^{34}$ cm$^{-2}$s$^{-1}$. 
+
+The experimental setup for the already approved 50 days and for 50 more days that we request will remain unchanged (it includes the standard CLAS12 and the ND$_3$ longitudinally polarized target). For 10 of the 110 days requested in this proposal, the inclusion of the Forward Tagger will allow to detect low-angle photons and thus increase the acceptance and precision at low $t$ for nDVCS observables, and also increase the coverage for the study of the $\pi^0$ channel in SIDIS. 
+
+The beam-time request for the extended run-group Cb is detailed in Table~\ref{beam_time_summary}. 
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|c||c|}
+%\hline
+%Testing and commissioning & 2 days\\
+\hline
+Production data taking at $10^{35}$ cm$^{-2}$s$^{-1}$ on ND$_3$ & 100 days (50 of which are already approved)\\
+\hline
+Production data taking at $0.5\cdot 10^{35}$ cm$^{-2}$s$^{-1}$ on ND$_3$ & 10 days (with FT)\\
+\hline
+Target work & 12 days\\
+\hline
+Production data taking on $^{12}$C target & 10 days\\
+\hline 
+Moeller polarimeter runs & 3 days\\
+\hline
+\hline
+Total beam time request & 135 days\\
+\hline
+\end{tabular}
+\caption{Beam-time request for the extension of Run-group Cb, including the already approved 50 days on ND$_3$ and $\sim 12$ days of overhead. }
+\label{beam_time_summary}
+\end{center}
+\end{table}
+

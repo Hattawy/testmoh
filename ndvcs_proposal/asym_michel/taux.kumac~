@@ -1,0 +1,108 @@
+macro taux
+
+set *
+opt *
+ve/de *
+zone
+
+set ymgu 3.5
+set ygti 1.
+set xmgr 1.5
+set ymgl 3.5 
+set gsiz 0.6
+set vsiz 0.5
+set ysiz 40
+set xsiz 45
+set yhti 1.
+set asiz 0.55
+set xlab 2.6
+set ylab 1.7
+set xval 0.5
+set yval 0.5
+opt nbox
+|opt logy
+|opt grid
+set *fon -131
+
+ve/read x1,upup1,updn1,dnup1,dndn1,tot1 ass_bat.dat
+ve/read x1,upup1,updn1,dnup1,dndn1,tot1 /projet/nucleon/ndvcs2/ndvcs_xbin1_qbin1_tbin2.dat
+
+*ve/read phit,sect,nt count_rates_bat.dat
+*vscal nt 4. nt
+ve/read phit,nt counts_fix_112.dat
+*counts_fix_212.dat
+
+sigma a1=(upup1+updn1-dnup1-dndn1)/(upup1+updn1+dnup1+dndn1)
+
+ve/cr a2(12) r
+ve/copy a1 a2
+vscal a1(1) -1 a2(12)
+vscal a1(2) -1 a2(11)
+vscal a1(3) -1 a2(10)
+vscal a1(4) -1 a2(9)
+vscal a1(5) -1 a2(8)
+vscal a1(6) -1 a2(7)
+ve/cr x2(12) r
+ve/copy x1 x2
+vscal x1(1) -1 x2(12)
+vscal x1(2) -1 x2(11)
+vscal x1(3) -1 x2(10)
+vscal x1(4) -1 x2(9)
+vscal x1(5) -1 x2(8)
+vscal x1(6) -1 x2(7)
+vbias x2(12) 360. x2(12)
+vbias x2(11) 360. x2(11)
+vbias x2(10) 360. x2(10)
+vbias x2(9) 360. x2(9)
+vbias x2(8) 360. x2(8)
+vbias x2(7) 360. x2(7)
+
+ve/copy a2 ass
+ve/cr xerr(12) R
+
+pol=.85
+sigma err=(1-[pol]*abs(ass))*(1-[pol]*abs(ass))
+vdiv err nt err
+sigma err=sqrt(err)/[pol]
+
+ve/cr x3(14)
+ve/cr a3(14)
+ve/copy x2(1:12) x3(2:13)
+ve/copy a2(1:12) a3(2:13)
+ve/inp x3(1) 0.
+ve/inp x3(14) 360.
+ve/inp a3(1) 0.
+ve/inp a3(14) 0.
+
+*****************************************************************************
+sigma l1=nco(x1)
+sigma l1t=nco(phit)
+sigma l3=nco(x3)
+
+zone 1 1
+title_global ''
+
+for/file 66 asym_ndvcs_newcuts.eps
+meta 66 -113
+
+set xwin 0.001
+set xval 0.
+set lwid 1.
+
+set xval 0
+null 0 360. -0.15 .15
+atitle '[F] (deg.)' ''
+set dmod 1
+hplot/errors phit ass xerr err l1t 20 0.3 
+*graph l3 x3 a3 cs
+set dmod 2
+set dmod 4
+
+set lwid 7.5
+set dmod 1
+set dmod 2
+set dmod 4
+set xval 1000.
+set lwid 1.
+
+close 66

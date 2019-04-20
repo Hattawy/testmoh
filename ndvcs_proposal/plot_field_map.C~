@@ -1,0 +1,69 @@
+#include <map>
+#include <string>
+
+void plot_field_map()
+{
+  gSystem->Load("libPhysics");
+  gROOT->SetStyle("Plain");
+  gStyle->SetPalette(1);
+  gStyle->SetOptStat(0);
+  gStyle->SetOptFit(111);
+
+  outfile = new TFile("field.root","RECREATE");
+
+  Float_t x,y;
+  Float_t z;
+  Float_t fx,fy;
+  Float_t fz;
+  Float_t theta,B;
+
+  Int_t nlines=0;
+
+  h1 = new TH2D("h1","Absolute value of the field (T);z (m); r(m)",1000,-3,3,1000,-3,3);
+  h2 = new TH2D("h2","#theta;z (m); r(m)",1000,-3,3,1000,-3,3);
+
+  tree = (TTree*) new TTree("Field","Field");
+  tree->Branch("x",&x,"x/F");
+  tree->Branch("y",&y,"y/F");
+  tree->Branch("z",&z,"z/F");
+  tree->Branch("fx",&fx,"fx/F");
+  tree->Branch("fy",&fy,"fy/F");
+  tree->Branch("fz",&fz,"fz/F");
+  tree->Branch("theta",&theta,"theta/F");
+  tree->Branch("B",&B,"B/F");
+
+  ifstream file("/projet/nucleon/silvia/ndvcs_proposal/field_map.txt");
+  string line;
+
+  if (file.is_open())
+    {
+      while (!file.eof())
+	{
+	  file>>x>>y>>z>>fx>>fy>>fz;
+	  nlines++;
+	  tree->Fill();
+	  
+	  theta = 180./TMath::Pi()*TMath::ATan(fx/fz);
+	  B = TMath::Sqrt(fx*fx+fz*fz);
+	  h1->Fill(x,z,B);
+	  h2->Fill(x,z,theta);
+	  h1->Fill(-x,-z,B);
+	  h2->Fill(-x,-z,theta);
+	  h1->Fill(-x,z,B);
+	  h2->Fill(-x,z,theta);
+	  h1->Fill(x,-z,B);
+	  h2->Fill(x,-z,theta);
+	}
+      file.close();
+    }
+
+
+  outfile->cd();
+  tree->Write();
+  outfile->Write();
+  outfile->Close();
+
+
+  
+
+}

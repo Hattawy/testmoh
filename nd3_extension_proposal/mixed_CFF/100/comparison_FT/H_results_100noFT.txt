@@ -1,0 +1,19 @@
+100 noFT j 4 i 3 k 1 value 1.4452 error 1.06983
+100 noFT j 4 i 3 k 2 value 0.793764 error 0.422573
+100 noFT j 4 i 3 k 3 value 0.42801 error 0.220291
+100 noFT j 4 i 3 k 4 value 0.210407 error 0.177266
+
+100 noFT j 3 i 2 k 1 value 2.25879 error 0.605773
+100 noFT j 3 i 2 k 2 value 1.18619 error 0.299665
+100 noFT j 3 i 2 k 3 value 0.329799 error 0.341491
+100 noFT j 3 i 2 k 4 value 0.383058 error 1.00964
+
+100 noFT j 2 i 1 k 1 value 3.88986 error 2.26212
+100 noFT j 2 i 1 k 2 value 1.53893 error 0.877323
+100 noFT j 2 i 1 k 3 value 0.848922 error 0.696694
+100 noFT j 2 i 1 k 4 value 0.154731 error 0.268652
+
+100 noFT j 2 i 2 k 1 value 0.909038 error 0.875998
+100 noFT j 2 i 2 k 2 value 0.759964 error 0.165033
+100 noFT j 2 i 2 k 3 value 0.358169 error 0.260248
+100 noFT j 2 i 2 k 4 value 0.0899766 error 0.123355

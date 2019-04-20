@@ -1,0 +1,318 @@
+%%%%%%%%% espcrc1.tex %%%%%%%%%%
+%
+% $Id: espcrc1.tex 1.2 2000/07/24 09:12:51 spepping Exp spepping $
+%
+\documentclass[12pt,oneside]{article}
+\usepackage{graphics}
+\usepackage{epsf}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=0.7in,bmargin=0.6in,lmargin=0.5in,rmargin=0.5in}
+%\setcounter{secnumdepth}{3}
+%\setcounter{tocdepth}{3}
+\usepackage{graphics}
+\usepackage{setspace}
+\usepackage{epsf}
+%\doublespacing
+\usepackage{rotating}
+%\textwidth  6.0 in
+%\textheight 8.5 in
+%\oddsidemargin 0.15in
+%\makeatletter
+\begin{document}
+%\pagestyle{plain}
+\begin{flushright}
+\vspace{-1cm}
+\centerline{UPDATE E11-003}
+\centerline{For Jefferson Lab PAC38}
+
+\end{flushright}
+
+\vskip 0.5cm
+
+{\Large{\centerline {\bf Deeply Virtual Compton Scattering on the Neutron}}}
+{\Large{\centerline {\bf with CLAS12 at 11 GeV}}}
+
+\vskip 0.5cm
+
+\centerline{A. Fradi, B. Guegan, M. Guidal, S. Niccolai\footnote{co-spokesperson}$^,$\footnote{contact person, email: silvia@jlab.org}, S. Pisano, D. Sokhan}
+\centerline{\it Institut de Physique Nucl\'eaire d'Orsay, 91406 Orsay, France}
+\vskip 0.2cm
+\centerline{A. Avakian, V. Baturin, V.D. Burkert, L. Elouadrhiri, T. Kageya, V. Kubarovsky\footnotemark[1]}
+\centerline{\it Jefferson Lab, Newport News, VA 23606, USA}
+\vskip 0.2cm
+\centerline{A. El Alaoui\footnotemark[1] \it Argonne National Laboratory, Argonne, IL 60439, USA}
+\vskip 0.2cm
+\centerline{M. Aghasyan, S. Anefalos Pereira, E. De Sanctis, D. Hasch, V. Lucherini, M. Mirazita\footnotemark[1], P. Rossi}
+\centerline{\it INFN, Laboratori Nazionali di Frascati, 00044 Frascati, Italy}
+\vskip 0.2cm
+\centerline{M. Battaglieri, R. De Vita, M. Osipenko, G. Ricco, M. Ripani, M. Taiuti}
+\centerline{\it INFN, Sezione di Genova, 16146 Genova, Italy}
+\vskip 0.2cm
+\centerline{C. Maieron, Y. Perrin, E. Voutier \it LPSC Grenoble, 38025 Grenoble, France}
+\vskip 0.2cm
+\centerline{J. Ball, M.~Gar\c con, P. Konczykowski, B. Moreno, H. Moutarde, S. Procureur, F. Sabati\'e}
+\centerline{\it SPhN-CEA Saclay, 91191 Gif-sur-Yvette, France}
+\vskip 0.2cm
+\centerline{A. D'Angelo, C. Schaerf, V. Vegna \it Universit\`a di Roma 2 - Tor Vergata, 00173 Roma, Italy}
+\vskip 0.2cm
+\centerline{J. Annand, M. Hoek, D. Ireland, R. Kaiser, K. Livingston, D. MacGregor, G. Rosner, B. Seitz, G. Smith}
+\centerline{\it University of Glasgow, Glasgow G12 8QQ, United Kingdom}
+\vskip 0.2cm
+\centerline{A. Kubarovsky, N. Saylor, P. Stoler \it Renesslaer Polytechnic Institute, Troy, NY 12180-3590, USA}
+\vskip 0.2cm
+\centerline{A. Biselli \it Fairfield University, Fairfield Connecticut 06824}
+\vskip 0.2cm
+\centerline{M. Ungaro \it University of Connecticut, Storrs, Connecticut 06269}
+\vskip 0.2cm
+\centerline{L. Barion, M. Contalbrigo, G. Ciullo, P. Lenisa, L. Pappalardo}
+\centerline{\it INFN Sezione di Ferrara, 44100 Ferrara, Italy}
+\vskip 0.2cm
+\centerline{F. Meddi, G.M. Urcioli \it INFN Sezione di Roma, 00185 Roma, Italy}
+\vskip 0.2cm
+\centerline{D.M. Castelluccio, E. Cisbani, F. Garibaldi, S. Frullani \it INFN Roma - Sanit\`a, 00161 Roma, Italy}
+\vskip 0.2cm
+\centerline{M. Capogni \it INFN Roma and ENEA Casaccia, 00123 S. Maria di Galeria - Roma, Italy}
+\vskip 0.2cm
+\centerline{V. Bellini, A. Giusa, F. Mammoliti, G. Russo, L. Sperduto, C. Sutera}
+\centerline{\it INFN Sezione di Catania, 95123 Catania, Italy}
+\vskip 0.2cm
+\centerline{R. De Leo \it Universit\`a di Bari, 70121 Bari, Italy}
+\vskip 0.2cm
+\centerline{R. Perrino \it INFN Sezione di Lecce, 73100 Lecce, Italy}
+%\maketitle
+\vskip 0.5cm
+{\large{\centerline{\bf A CLAS Collaboration proposal}}
+\newpage
+\abstract{}
+The experiment E11-003, aimed at measuring the beam-spin asymmetry for the DVCS reaction on the neutron, was proposed at PAC 37 and approved. This document provides an update on the work that has been done, particularly on the technical side, since the proposal was submitted in December 2010. Issues raised by the TAC and the PAC are also addressed. 
+
+\setcounter{page}{1}
+%\newpage
+%\tableofcontents{}
+%\newpage
+%\listoftables{} 
+%\listoffigures{}
+%\newpage
+\section{Summary of proposal}
+Measuring Deeply Virtual Compton Scattering on the neutron (n-DVCS) is one of the necessary steps to complete our understanding of the structure of the nucleon in terms of Generalized Parton Distributions (GPDs). n-DVCS allows to operate a flavor decomposition of the GPDs and plays a complementary role to DVCS on a transversely polarized proton target in the determination of the GPD $E$, the least known and least constrained GPD that enters Ji's angular momentum sum rule. To start the experimental program of DVCS on the neutron, we propose to measure beam-spin asymmetries (BSA) for n-DVCS ($ed\to en\gamma(p)$) with the upgraded 11-GeV CEBAF polarized-electron beam and the CLAS12 detector. The sensitivity of this observable to the GPD $E$ is expected to be maximal for values of $(Q^2, x_B)$ which are attainable only with an 11-GeV beam (\cite{proposal}, Fig.~2). 
+
+For the detection of the recoil neutron, necessary to ensure the exclusivity of the reaction after having detected the scattered electron and the DVCS photon, we are constructing a scintillator-barrel detector to be placed in the Central Detector, between the CTOF and the solenoid magnet (the n-DVCS neutrons are in fact expected to be emitted mostly at backward angles). The Central Neutron Detector (CND) will be made of three radial layers of scintillator paddles (48 paddles per layer), coupled two-by-two upstream with semi-circular light guides and read downstream by photomultipliers placed outside of the high magnetic-field region and connected to the bars via 1.5-m-long bent light guides (Fig.\ref{side_view}). Our GEANT4-based simulations, calibrated with measurements in cosmic rays carried out on a prototype, show that the efficiencies and resolutions obtainable with this detector, as well as its photon-rejection capabilities, match the requirements of the experiment. 
+
+In order to provide an accurate mapping of the n-DVCS beam-spin asymmetry over the available 4-dimensional ($Q^2$, $x_B$, $-t$, $\phi$) phase space, we request 90 days of running on a liquid deuterium target with the maximum available beam energy, 11 GeV, and 85\% of beam polarization. Figure~\ref{asym} shows the expected sensitivity of the extracted asymmetry to different values of the GPD $E$ (parameterized, in the VGG model \cite{VGG}, by the quarks' total angular momenta $J_u$ and  $J_d$), for one of the 49 $Q^2$-$x_B$-$t$ bins for which we will extract the $\phi$ dependence (in 12 $\phi$ bins) of the BSA. 
+
+\begin{figure}[h]  
+\begin{center}
+\epsfxsize=10 cm
+\epsffile{cnd_side_view.eps}
+\caption{Side-view drawing of the Central Neutron Detector.}
+\label{side_view}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]  
+\begin{center}
+\epsfxsize=10 cm
+\epsffile{asym_ndvcs_newcuts.eps}
+\caption{Beam-spin asymmetry for n-DVCS, as a function of $\phi$, for $<Q^2>=2.75$ GeV$^2$, $<x_B>=0.225$, $<-t>=0.35$  GeV$^2$, and $\Delta Q^2=1.5$ GeV$^2$, $\Delta t=0.3$ GeV$^2$, $\Delta x_B=0.15$, $\Delta\phi=30^{\circ}$. The points illustrate the error bars expected for our experiment. The curves are predictions by the VGG model \cite{VGG} for different values of the quarks' orbital momenta $J_u$ and $J_d$ that, in this model, parametrize the GPD $E$: $J_u=0.1$ and $J_d=0.1$ for the solid line, $J_u=0.3$ and $J_d=0.1$ for the dashed line, $J_u=0.3$ and $J_d=0.3$ for the dotted line, and  $J_u=0.3$ and $J_d=-0.1$ for the dashed-dotted line.}
+\label{asym}
+\end{center}
+\end{figure}
+
+\section{Technical updates on the CND}
+Since the submission of the proposal, a lot of work has been carried out at the test lab of the IPN Orsay in order to choose and dimension the constituent elements of the CND. Progress has also been made on the mechanical design and on the integration with the other elements of the CLAS12 Central Detector. 
+
+\subsection{Choice of PMTs}
+Tests with cosmic rays on our prototype of the CND (1 radial layer, 2 azimuthal coupled bins), following the same experimental procedure described in the proposal (\cite{proposal}, page 27), were performed to compare the timing resolutions that can be obtained using two kinds of photomultipliers from Hamamatsu: R2083 - that was used for the tests described in the proposal - and R9779, a new PMT which is sold at 1/3 of the price of the R2083. The results are shown in Fig.~\ref{test_pmts}. The resolutions obtained with the R9779 were at most 10\% worse than for R2083. 
+
+\begin{figure}[h]  
+\begin{center}
+\epsfxsize=10 cm
+\epsffile{test_pmts.eps}
+\caption {Timing resolution for each PMT (``direct'' - D - and ``neighbor'' - N -, the blue points are obtained with the R2083 and the red ones with the R9779)  as a function of hit position along the scintillator bar.}
+\label{test_pmts}
+\end{center}
+\end{figure}
+
+We have rerun our GEMC-based Monte-Carlo simulations to verify how such a change in timing resolution would affect the performances of the detector in terms of particle identification and resolutions. The results indicate a negligible impact on the performances of the CND, if equipped with the R9779 Hamamatsu PMTs (see Fig.~\ref{pid_plot}, illustrating the photon/neutron separation capabilities of the CND for the two PMTs). Therefore, they will be adopted. 
+
+\begin{figure}[h]  
+\begin{center}
+\epsfxsize=10 cm
+\epsffile{pid_layer2_alt.eps}
+\caption {Results of CND simulations: $\beta$ versus momentum for neutrons and photons as a function of momentum, for the two different PMTs tested.  The error bars are defined as $3\sigma$, where $\sigma$ is the fitted gaussian width of each $\beta$ peak. Blue: photons, R2083; red: neutrons, R2083; purple: photons, R9779; green: neutrons, R9779.}
+\label{pid_plot}
+\end{center}
+\end{figure}
+
+\subsection{Tests of shieldings in magnetic field}
+The purpose of the 1.5-m-long light guides of the CND is to bring the light from the scintillators to the photomultipliers, which will be placed out of the region of high magnetic field. However, some stray field persists even in this region, and the photomultipliers need to be shielded. The two plots of Fig.~\ref{field_map} \cite{lionel} show the value and the angle of the magnetic field produced by the CLAS12 solenoid as a function of position. The average magnitude of the field that will be present at the location of the PMTs of the CND will be 215 G, and its direction will be at an angle $\theta\sim-70^{\circ}$ with respect to the beam direction. Considering that the axis of the PMTs will be at around $37^{\circ}$ (Fig.~\ref{side_view}), the magnetic field will be roughly perpendicular to it. In these conditions, a cylindrical shielding made up by a layer of mu-metal and one of mild steel (a few mm thick) is quoted in the literature as the optimal solution \cite{Hamamatsu}. 
+Some preliminary tests have been recently carried out, using a solenoid magnet available at the Linear Accelerator Laboratory (LAL) of the Orsay Campus, in order to determine the thickness of the mild-steel shielding. An R9779 phototube was shielded with a cylindrical 1-mm-thick layer of mu-metal and two different thicknesses of mild-steel cylindrical shielding (2.5 mm and 5 mm), and then placed inside the magnet, at its center. Light from a LED was sent onto the photocathode via an optic fiber, and the amplitude of the output voltage of the tube was recorded on a digital oscilloscope as a function of the value of the magnetic field. Due to the limited space within the magnet and the size of the phototube, the maximum relative angle between the field direction and the PMT axis that could be tested was $30^{\circ}$. The results, summarized in Fig.~\ref{field_tests}, while showing little effect for a $30^{\circ}$ variation of the angle between the field and the PMT axis, point to the need of using the thicker shielding in order to sustain a 215-G field. However, as in our measurement the field was roughly parallel to the axis of the tube --- configuration for which the cylidrical shielding is supposed to be less effective \cite{Hamamatsu} ---, these results are a worst-case scenario. More measurements are planned for the end of this month with a different setup to test the effect of perpendicular field and determine the optimal thickness of the shielding. 
+
+\begin{figure}[h]  
+%\begin{center}
+\epsfxsize=9.5 cm
+\epsffile{field_good.eps}
+\epsfxsize=9.5 cm
+\epsffile{theta.eps}
+\caption{Absolute value in Tesla (left) and orientation in degrees (right) of the magnetic field of the CLAS12 solenoid as a function of the position (radial and longitudinal). The three triangles indicate the position of the three PMTs for one azimuthal segment of the CND. }
+\label{field_map}
+%\end{center}
+\end{figure}
+
+\begin{figure}[h]  
+\begin{center}
+\epsfxsize=10 cm
+\epsffile{field_tests_comparison.eps}
+\caption{Amplitude (in mV) of the otput voltage of the R9779 PMT as a function of magnetic field (in Gauss), for two different orientations ($\theta=0^{\circ}$ and $\theta=30^{\circ}$) of the phototube in the field and for two different thicknesses of the mild-steel shielding (2.5 mm and 5 mm). The blue arrow indicates the absolute value of the field produced by the CLAS12 solenoid at the position where the PMTs of the CND will be placed.}
+\label{field_tests}
+\end{center}
+\end{figure}
+
+\subsection{Mechanical integration}
+As pointed out by the TAC, given the limited space available in the Central Detector of CLAS12, a central issue is the mechanical integration of the CND with the other sub-detectors. As shown in Fig.~\ref{old_interference}, the old design of the solenoid magnet did not allow to place the light guides of the CND at a sufficiently high angle in order to avoid mechanical interference with the CTOF. Also, the CTOF scintillator bars were too short and thus their light guides blocked the way for the CND ones.  
+
+\begin{figure}[h]  
+\begin{center}
+%\vspace{-2cm}
+\epsfxsize=10 cm
+\epsffile{old_interference.eps}
+\caption{Schematic drawing of a side-view of the CLAS12 Central Detector, with the old solenoid and CTOF design: the mechanical interference between the CND (in white/gray) and the CTOF (in blue) is shown by the red ellipse.}
+\label{old_interference}
+\end{center}
+\end{figure}
+
+The following modifications (Fig.~\ref{magnet_modifications}) have been proposed to the manufacturer of the solenoid in order to solve this problem:
+\begin{itemize}
+\item{increase the opening angle of the magnet at the backward side, from $30^{\circ}$ to $41^{\circ}$,}
+\item{shortening of the length of the inner cylinder by 6.5 cm,}
+\item{move the cryogenic pipe from the side to the top of the magnet.}
+\end{itemize}
+
+\begin{figure}[h] 
+\vspace{-2cm}
+\begin{center}
+\epsfxsize=11.5 cm
+\epsffile{Plans-Modifications.ps}
+\caption{Old design of the CLAS12 solenoid (left). On the right, the modifications required to insert the CND in the Central Detector are shown in red.}
+\label{magnet_modifications}
+\end{center}
+\end{figure}
+
+All the proposed modifications have been accepted by the factory in charge of the construction of the magnet. The CTOF group also agreed to increase by a few centimeters the length of their paddles: the final design of the CND, with no more mechanical interferences, is shown at the bottom of Fig.~\ref{ctof_interference}.
+
+Table~\ref{table_plan} summarizes the plan for the construction of the Central Neutron Detector. 
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+Summer 2011 & Completion of tests of shieldings in magnetic field\\
+\hline
+Fall 2011 & Construction of one sector (2 $\phi$ bins, 3 radial layers)\\
+ & Tests of DAQ in cosmic rays with this sector\\
+\hline
+2012 & Purchase of scintillators and light guides\\
+& Polishing, wrapping\\
+& Completion of mechanical design and purchase of material for mechanics\\
+\hline
+2013 & Purchase of PMTs, of their associated equipment, and electronics\\
+\hline
+2014 & Assembly, shipping to JLab and installation in the Central Detector\\
+\hline
+
+\end{tabular}
+\caption{Timeline for the construction of the Central Neutron Detector.}
+\label{table_plan}
+\end{center}
+
+\end{table}
+
+\begin{figure}[h]  
+\begin{center}
+\epsfxsize=10 cm
+\epsffile{cnd_ctof_before_after.eps}
+\caption{Top: side-view drawing of the Central Detector with the new solenoid design and the old CTOF design, showing the interference with the CTOF due to its too short scintillator bars. Bottom: increasing by a few centimeters the length of the CTOF paddles, the CND fits in the Central Detector.}
+\label{ctof_interference}
+\end{center}
+\end{figure}
+
+\section{Issues raised by the PAC}
+\subsection{$\Delta^+$ background}
+In the proposal, the background coming from $en\pi^0(p)$ events, in which one of the two decay photons escapes detection, was quantified, and the procedure to subtract it was described. However, the issue of the contamination to the sample of $en\gamma$ events coming from the $\Delta$VCS channel on the proton ($ed\to e \Delta^+ \gamma(n) \to en\pi^+\gamma(n)$) was raised by the PAC. The cross section for this channel is in fact expected to be of the same order of magnitude as the one for n-DVCS, as Fig.\ref{delta_theory} illustrates for one typical kinematics. 
+\begin{figure}[h]  
+\begin{center}
+\epsfxsize=10 cm
+\epsffile{n-delta.ps}
+\caption{VGG-model calculations \cite{marc} for the 5-fold differential cross sections for DVCS on the neutron (solid line) and $\Delta$VCS on a proton target (dashed line), in the $n\pi^+$ decay mode, as a function of $x_B$, for $-t=0.4$ GeV$^2$, $Q^2=2.75$ GeV$^2$, $\phi=80^{\circ}$.}
+\label{delta_theory}
+\end{center}
+\end{figure}
+In order to quantify the contamination from $\Delta$VCS events, Monte-Carlo studies have been performed, using the following procedure: 
+\begin{itemize} 
+\item{a phase-space generator for the $ed\to e \Delta^+ \gamma n\to en\pi^+\gamma n$ final state was run, for $Q^2>1$ GeV$^2$, $W>2$ GeV;}
+\item{for each kinematic point produced by the generator, both the 7-fold ($\frac{d\sigma}{dQ^2dx_Bdtd\phi dW_{\pi n} d\Omega_{\pi}}$) and 4-fold ($\frac{d\sigma}{dQ^2dx_Bdtd\phi}$) differential cross sections were computed, using the model by Vanderhaegen {\it et al.} \cite{marc}, and saved in the output ntuple;}
+\item{for each kinematic point and for each final-state particle, the CLAS12 acceptance was computed using the CLAS12 Fast MC code, and also saved in the ntuple;}
+\item{the events for which one electron, one neutron and one photon and {\it no positive pions} were in the CLAS12 acceptance were considered accepted.}
+\end{itemize}
+\begin{figure}[h]  
+\begin{center}
+\epsfxsize=10 cm
+\epsffile{piplus_acc.eps}
+\caption{In black: polar angle versus momentum for the decay $\pi^+$ of the $\Delta^+$ in the $ed \to e\Delta^+\gamma n$ final state, simulated according to phase-space distribution. In red: after the acceptance cuts for the n-DVCS channel have been applied, using the CLAS12 Fast Monte Carlo code.}
+\label{piplus_acc}
+\end{center}
+\end{figure}
+
+Figure \ref{piplus_acc}, showing $\theta$ as a function of momentum for $\pi^+$s before (black) and after (red) acceptance cuts, demonstrates how the majority of the $\pi^+$s escaping detection are emitted at low momenta, below $\sim300$ MeV. It is important to remind that the current version of FastMC has not been updated yet with the parameters of the central tracker in its final version (SVT plus MicroMegas). Also, here we have conservatively assumed to veto {\it fully identified} $\pi^+$s, while in the actual experiment we will reject all tracks passing through the Central Tracker, without requiring PID, and this should considerably reduce the minimum momentum of vetoed particles and thus the contamination. However, even within these approximations, the results of this work are reassuring. The acceptance for $\Delta$VCS (requiring detection of $en\gamma$ and {\it no $\pi^+$}) is in fact more than a factor of two smaller than the one for n-DVCS, as it is shown in Fig.~\ref{acc_phi_delta}, where 3 methods have been used to evaluate the $\Delta$VCS part, as described in the caption, giving good agreement. Figure~\ref{delta_mm} shows the invariant mass of the $en\gamma$ system for:
+\begin{itemize}
+\item{n-DVCS simulated events (black), after acceptance cuts, weighed by the 4-fold differential cross section, calculated using the code \cite{ahmed} described in the proposal (\cite{proposal}, page 15)}
+\item{$\Delta$VCS simulated events (green), after acceptance cuts, weighed by the 4-fold differential cross section coming from the model of Ref.~\cite{marc}.}
+\end{itemize}
+As a ``ballpark'' cross check, the $en\gamma$ missing mass of the $\Delta$VCS simulated phase-space events after acceptance cuts is also plotted (red), renormalized to the height of the n-DVCS peak and then rescaled by a factor ($3/5\cdot 0.5$) accounting for the relative cross sections (Fig.~\ref{delta_theory}) and acceptances (Fig.~\ref{acc_phi_delta}) of the two reactions. 
+The results between the ``accurate'' method (green) and the ``ballpark'' one (red) differ by about a factor of two. By cutting on the $en\gamma$ missing mass at 1.05 GeV (cut chosen in the original proposal), the contamination from $\Delta$VCS events is between 1\% (red) and 4\% (green). This estimate is, of course, model dependent, and may vary as a function of the kinematics. However, it hints to the fact that the $\Delta$VCS background will be much smaller than the $\pi^0$ one (estimated, in the proposal, to be around 15\%). Nevertheless, as for the $\pi^0$ background, we plan to evaluate and subtract the $\Delta$VCS background by extracting $ed\to en\pi^+\gamma(n)$ events from our data (requiring, in this case, the detection the $\pi^+$), and computing by Monte Carlo, for each 4-dimensional bin, the ratio of acceptances for the topologies with and without detected $\pi^+$. Namely, the number of $\Delta$VCS events to subtract will be given by:
+\begin{eqnarray}\label{background_formula}
+N_{en\gamma(\pi^+)}(Q^2,x_B,-t,\phi)=N^{data}_{en\gamma\pi^+}(Q^2,x_B,-t,\phi)\cdot \frac{N^{MC}_{en\gamma(\pi^+)}(Q^2,x_B,-t,\phi)}{N^{MC}_{en\gamma\pi^+}(Q^2,x_B,-t,\phi).}
+\end{eqnarray}
+
+\begin{figure}[h]  
+\begin{center}
+\epsfxsize=10 cm
+\epsffile{acceptances_phi_delta_new.eps}
+\caption{Comparison of the acceptances, as a function of $\phi$ and integrated over the other kinematic variables, for the n-DVCS channel (black points) and the $\Delta$VCS channel, computed with phase-space simulation without cross-section weight (red), with 4-fold cross-section weights (blue), with 7-fold cross-section weights (green).}
+\label{acc_phi_delta}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]  
+\begin{center}
+\epsfxsize=10 cm
+\epsffile{mm_good.eps}
+\caption{Missing mass of the $en\gamma$ system for: n-DVCS (black) and $\Delta$VCS (green) simulated events, after acceptance and weighing by the respective 4-fold cross sections; in red the $en\gamma$ missing mass for the $\Delta$VCS simulated events after acceptance cuts, renormalized to the height of the n-DVCS peak and then rescaled by a factor ($3/5\cdot 0.5$) accounting for the relative cross sections (Fig.~\ref{delta_theory}) and acceptances (Fig.~\ref{acc_phi_delta}) of the two reactions.}
+\label{delta_mm}
+\end{center}
+\end{figure}
+
+\subsection{Check of the effects of FSI}
+Another comment of the PAC pointed to the necessity to evaluate the effects of Final State Interactions. This will be definitely pursued via the comparison of the asymmetries and cross sections for the DVCS reaction on the bound proton in the deuterium target ($ed\to ep\gamma(n)$), that we will extract from our data, and on the free proton ($ep\to ep\gamma$), that will be measured in another dedicated experiment~\cite{sabatie} with CLAS12. 
+
+\subsection{Neutron detector: efficiency and calibrations}
+The need to cross-check in an empirical way the neutron-detection efficiency of the CND determined by Monte-Carlo simulations was emphasized by one of the PAC readers. Since the CND will be installed in the Central Detector from the start of the CLAS12 experimental program, we will be able to achieve this by measuring the $ep\to en\pi^+$ reaction using the data taken during any experiment on proton target with an 11-GeV beam. Following the method described in \cite{ioana}, we will select the $ep\to e\pi^+ X$ events and cut on the $e\pi^+$ missing mass around the neutron peak to ensure the exclusivity of the $ep\to en\pi^+$ final state. The kinematics of the neutron will be therefore determined. We will then check, for each $(\theta_n,p_n)$ bin, whether or not a neutron was detected in the corresponding sector of the CND. The ratio, for each bin, of detected neutrons to the total number of events will give us the efficiency. 
+
+Finally, energy and time calibrations for each of the 144 paddles of the CND will be performed during the experiment using real data, selecting charged particles detected and identified by the Central Tracker and the CTOF. 
+
+%\newpage
+\begin{thebibliography}{999}
+\bibitem{proposal} S. Niccolai, A. El Alaoui, V. Kubarovsky, M. Mirazita {\it et al.}, Jefferson Lab Experiment E11-003.
+\bibitem{VGG} M. Vanderhaeghen, P.A.M. Guichon, M. Guidal, Phys. Rev. D {\bf 60}, 094017 (1999).
+\bibitem{lionel} L. Quettier, private communication.
+\bibitem{Hamamatsu} ``Photomultiplier tubes - Basics and applications'', Hamamatsu handbook, 2006. 
+\bibitem{marc} P.A.M. Guichon, L. Mosse, M. Vanderhaegen, Phys. Rev. D {\bf 68}, 034018 (2003). 
+\bibitem{ahmed} A. El Alaoui and E. Voutier, CLAS Note 2009-024.
+\bibitem{sabatie} F. Sabati\'e {\it et al.}, Jefferson Lab Experiment E12-06-119. 
+\bibitem{ioana} I. Niculescu {\it et al.}, CLAS-NOTE 2001-006. 
+\end{thebibliography}
+
+\end{document}

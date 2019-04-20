@@ -1,0 +1,21 @@
+\section{Physics motivation: neutron GPDs and flavor separation}
+Measuring neutron GPDs is complementary to measuring proton GPDs: %Measuring both sets of GPDs allows to carry out a quark-flavor separation. 
+quark-flavor separation of the GPDs becomes possible only if both the proton and neutron GPDs are measured. 
+Since we can express 
+\begin{eqnarray}
+{\cal H}^p(\xi, t)=\frac{4}{9}{\cal H}^u(\xi, t)+\frac{1}{9}{\cal H}^d(\xi, t)
+\end{eqnarray}
+and
+\begin{eqnarray}
+{\cal H}^n(\xi, t)=\frac{1}{9}{\cal H}^u(\xi, t)+\frac{4}{9}{\cal H}^d(\xi, t)  
+\end{eqnarray}
+(and similarly for ${\cal E}$, ${\tilde {\cal H}}$ and ${\tilde {\cal E}}$), it immediately follows that
+\begin{eqnarray}
+{\cal H}^u(\xi, t)=\frac{9}{15}(4 {\cal H}^p(\xi, t)-{\cal H}^n(\xi, t))
+\end{eqnarray}
+and
+\begin{eqnarray}
+{\cal H}^d(\xi, t)=\frac{9}{15}(4 {\cal H}^n(\xi, t)-{\cal H}^p(\xi, t)).  
+\end{eqnarray}
+An extensive experimental program devoted to the measurement of GPDs using the DVCS channel on a proton target has been approved at Jefferson Lab, in particular with CLAS12. Single-spin asymmetries with polarized beam and/or linearly or transversely polarized proton targets, as well as unpolarized and polarized cross sections, will be measured with high precision and a vast kinematic coverage. If a similar program is performed on the neutron, the flavor separation of the various GPDs will be possible. 
+An experiment to measure the beam-spin asymmetry for nDVCS, particularly sensitive to the GPD $E_n$, has already been approved \cite{proposal}. The present proposal focuses on the extraction of two more observables, the target single-spin asymmetry and the (beam-target) double-spin asymmetry for nDVCS on a longitudinally polarized deuterium target. The next sections will outline those GPDs to which the nDVCS observables we plan to measure show the most sensitivity. 

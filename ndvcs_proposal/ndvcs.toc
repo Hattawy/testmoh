@@ -1,0 +1,25 @@
+\contentsline {section}{\numberline {1}Introduction}{8}
+\contentsline {section}{\numberline {2}Physics motivation: neutron GPDs}{9}
+\contentsline {section}{\numberline {3}First n-DVCS experiment: JLab Hall A}{11}
+\contentsline {section}{\numberline {4}Central Neutron Detector: motivation and requirements}{15}
+\contentsline {section}{\numberline {5}CND: R \& D studies and final detector design}{25}
+\contentsline {subsection}{\numberline {5.1}Summary of early R\&D studies}{26}
+\contentsline {subsection}{\numberline {5.2}Final design and performances}{27}
+\contentsline {subsection}{\numberline {5.3}Costs and financial support for the CND}{31}
+\contentsline {section}{\numberline {6}Simulation and reconstruction}{31}
+\contentsline {subsection}{\numberline {6.1}Efficiency}{33}
+\contentsline {subsection}{\numberline {6.2}Angular and momentum resolutions}{35}
+\contentsline {subsection}{\numberline {6.3}Particle Identification}{36}
+\contentsline {section}{\numberline {7}Backgrounds on the CND}{38}
+\contentsline {subsection}{\numberline {7.1}Physics background}{38}
+\contentsline {subsection}{\numberline {7.2}Electromagnetic background}{41}
+\contentsline {section}{\numberline {8}$en\pi ^0(p)$ background }{42}
+\contentsline {section}{\numberline {9}Count-rate estimate}{47}
+\contentsline {section}{\numberline {10}Systematic uncertainties}{49}
+\contentsline {section}{\numberline {11}Summary of experimental setup and trigger configuration}{51}
+\contentsline {section}{\numberline {12}Beam-time request}{52}
+\contentsline {section}{\numberline {13}Conclusions}{52}
+\contentsline {section}{\numberline {A}Details on simulation and reconstruction}{54}
+\contentsline {subsection}{\numberline {A.1}Digitisation of signals from CND paddles in GEMC}{54}
+\contentsline {subsection}{\numberline {A.2}Hit reconstruction}{55}
+\contentsline {section}{\numberline {B}Projected results}{58}

@@ -1,0 +1,308 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.4.5)  5 JUL 2011 12:35
+entering extended mode
+ %&-line parsing enabled.
+**ndvcs_update_new.tex
+(./ndvcs_update_new.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: dvips.def on input line 91.
+
+(/usr/share/texmf-texlive/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+(/usr/share/texmf-texlive/tex/generic/epsf/epsf.sty
+This is `epsf.tex' v2.7.3 <23 July 2005>
+\epsffilein=\read1
+\epsfframemargin=\dimen103
+\epsfframethickness=\dimen104
+\epsfrsize=\dimen105
+\epsftmp=\dimen106
+\epsftsize=\dimen107
+\epsfxsize=\dimen108
+\epsfysize=\dimen109
+\pspoints=\dimen110
+) (/usr/share/texmf-texlive/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/usr/share/texmf-texlive/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texmf-texlive/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+(/usr/share/texmf-texlive/tex/latex/base/latin1.def
+File: latin1.def 2008/03/30 v1.1d Input encoding file
+))
+(/usr/share/texmf-texlive/tex/latex/geometry/geometry.sty
+Package: geometry 2008/12/21 v4.2 Page Geometry
+
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+\Gm@cnth=\count87
+\Gm@cntv=\count88
+\c@Gm@tempcnt=\count89
+\Gm@bindingoffset=\dimen111
+\Gm@wd@mp=\dimen112
+\Gm@odd@mp=\dimen113
+\Gm@even@mp=\dimen114
+\Gm@dimlist=\toks17
+)
+(/usr/share/texmf-texlive/tex/latex/setspace/setspace.sty
+Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
+
+Package: `setspace' 6.7 <2000/12/01>
+) (/usr/share/texmf-texlive/tex/latex/rotating/rotating.sty
+Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
+
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+\Gin@req@height=\dimen115
+\Gin@req@width=\dimen116
+)
+(/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count90
+\rotFPtop=\skip43
+\rotFPbot=\skip44
+\rot@float@box=\box26
+\rot@mess@toks=\toks18
+) (./ndvcs_update_new.aux)
+\openout1 = `ndvcs_update_new.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 24.
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+)
+*geometry auto-detecting driver*
+*geometry detected driver: dvips*
+
+Package geometry Warning: The marginal notes would fall off the page.
+     Add 17.865pt and more to the right margin.
+
+-------------------- Geometry parameters
+paper: class default
+landscape: --
+twocolumn: --
+twoside: --
+asymmetric: --
+h-parts: 36.135pt, 542.02501pt, 36.135pt
+v-parts: 50.58878pt, 701.01878pt, 43.36243pt
+hmarginratio: --
+vmarginratio: --
+lines: --
+heightrounded: --
+bindingoffset: 0.0pt
+truedimen: --
+includehead: --
+includefoot: --
+includemp: --
+driver: dvips
+-------------------- Page layout dimensions and switches
+\paperwidth  614.295pt
+\paperheight 794.96999pt
+\textwidth  542.02501pt
+\textheight 701.01878pt
+\oddsidemargin  -36.135pt
+\evensidemargin -36.135pt
+\topmargin  -58.68121pt
+\headheight 12.0pt
+\headsep    25.0pt
+\footskip   30.0pt
+\marginparwidth 44.0pt
+\marginparsep   10.0pt
+\columnsep  10.0pt
+\skip\footins  10.8pt plus 4.0pt minus 2.0pt
+\hoffset 0.0pt
+\voffset 0.0pt
+\mag 1000
+
+(1in=72.27pt, 1cm=28.45pt)
+-----------------------
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 35.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 40.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 40.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 40.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 40.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 40.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 87.
+[1
+
+]
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 89.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 100.
+
+Overfull \hbox (12.39265pt too wide) in paragraph at lines 104--105
+[]\T1/ptm/m/n/10.95 In or-der to pro-vide an ac-cu-rate map-ping of the n-DVCS 
+beam-spin asym-me-try over the avail-able 4-dimensional
+ []
+
+(cnd_side_view.eps
+)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(asym_ndvcs_newcuts.eps
+)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(test_pmts.eps
+)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(beta_res_photons_neutrons_layer2.eps
+)
+(beta_res_old_PMT_layer2.eps
+)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[1]
+(field_good.eps
+)
+(theta.eps
+)
+
+Overfull \hbox (29.31013pt too wide) in paragraph at lines 159--162
+[][] [] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(field_tests_comparison.eps
+)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(old_interference.eps
+)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 190.
+
+ (/usr/share/texmf-texlive/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 190.
+
+(Plans-Modifications.ps
+)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(cnd_ctof_before_after.eps
+)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 244.
+(n-delta.ps
+)
+[3]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[4]
+(piplus_acc.eps
+)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5]
+(acceptances_phi_delta_new.eps
+)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(mm_good.eps
+)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6] [7] [8] [9] [10] (./ndvcs_update_new.aux) )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 87 ({)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 1505 strings out of 495062
+ 18998 string characters out of 1182645
+ 79407 words of memory out of 3000000
+ 4676 multiletter control sequences out of 15000+50000
+ 28989 words of font info for 42 fonts, out of 3000000 for 9000
+ 28 hyphenation exceptions out of 8191
+ 26i,9n,19p,1488b,364s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on ndvcs_update_new.dvi (11 pages, 31004 bytes).

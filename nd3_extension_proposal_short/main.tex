@@ -1,0 +1,435 @@
+%%%%%%%%% espcrc1.tex %%%%%%%%%%
+%
+% $Id: espcrc1.tex 1.2 2000/07/24 09:12:51 spepping Exp spepping $
+%
+\documentclass[12pt]{report}
+\usepackage{footnote}
+\usepackage{graphics}
+\usepackage{sidecap}
+\usepackage{layouts}
+\usepackage{epsf}
+\usepackage{epsfig}
+\input epsf
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage{geometry}
+%\geometry{verbose,tmargin=0.7in,bmargin=0.5in,lmargin=0.4in,rmargin=0.4in}
+%\setcounter{secnumdepth}{3}
+%\setcounter{tocdepth}{3}
+\geometry{verbose,letterpaper,tmargin=1in,bmargin=1in,lmargin=1.in,rmargin=0.7in}
+%\pagestyle{plain}
+\usepackage{graphicx,psfrag}
+\usepackage{setspace}
+\usepackage{epsf}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bm}
+%\doublespacing
+\usepackage{rotating}
+\raggedbottom
+\textwidth  6.0 in
+\textheight 8.5 in
+%\oddsidemargin 0.15in
+%\makeatletter
+\newcommand{\plus}{\raisebox{.3\height}{\scalebox{.6}{+}}}
+\newcommand{\minus}{\raisebox{0\height}{\scalebox{1}{-}}}
+\begin{document}
+\pagestyle{plain}
+\begin{flushright}
+\vspace{-1cm}
+\centerline{New Research Proposal to Jefferson Lab PAC 43}
+\def\beqn{\begin{eqnarray}}
+\def\eeqn{\end{eqnarray}}
+
+\def\Journal#1#2#3#4{{#1} {\bf #2} (#4) #3 }
+\def\PPNP{{ Prog. Part. Nucl. Phys.}}
+\def\NIMA{{ Nucl. Instrum. Meth.} A}
+\def\NIMB{{ Nucl. Instrum. Meth.} B}
+\def\NCA{{ Nuovo Cimento} A}
+\def\PHYS{{ Physica}}
+\def\NPA{{ Nucl. Phys.} A}
+\def\MATH{{ J. Math. Phys.}}
+\def\PRO{{ Prog. Theor. Phys.}}
+\def\NPB{{ Nucl. Phys.} B}
+\def\PLA{{ Phys. Lett.} A}
+\def\PLB{{ Phys. Lett.} B}
+\def\PLD{{ Phys. Lett.} D}
+\def\PL{{ Phys. Lett.}}
+\def\PRL{ Phys. Rev. Lett.}
+\def\PREV{ Phys. Rev.}
+\def\PREP{ Phys. Rep.}
+\def\PRA{{ Phys. Rev.} A}
+\def\PRD{{ Phys. Rev.} D}
+\def\PRC{{ Phys. Rev.} C}
+\def\PRB{{ Phys. Rev.} B}
+\def\ZPC{{ Z. Phys.} C}
+\def\ZPA{{ Z. Phys.} A}
+\def\ANNP{ Ann. Phys. (N.Y.)}
+\def\RMP{{ Rev. Mod. Phys.}}
+\def\CHEM{{ J. Chem. Phys.}}
+\def\INT{{ Int. J. Mod. Phys.} E}
+\def\INTA{{ Int. J. Mod. Phys.} A}
+\def\EPJC{{ Eur. Phys. J.} C}
+\def\JHEP{{ JHEP}}
+\def\SJNP{{ Sov. J. Nucl. Phys.}}
+%
+\newcommand{\la}{\langle}
+\newcommand{\ra}{\rangle}
+\newcommand{\zh}{z}
+\newcommand{\xbj}{x_{\scriptscriptstyle B}}
+%
+\newcommand{\Epgb}{$\vec ep~\rightarrow~ep(p,\Delta, N^*)\gamma~$}
+\newcommand{\Epgl}{$\vec e\vec p~\rightarrow~ep(p,\Delta, N^*)\gamma~$}
+\newcommand{\Eppiz}{$ep~\rightarrow~ep\pi^0~$}
+\newcommand{\Enpip}{$ep~\rightarrow~en\pi^+~$}
+\newcommand{\EppiD}{$ep~\rightarrow~e\pi \Delta~$}
+\newcommand{\Epeta}{$ep~\rightarrow~ep\eta~$}
+\newcommand{\Epr}{$ep~\rightarrow~ep\rho~$}
+\newcommand{\EpX}{$ep\rightarrow epX~$}
+\newcommand{\EpKY}{$ep~\rightarrow~eKY~$}
+\newcommand{\vEpg}{$\vec ep~\rightarrow~ep\gamma~$}
+\newcommand{\xidef}{$\xi=x_B\frac{1+\frac{Delta^2}{2Q^2}}{2-x_B+x_B\frac{Delta^2}{2Q^2}}$}
+\def\gevc2{(GeV/c)$^2$}
+\newcommand{\EpgX}{$ep~\rightarrow~ep\gamma X~$}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\topfraction}{0.95}
+\renewcommand{\bottomfraction}{0.95}
+\renewcommand{\textfraction}{0.05}
+\renewcommand{\floatpagefraction}{0.95}
+\end{flushright}
+
+\bigskip
+%\vskip 0.5cm
+{\Large{\centerline {\bf Proposal of extension of the CLAS12 run-group Cb (ND$_3$ target)}}}
+%{\Large{\centerline {\bf CLAS12 and a longitudinally polarized deuterium target}}}
+
+\vskip 0.5cm
+
+\centerline{S. Niccolai\footnote{co-spokesperson} $^,$\footnote{contact person, email: silvia@jlab.org}}
+\centerline{\it Institut de Physique Nucl\'eaire d'Orsay, 91406 Orsay, France}
+\vskip 0.4cm
+\centerline{A. Biselli\footnotemark[1]}
+\centerline{\it Fairfield University, Fairfield Connecticut 06824}
+\vskip 0.4cm
+\centerline{C. Keith\footnotemark[1]}
+\centerline{\it Thomas Jefferson National Laboratory, Newport News, VA 23606}
+\vskip 0.4cm
+\centerline{S. Pisano\footnotemark[1]}
+\centerline{\it INFN, Laboratori Nazionali di Frascati, 00044 Frascati, Italy}
+\vskip 0.4cm
+\centerline{D. Sokhan\footnotemark[1]}
+\centerline{\it University of Glasgow, Glasgow, Scotland}
+\vskip 0.4cm
+\centerline{S. Kuhn\footnotemark[1]}
+\centerline{\it Old Dominion University, Norfolk, VA 23529}
+\vskip 0.4cm
+%\centerline{A. Avakian\footnotemark[1]}
+%\centerline{\it Old Dominion University, Norfolk VA}
+%\date{}
+\newpage
+
+\abstract{The multi-dimensional mapping of the structure of the nucleon in terms of its partonic degrees of freedom is nowadays one of the main challenges of hadronic physics, and is at the core of the CLAS12 experimental program. Precise measurements of polarized parton distribution functions (PDFs) via deep inelastic scattering (DIS) give information on the spin content of the nucleon; the extraction of transverse momentum dependent distributions (TMDs) from semi-inclusive DIS (SIDIS) data provides the correlation between the transverse spin and momentum of the quarks; the generalized parton distributions (GPDs), accessible in exclusive electroproduction channels, finally, encode the interplay between the longitudinal momentum, the transverse position, and the spin of the quarks in the nucleon. An extensive experimental program geared towards the extraction of all the cited distributions is already scheduled for CLAS12, mainly on proton target. In particular, 120 days on polarized NH3 target are approved. However, in order to perform the flavor separation of PDFs, TMDs, and GPDs, measurements on neutron target, with comparable statistical precision, are necessary as well. This proposal aims at extending the running time of the approved run-group Cb, which currently requires 50 days of an 11-GeV electron beam impinging on a longitudinally polarized deuterium target (plus 15 days for target overhead and beam-polarization measurements), to 100 days of duration (plus 25 days of overhead). The driving motivations for this extension are the measurements of single and double target-spin asymmetries for deeply virtual Compton scattering on longitudinally polarized neutrons (nDVCS), of double and single spin asymmetries for SIDIS (with both pions and kaons), and double spin asymmetries for DIS on the deuteron. Considering the lower polarization of the neutron on ND3 (40\%) with respect to the one of the proton in NH3 (80\%) and the smaller cross sections on neutrons than on protons, the overall neutron figure-of-merit is up to a factor of 4 smaller than for the proton. At least, matching the integrated luminosity on protons with that on neutrons is necessary to perform the flavor separation of the aforementioned parton distributions, binned in the relevant kinematic variables. 
+These data will also allow pioneering first-time measurements, such as polarized timelike Compton scattering on the neutron and deeply-virtual meson electroproduction off a polarized neutron.}
+
+\setcounter{page}{1}
+\newpage
+%\tableofcontents{}
+%\newpage
+%\listoftables{} 
+%\listoffigures{}
+%\newpage
+
+\chapter{DIS on Longitudinally Polarized Deuterium}
+{\center Proposal to increase the beam time allocation for the ND$_3$ part of Experiment 12-06-109 (approved by PAC 30 and
+rated ``A'' by PAC 36.)\\}
+\centerline{Sebastian Kuhn\footnote{co-spokesperson} $^,$\footnote{contact person, email: skuhn@odu.edu}}
+\centerline{\it  Old Dominion University, Norfolk VA 23529.}
+
+\abstract
+{We are proposing to add 50 more days of running to the 50 days already approved for 
+the portion of Experiment 12-06-109 with CLAS12 and 11 GeV polarized electrons on 
+longitudinally polarized  deuterons (ND$_3$). This additional beam time (plus 10-15 days overhead)
+will significantly reduce the uncertainty on polarized parton distributions, in
+particular for d quarks, in the limit of large $x$, as well as for gluons and the strange quark sea
+at moderate to large $x$. It will bring the deuteron data at least closer to parity with the
+already approved 120 days of data on the proton, thus maximizing the information 
+that can be extracted from a single experiment, as well as making more significant comparisons
+with other experiments (e.g. on $^3$He) possible. This will be important to assess the
+impact of nuclear effects on the extraction of $\Delta d$ at high $x$, and to guarantee
+that the unique opportunity to finally map out the asymptotic behavior of all quark distribution
+provided by Jefferson Lab's 12 GeV beam will be optimally utilized. In this proposal,
+we are providing updated estimates of various quantities that can be extracted from these
+data under the assumption of a doubling for the integrated luminosity on the deuteron.
+%In addition, we will need about 5 days (no beam) for target changes, anneals and polarization reversal.
+}
+
+%\input{dis/EG12update}
+\begin{thebibliography}{99}
+\addtocontents{toc}{\vspace*{12pt}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Intro begin
+%------ DATA FROM----------------------
+\bibitem{Kuhn:2008sy}
+  S.~E.~Kuhn, J.~P.~Chen and E.~Leader,
+  %``Spin Structure of the Nucleon - Status and Recent Results,''
+Prog.\ Part.\ Nucl.\ Phys.\  {\bf 63}, 1 (2009), hep-ph/0812.3535.
+
+\bibitem{Alguard:1976bm}
+  M.~J.~Alguard {\it et al.},
+  %``Deep inelastic scattering of polarized electrons by polarized protons,''
+%  \Journal{\PRL}{37}{1261}{1976};
+  Phys. Rev. Lett. {\bf 37}, 1261 (1976).
+ G.~Baum {\it et al.},
+  %``A new measurement of deep inelastic e p asymmetries,''
+%  \Journal{\PRL}{51}{1135}{1983}.
+  Phys. Rev. Lett. {\bf 51}, 1135 (1983). 
+\bibitem{EMCfinal}
+J. Ashman {\it et~al.} [EMC Collaboration],
+Nucl. Phys. {\bf B328}, 1 (1989).
+
+\bibitem{Bjorken:1968dy}
+  J.~D.~Bjorken,
+  %``Asymptotic Sum Rules At Infinite Momentum,''
+%  \Journal{\PREV}{179}{1547}{1969};
+  Phys. Rev. {\bf 179}, 1547 (1969). 
+  %%CITATION = PHRVA,179,1547;%%
+  J.~R.~Ellis and R.~L.~Jaffe,
+  %``A Sum Rule For Deep Inelastic Electroproduction From Polarized Protons,''
+%  \Journal{\PRD}{9}{1444}{1974}
+%  [Erratum- \Journal{\PRD}{10}{1669}{1974}].
+  Phys. Rev. {\bf D 9}, 1444 (1974), Erratum Phys. Rev. {\bf D 10}, 1669 (1974).
+ 
+ \bibitem{JAM15}
+ N.~Sato, W.~Melnitchouk, S.E.~Kuhn, J.J.~Ethier, and A.~Accardi,
+% \Journal{\PRD}{93}{074005}{2016}
+ Phys. Rev. {\bf D 93}, 074005 (2016). 
+
+ \bibitem{STAR_jet15}
+L.~Adamczyk {\it et al.}, % [STAR Collaboration],
+Phys. Rev. Lett. {\bf 115}, 092002 (2015).
+
+\bibitem{PHENIX_pi14}
+A.~Adare {\it et al.}, % [PHENIX Collaboration],
+Phys. Rev. D {\bf 90}, 012007 (2014).
+
+\bibitem{PHENIX_pi15}
+A.~Adare {\it et al.}, % [PHENIX Collaboration],
+arXiv:1510.02317 [hep-ex].
+
+\bibitem{STAR_W14}
+L.~Adamczyk {\it et al.}, % [STAR Collaboration],
+Phys. Rev. Lett. {\bf 113}, 072301 (2014).
+
+ \bibitem{PHENIX_W15}
+A.~Adare {\it et al.}, % [PHENIX Collaboration],
+arXiv:1504.07451 [hep-ex].
+
+\bibitem{COMPASS_g13}
+C.~Adolph {\it et al.}, % [COMPASS Collaboration],
+Phys. Rev. D {\bf 87}, 052018 (2013).
+
+\bibitem{COMPASS16}
+C.~Adolph {\it et al.}, % [COMPASS Collaboration],
+Phys. Lett. B {\bf 753}, 18 (2016).
+
+\bibitem{eg1b-d}
+N.~Guler {\it et al.}, % [CLAS Collaboration],
+Phys. Rev. C {\bf 92}, 055201 (2015).
+
+ \bibitem{eg1b-p}
+R.~G.~Fersch, N.~Guler, P.~Bosted, A.~Deur, K.~Griffioen, S.~E.~Kuhn,
+R.~Minehart, Y.~Prok {\it et al.} [CLAS Collaboration]:
+``Precise determination of proton spin structure functions at
+low to moderate $Q^2$ with CLAS'',
+to be published in Phys. Rev. C (2016).
+
+\bibitem{eg1-dvcs}
+Y.~Prok {\it et al.},
+Phys. Rev. C {\bf 90}, 025212 (2014).
+
+\bibitem{E06-014_A1}
+D.~S.~Parno {\it et al.},
+Phys. Lett. B {\bf 744}, 309 (2015).
+
+\bibitem{E06-014_d2}
+M.~Posik {\it et al.},
+Phys. Rev. Lett. {\bf 113}, 022002 (2014).
+
+\bibitem{E01-012}
+P.~Solvignon {\it et al.},
+Phys. Rev. C {\bf 92}, 015208 (2015).
+
+\bibitem{Leader:2006xc}
+  E.~Leader, A.~V.~Sidorov and D.~B.~Stamenov,
+  %``Impact of CLAS and COMPASS data on Polarized Parton Densities and Higher
+  %Twist,''
+%  \Journal{\PRD}{75}{074027}{2007},
+Phys. Rev. {\bf D 75}, 074027 (2007), 
+%  preprint hep-ph/0612360.
+preprint hep-ph/0612360; Eur. Phys. J. ST 162 (2008) 19.
+
+\bibitem{Brodsky:1994kg}
+  S.~J.~Brodsky, M.~Burkardt and I.~Schmidt,
+  %``Perturbative QCD constraints on the shape of polarized quark and gluon
+  %distributions,''
+%  \Journal{\NPB}{441}{197}{1995},
+  Nucl. Phys. {\bf B441}, 197 (1995), 
+  preprint hep-ph/9401328.
+  %%CITATION = NUPHA,B441,197;%%
+
+\bibitem{Avakian:2007xa}
+  H.~Avakian, S.~J.~Brodsky, A.~Deur and F.~Yuan,
+  %``Effect of orbital angular momentum on valence-quark helicity
+  %distributions,''
+%  \Journal{\PRL}{99}{082001}{2007},
+  Phys. Rev. Lett. {\bf 99}, 082001 (2007), 
+  preprint hep-ph/0705.1553.
+  %%CITATION = PRLTA,99,082001;%%
+
+\bibitem{Isgur:1998yb}
+  N.~Isgur,
+  %``Valence quark spin distribution functions,''
+%  \Journal{\PRD}{59}{034013}{1999},
+  Phys. Rev. {\bf D 59}, 034013 (1999), 
+ preprint hep-ph/9809255.
+ %%CITATION = PHRVA,D59,034013;%%
+
+\bibitem{Mayer}
+  M.~Mayer {\it et al.} (CLAS collaboration), 
+  ``Beam-target double spin asymmetry in quasi-elastic electron scattering off the deuteron with CLAS'',
+  paper presently under CLAS AHC review.
+
+\end{thebibliography}
+
+\newpage
+\chapter{Semi-Inclusive Deep Inelastic Scattering on a longitudinally polarized deuterium target}
+
+\centerline{S. Pisano\footnote{co-spokesperson} $^,$\footnote{contact person, email: pisanos@jlab.org}}
+\centerline{\it INFN, Laboratori Nazionali di Frascati, 00044 Frascati, Italy}
+\vskip 0.4cm
+\centerline{S. Niccolai\footnotemark[1]}
+\centerline{\it Institut de Physique Nucl\'eaire d'Orsay, 91406 Orsay, France}
+\vskip 0.4cm
+\centerline{A. Biselli\footnotemark[1]}
+\centerline{\it Fairfield University, Fairfield Connecticut 06824}
+\vskip 0.4cm
+\centerline{C. Keith\footnotemark[1]}
+\centerline{\it Thomas Jefferson National Laboratory, Newport News, VA 23606}
+\vskip 0.4cm
+\centerline{D. Sokhan\footnotemark[1]}
+\centerline{\it University of Glasgow}
+\vskip 0.4cm
+
+\abstract{A comprehensive program to study Transverse Momentum Dependent distribution functions is foreseen for CLAS12. In particular, the E12-07-107 and E12-09-009 experiments aim to access the valence-quark transverse and longitudinal spin distributions through measurements of spin-azimuthal asymmetries in semi-inclusive electroproduction of pions and kaons. They will make use of the upgraded JLab 11 GeV polarized electron beam and the CLAS12 detector with longitudinally polarized proton and deuteron targets. 
+The use of different targets, in conjunction with the detection of various hadrons in the final state, provides access to information about the flavor of the struck quark. As of today, 120 days of beam time are approved for longitudinally polarized proton target (NH$_3$), but only 50 for the deuteron one (ND$_3$). 
+This proposal requests the addition of 50 more days to the CLAS12 Run group Cb (ND$_3$ target). This will be particularly beneficial for the high-$p_T$ region, especially for the $k^-$ channel, where the existing models are less constrained and their predictions for the SIDIS target-spin asymmetries differ the most. 
+Furthermore, an increased statistics on ND$_3$ will permit to measure, for the first time, the semi-inclusive production of hadron pairs on longitudinally polarized deuterium. This can provide a unique access to the poorly known chiral-odd PDFs, which can then be separated according to their flavor via the combination with the results obtained on proton and deuteron targets. 
+
+%Main objectives include studies of correlations of the transverse spin of quarks with their transverse momentum, leading to observable spin and azimuthal asymmetries.  The measurement of the $\sin 2\phi$ azimuthal moment of the semi-inclusive production of hadrons in DIS with longitudinally polarized targets, in particular will provide direct information on spin-orbit correlations by measuring the leading twist transverse momentum dependent (TMD) parton distributions related to the interference between states with different orbital momenta. Measurements with kaons are complementary to measurements with pions and will provide additional information on the Collins fragmentation mechanism. The $p_T$ dependence of the double spin asymmetry will provide additional information on the flavor and polarization dependence of transverse momentum dependence of helicity distributions of quarks, providing complementary to SSA measurements access to spin-orbit correlations. The $x$, $z$, $p_T$ and $Q^2$ dependences of the $\sin 2\phi$ and $\sin\phi$ moments will be studied to probe the underlying T-odd distribution and fragmentation functions. The experiment will use the upgraded CLAS12 detector, 11 GeV highly polarized electron beam and longitudinally polarized solid ammonia targets (NH3 and ND3). Kaon identification in the complete kinematic range will be done by the proposed CLAS12-RICH proximity-focusing detector.  The large acceptance of CLAS12 would allow simultaneous detection of the scattered electrons and leading hadrons from the hadronization of the struck quark, providing information on its flavor and transverse momentum. We request 30 days of runningon NH3 and 50 days of running on ND3, plus overhead and auxiliary measurements.}
+}
+\input{sidis}
+\newpage
+
+\chapter{Deeply Virtual Compton Scattering on the neutron with a longitudinally polarized deuteron target}
+\centerline{S. Niccolai\footnote{co-spokesperson} $^,$\footnote{contact person, email: silvia@jlab.org}}
+\centerline{\it Institut de Physique Nucl\'eaire d'Orsay, 91406 Orsay, France}
+\vskip 0.4cm
+\centerline{A. Biselli\footnotemark[1]}
+\centerline{\it Fairfield University, Fairfield Connecticut 06824}
+\vskip 0.4cm
+\centerline{C. Keith\footnotemark[1]}
+\centerline{\it Thomas Jefferson National Laboratory, Newport News, VA 23606}
+\vskip 0.4cm
+\centerline{S. Pisano\footnotemark[1]}
+\centerline{\it INFN, Laboratori Nazionali di Frascati, 00044 Frascati, Italy}
+\vskip 0.4cm
+\centerline{D. Sokhan\footnotemark[1]}
+\centerline{\it University of Glasgow}
+\vskip 0.4cm
+
+\abstract{Measurements of Deeply Virtual Compton Scattering on the neutron (nDVCS) are necessary for a complete description of nucleon structure in terms of Generalized Parton Distributions (GPDs). Combining DVCS results from both proton and neutron targets will permit the flavor decomposition of the GPDs. An experimental program of nDVCS has commenced at JLab with the already-approved experiment E12-11-003 to measure beam-spin asymmetries over a wide kinematic range using the CLAS12 detector. Here we propose to extend this program by measuring, for the first time, both target-spin and double-spin asymmetries for nDVCS using a longitudinally polarized deuteron target inside CLAS12. The measurements will be made detecting the electron and the photon in the forward part of CLAS12, and the recoil neutron in the recently completed Central Neutron Detector, thus assuring the exclusivity of the nDVCS reaction ($ed\to e'n\gamma(p)$). By fitting these results together with the beam-spin asymmetries measured by E12-11-003 at the same kinematic points, an extraction of several neutron Compton Form Factors (CFFs) can be made. $\Im{\rm m}({\cal E}_n)$ and $\Im{\rm m}({\cal H}_n)$ will be especially well determined thanks to their dominance in the beam- and target-spin asymmetries, respectively. Quark-flavor separation of the GPDs then becomes possible through a combination of the extracted neutron CFFs with those obtained from proton DVCS. In order to provide an accurate mapping of the nDVCS single and double target-spin asymmetries over the available 4-dimensional ($Q^2$ , $x_B$, $-t$, $\phi$) phase space, and thus achieve an accurate extraction of the neutron CFFs accessible from these observables, we request 50 more days of running on a ND$_3$ polarized target to add to the 50 existing ones of Run Group C of CLAS12, plus a total of 25 days of calibration and ancillary runs, with the maximum available beam energy of 11 GeV. This proposal was conditionally approved (C2) by PAC43, with the request to represent it at PAC44 split it into a run-group proposal for the existing 50 days of Run-group Cb and an extension-request proposal for the other 50 days.}
+
+%\input{Introduction}
+%\input{Motivation}
+%\input{Observables}
+%\input{CFF_Extraction}
+%\input{Exp_situation}
+%\input{Setup}
+%\input{Poltar}
+%\input{CND}
+%\input{Analysis}
+%\input{Projections}
+%\input{CFF_Results}
+%\input{Systematics}
+%\input{Request}
+
+
+\newpage
+\begin{thebibliography}{999}
+\bibitem{muller}
+D. M\"uller, D. Robaschik, B. Geyer, F.-M. Dittes, and J. Horejsi, Fortschr. Phys. {\bf 42} (1994) 101.
+\bibitem{ji} X. Ji, Phys. Rev. Lett. {\bf 78} (1997) 610;
+Phys. Rev. D {\bf 55} (1997) 7114.
+\bibitem{rady} A.V. Radyushkin, Phys. Lett. B {\bf 380} (1996) 417; Phys. Rev. D {\bf 56} (1997) 5524.
+\bibitem{collins} J.C. Collins, L. Frankfurt and M. Strikman, Phys. Rev. D {\bf 56} (1997) 2982.
+\bibitem{goeke} K. Goeke, M. V. Polyakov and M. Vanderhaeghen, Prog.\ Part.\ Nucl.\ Phys. {\bf 47} (2001) 401.
+\bibitem{revdiehl} M. Diehl, Phys.  Rept. {\bf 388} (2003) 41.
+\bibitem{revrady} A.V. Belitsky, A.V. Radyushkin, Phys. Rept. {\bf 418} (2005) 1.
+\bibitem{proposal} S. Niccolai, V. Kubarovsky, S. Pisano, and D. Sokhan, JLab experiment E12-11-003.
+\bibitem{belitski} A.V. Belitsky, D. M\"uller, A. Kirchner, Nucl. Phys. B {\bf 629} (2002) 323-392.
+\bibitem{fitmick} M. Guidal, Eur. Phys. J. A {\bf 37} (2008) 319; M. Guidal, H. Moutarde, Eur. Phys. J. A 42 (2009) 71.
+\bibitem{mick_herve} M. Guidal, H. Moutarde, M. Vanderhaeghen, Rep. Prog. Phys. {\bf 76}, 066202 (2013).
+\bibitem{vgg} M. Vanderhaeghen, P.A.M. Guichon, M. Guidal, Phys. Rev. D {\bf 60}, 094017 (1999).
+\bibitem{vgg1} M. Guidal, M. V. Polyakov, A. V. Radyushkin and 
+M. Vanderhaeghen, Phys.\ Rev. D {\bf 72}, 054013 (2005).
+\bibitem{pisano} S. Pisano {\it et al.}, Phys. Rev. {\bf D91}, 052014 (2015).
+\bibitem{erin} E. Seder {\it et al.}, Phys. Rev. Lett. {\bf 114}, 032001 (2015).
+\bibitem{fx} F.-X. Girod {\it et al.}, Phys. Rev. Lett. {\bf 100}, 162002 (2008).
+\bibitem{shifeng} S. Chen {\it et al.}, Phys. Rev. Lett. {\bf 97}, 072002 (2006).
+\bibitem{malek} M. Mazouz et al., Phys.\ Rev.\ Lett. {\bf 99}, 242501 (2007).
+\bibitem{carlos} C. Mu\~noz Camacho {\it et al.} (Hall-A Collaboration), Phys. Rev. Lett. {\bf 97}, 262002 (2006).
+\bibitem{stepan} S. Stepanyan {\it et al.} (CLAS Collaboration), Phys. Rev. Lett. {\bf 87}, 182002 (2001).
+\bibitem{hermes} A. Airapetian {\it et al.} (HERMES Collaboration), JHEP06 {\bf 0806}, 066 (2008); A. Airapetian {\it et al.} (HERMES Collaboration), JHEP {\bf 06}, 019 (2010).
+\bibitem{hs} H.-S. Jo {\it et al.}, arXiv:1504.02009 [hep-ex].
+\bibitem{E1206114}  C. Hyde-Wright, B. Michel, C. Munoz Camacho and J. Roche, JLab experiment E12-06-114.
+\bibitem{E1206119} F. Sabati\'e, A. Biselli, V. Burkert, L. Elouadrhiri, M. Gar\c{c}on, M. Holtrop, D. Ireland, K. Joo, W. Kim, JLab experiment E12-06-119.
+\bibitem{E1212010}  L. Elouadrhiri, H. Avakian, V. Burkert, M. Guidal, M. Lowry, L. Pappalardo, and S. Procureur, JLab experiment E-12-12-010, conditionally approved.
+\bibitem{E07007} C. Munoz Camacho, C. Hyde-Wright, P.-Y. Bertin, JLab experiment E07-007.
+\bibitem{E1213010} C. Munoz Camacho, R. Paremuzyan, T. Horn, JLab experiment E12-13-010. 
+\bibitem{E08025} C.H. Hyde, P.-Y. Bertin, A. Camsonne, JLab Experiment E08-025.
+\bibitem{batta} Technical Design Report of the CLAS12 Forward Tagger, {\rm http://www.ge.infn.it/\textasciitilde batta/jlab/ft-tdr.2.0.pdf}.
+\bibitem{Goertz2002} St. Goertz, W. Meyer, and G. Reichertz, Progress in Particle and Nuclear Physics {\bf 49} (2002) 403.
+\bibitem{Court1993} G.R. Court, D.W. Gifford, P. Harrison, W.G. Heyes, and M.A. Houlden, Nucl. Instr. Meth. {\bf A 324}, 433 (1993). 
+\bibitem{Court2004} G.R. Court, {\it et al.}, Nucl. Instr. Meth. {\bf A 527}, 253 (2004).
+\bibitem{Dulya1997}  C. Dulya, {\it et al}, Nucl. Instr. and Meth. A \textbf{398} (1997) 109.
+\bibitem{Kwaltine2013} N. D. Kwaltine, PhD thesis, University of Virginia, 2013.
+\bibitem{Slifer2007} K. Slifer, ``Proceedings of the 12th International Workshop on Polarized Ion Sources, Targets, and Polarimetry'', Upton, NY (2007) 330.
+\bibitem{McKee2004} P. McKee, Nucl. Instr. Meth. {\bf A 526}, 60 (2004).
+\bibitem{giles} R.T. Giles {\it et al.}, Nucl. Instr. Meth. {\bf A 252}, 41 (1986).
+\bibitem{elton_paper} E. Smith {\it et al.}, Nucl. Instr. Meth. {\bf A 432}, 265 (1999).
+\bibitem{vitali} V. Baturin {\it et al.}, Nucl. Instr. Meth. {\bf A 562}, 327 (2006).
+\bibitem{mauri} M. Ungaro, private communication.
+\bibitem{birks} J.B. Birks, Proc. Phys. Soc. {\bf A64}, 874 (1951).
+\bibitem{daria_wiki} D. Sokhan, http://clasweb.jlab.org/wiki/index.php/Daria .
+\bibitem{silvia_wiki} S. Niccolai, {\rm http://clasweb.jlab.org/rungroups/e1-dvcs/wiki/index.php/CLAS12 neutron detector:update on simulation (September 2008)}.
+\bibitem{ahmed} A. El Aloui and E. Voutier, CLAS-NOTE 2009-024.
+\bibitem{harut} H. Avakyan, private communication.
+\bibitem{paris} M. Lacombe et al., Phys. Rev C {\bf 21} (1980) 861.
+\bibitem{daria_eg1dvcs} D. Sokhan, analysis underway. 
+\bibitem{peter_exclusive} P. Bosted {\rm https://www.jlab.org/Hall-B/secure/eg1-dvcs/bosted/Exclusive/exclnote.pdf}.
+\bibitem{raffa}  R. De Vita, private communication.
+\bibitem{sidis_prop} A. Avakian {\it et al.}, JLab conditionally approved proposal C12-11-111. 
+\bibitem{procureur} S. Procureur, private communication.  
+\bibitem{afanasev} A.V. Afanasev {\it et al.}, J. Exp. Theor. Phys. {\bf 102}, 220 (2006).
+\bibitem{kuhn} S. Kuhn, A. Deur, V. Dharmawardane, K. Griffioen, D. Crabb, Y. Prok, T. Forest, Jefferson Lab Experiment E12-06-109.
+\bibitem{schedule} {\rm https://www.jlab.org/Hall-B/clas12-web/clas12-expt1.jpg}.
+
+\end{thebibliography}
+
+
+%\input{Appendix}
+
+\end{document}

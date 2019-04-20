@@ -1,0 +1,13 @@
+\raisebox{-.1in}{$15$}  & \raisebox{-.1in}{$0.01794$} & \raisebox{-.1in}{$5356$}\\[.05in]
+\raisebox{-.1in}{$40$}  & \raisebox{-.1in}{$0.00627$} & \raisebox{-.1in}{$1873$}\\[.05in]
+\raisebox{-.1in}{$75$}  & \raisebox{-.1in}{$0.00276$} & \raisebox{-.1in}{$824$}\\[.05in]
+\raisebox{-.1in}{$105$} & \raisebox{-.1in}{$0.00174$} & \raisebox{-.1in}{$520$}\\[.05in]
+\raisebox{-.1in}{$135$} & \raisebox{-.1in}{$0.00137$} & \raisebox{-.1in}{$409$}\\[.05in]
+\raisebox{-.1in}{$165$} & \raisebox{-.1in}{$0.00127$} & \raisebox{-.1in}{$379$}\\[.05in]
+\raisebox{-.1in}{$195$} & \raisebox{-.1in}{$0.00126$} & \raisebox{-.1in}{$377$}\\[.05in]
+\raisebox{-.1in}{$225$} & \raisebox{-.1in}{$0.00140$} & \raisebox{-.1in}{$417$}\\[.05in]
+\raisebox{-.1in}{$255$} & \raisebox{-.1in}{$0.00172$} & \raisebox{-.1in}{$513$}\\[.05in]
+\raisebox{-.1in}{$285$} & \raisebox{-.1in}{$0.00280$} & \raisebox{-.1in}{$835$}\\[.05in]
+\raisebox{-.1in}{$315$} & \raisebox{-.1in}{$0.00616$} & \raisebox{-.1in}{$1838$}\\[.05in]
+\raisebox{-.1in}{$345$} & \raisebox{-.1in}{$0.01826$} & \raisebox{-.1in}{$5452$}\\[.1in]\hline \hline
+    \end{tabular}

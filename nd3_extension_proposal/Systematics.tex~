@@ -1,0 +1,47 @@
+\section{Systematic uncertainties}\label{sec_syst}
+The goal of this experiment is to extract target and double-spin asymmetries, which are ratios of polarized cross sections. In the ratio, polarization-independent terms, such as acceptances, efficiencies, radiative corrections and luminosity, cancel out to a first approximation\footnote{Afanasev {\it et al.} \cite{afanasev} have computed the radiative corrections for the DVCS and BH processes on for CLAS kinematics. It was found that, given the strict kinematic cuts adopted to select the final state, the undetected radiated photon can only have small energies. In this case, therefore, the main contribution to the radiative correction comes from spin-independent soft-photon emission that does not affect the polarization observables. The approximation of negligible contribution from the radiative corrections to the BSA, TSA and DSA, compared to the size of the asymmetries, was estimated to be valid at the 0.1\% level \cite{afanasev}.}. Remaining effects could come from the quantities entering in the asymmetry definitions, namely the procedure to evaluate the counts $N^{+(-)}$, the dilution factor, the $\pi^0$ contamination, as well as the beam and target polarizations. 
+
+Analyses performed at 6 GeV \cite{erin,pisano} showed that the biggest contributor to the overall systematic uncertainty is the selection of exclusivity cuts adopted to identify DVCS events and the corresponding counts $N^{+(-)}$. This factor contributed about 10\% (this and the following percentages for systematics are defined relatively to the average value of the TSA at $90^{\circ}$) to the total systematics uncertainty. 
+
+Another source of uncertainty will be the $\pi^0$ background estimation, which will depend on the accuracy of the description of the detector acceptance and efficiency and on the model used in the Monte-Carlo simulation to describe the $en\pi^0(p)$ reaction (see Eq. 32). In order to account for this latter effect, 6-GeV analyses, performed on data taken on a polarized NH$_3$ target during the eg1-dvcs experiment \cite{erin,pisano}, evaluted this systematic by varying the contribution of the calculated background by $\pm 30\%$ (Section \ref{sec_pi0_back}), and extracting the final asymmetries in correspondence with this increased/decreased background. The total effect turned out to be 4\%, and a similar estimation can be assumed for the present experiment on ND$_3$.
+
+While acceptance effects are expected to cancel in asymmetries, a residual effect could emerge due to the strong variations of the cross section inside the finite-size bins, that can lead, in principle, to a non-exact cancellation of acceptance effects from the numerator and the denominator. Such an acceptance effect has been estimated to bring an additional 1\% systematic error. 
+
+To evaluate the systematic uncertainties linked to the dilution factor determination, in the aforementioned eg1-dvcs pDVCS anaysis the  asymmetries were computed two more times, taking two different values of the dilution factor: $D_f+\Delta(D_f)$ and $D_f-\Delta(D_f)$, where $\Delta(D_f)$ is the statistical error that was estimated on this quantity. The resulting systematic uncertainties were found to be below the percent level. While studying the systematics on the exclusivity cuts, it was observed that changing the exclusivity cuts induces a variation of the dilution factors much bigger than the variations within the statistical errors described above. It was therefore decided, in order to avoid double-counting and therefore overestimation of systematics, to remove the contribution from the dilution factor computed according to its errors from the total systematic uncertainty. For this proposal, instead, a conservative estimate of the systematic uncertainty on the dilution factor of the order of 3\%, consistent with previous assumptions \cite{kuhn}, is assumed. 
+
+%As for the systematic uncertainties on the dilution factors, in the aforementioned pDVCS 6-GeV analysis of eg1-dvcs were included in the exclusivity cut ones. Indeed, the systematic effect due to the variation of the exclusivity cuts represents the biggest contribution to the overall systematics, and, being the dilution factor strictly related to the specific set of exclusivity cuts adopted, its variation between the different sets of cuts turned out to be larger than its statistical error, making unnecessary a dedicated study.
+
+An additional 2\% systematic effect is included in the total budget to account for the possible misedentification of neutrons due to accidental coincidences (Section~\ref{sec_accidentals}.)
+
+Finally, uncertainties in the knowledge of the beam and target polarizations (extracted, respectively, via M{\o}ller polarimetry measurements and via the NMR system) will propagate into the asymmetry measurements, and are expected to lead to contributions of, respectively, 3\% and 4\%.
+
+A summary of the systematic uncertainties can be found in Table~\ref{table_syst}. The total systematic uncertainty will be of the order of 12\%, averaged over all the kinematic bins (the $\pi^0$-background uncertainty will actually vary depending on the bin). 
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|c||c|}
+\hline
+Source of error & Systematic uncertainty\\
+\hline
+Channel selection cuts & 10\% \\
+\hline
+Beam and target polarization & 3\%-4\%  \\
+\hline
+$\pi^0$ contamination & 4\%  \\
+\hline
+Acceptance & 1\%  \\
+\hline
+Dilution factor & 3\%  \\
+\hline
+Accidentals & 2\%  \\
+\hline
+Radiative corrections & Negligible  \\
+\hline
+\hline
+Total & 12\%  \\
+\hline
+\end{tabular}
+\caption{Expected systematic uncertainties on the proposed measurement.}
+\label{table_syst}
+\end{center}
+\end{table}

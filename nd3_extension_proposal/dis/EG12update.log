@@ -1,0 +1,311 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.19)  25 APR 2016 11:45
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**EG12update.tex
+(./EG12update.tex
+LaTeX2e <2011/06/27>
+Babel <3.9h> and hyphenation patterns for 13 languages loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+\epsfxsize=\dimen105
+\epsfysize=\dimen106
+)
+(/usr/share/texlive/texmf-dist/tex/generic/epsf/epsf.tex
+This is `epsf.tex' v2.7.4 <14 February 2011>
+\epsffilein=\read1
+\epsfframemargin=\dimen107
+\epsfframethickness=\dimen108
+\epsfrsize=\dimen109
+\epsftmp=\dimen110
+\epsftsize=\dimen111
+\epsfxsize=\dimen112
+\epsfysize=\dimen113
+\pspoints=\dimen114
+) (./EG12update.aux)
+\openout1 = `EG12update.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count88
+\scratchdimen=\dimen115
+\scratchbox=\box26
+\nofMPsegments=\count89
+\nofMParguments=\count90
+\everyMPshowfont=\toks15
+\MPscratchCnt=\count91
+\MPscratchDim=\dimen116
+\MPnumerator=\count92
+\makeMPintoPDFobject=\count93
+\everyMPtoPDFconversion=\toks16
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 84.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 84.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 84.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 162.
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [1
+
+]
+Overfull \hbox (9.14838pt too wide) in paragraph at lines 263--268
+[]\OT1/cmr/m/n/12 Presently, the only read-ily avail-able and suit-able tar-get
+s for po-lar-ized pro-tons and deuterons
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 269.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 269.
+ [2]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 345.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 345.
+ [3]
+<delqFig-eps-converted-to.pdf, id=26, 794.97pt x 614.295pt>
+File: delqFig-eps-converted-to.pdf Graphic file (type pdf)
+
+<use delqFig-eps-converted-to.pdf>
+Package pdftex.def Info: delqFig-eps-converted-to.pdf used on input line 353.
+(pdftex.def)             Requested size: 289.07999pt x 223.38626pt.
+
+<Coverage2-eps-converted-to.pdf, id=27, 747.79375pt x 736.7525pt>
+File: Coverage2-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Coverage2-eps-converted-to.pdf>
+Package pdftex.def Info: Coverage2-eps-converted-to.pdf used on input line 382.
+
+(pdftex.def)             Requested size: 180.67499pt x 178.00461pt.
+ [4 <./delqFig-eps-converted-to.pdf>]
+<Errors_CLAS12_duub-eps-converted-to.pdf, id=43, 321.2pt x 244.915pt>
+File: Errors_CLAS12_duub-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Errors_CLAS12_duub-eps-converted-to.pdf>
+Package pdftex.def Info: Errors_CLAS12_duub-eps-converted-to.pdf used on input 
+line 464.
+(pdftex.def)             Requested size: 234.87749pt x 179.10036pt.
+
+<Errors_CLAS12_dddb-eps-converted-to.pdf, id=44, 321.2pt x 244.915pt>
+File: Errors_CLAS12_dddb-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Errors_CLAS12_dddb-eps-converted-to.pdf>
+Package pdftex.def Info: Errors_CLAS12_dddb-eps-converted-to.pdf used on input 
+line 468.
+(pdftex.def)             Requested size: 234.87749pt x 179.10036pt.
+
+<Errors_CLAS12_dG-eps-converted-to.pdf, id=45, 314.17375pt x 240.9pt>
+File: Errors_CLAS12_dG-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Errors_CLAS12_dG-eps-converted-to.pdf>
+Package pdftex.def Info: Errors_CLAS12_dG-eps-converted-to.pdf used on input li
+ne 472.
+(pdftex.def)             Requested size: 234.87749pt x 180.09744pt.
+
+<Errors_CLAS12_ds-eps-converted-to.pdf, id=46, 321.2pt x 244.915pt>
+File: Errors_CLAS12_ds-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Errors_CLAS12_ds-eps-converted-to.pdf>
+Package pdftex.def Info: Errors_CLAS12_ds-eps-converted-to.pdf used on input li
+ne 476.
+(pdftex.def)             Requested size: 234.87749pt x 179.10036pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 462--488
+[][][]
+ []
+
+[5 <./Coverage2-eps-converted-to.pdf>] [6 <./Errors_CLAS12_duub-eps-converted-t
+o.pdf> <./Errors_CLAS12_dddb-eps-converted-to.pdf> <./Errors_CLAS12_dG-eps-conv
+erted-to.pdf> <./Errors_CLAS12_ds-eps-converted-to.pdf>]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 520.
+
+<NewHighX.pdf, id=269, 705.38109pt x 324.44255pt>
+File: NewHighX.pdf Graphic file (type pdf)
+ <use NewHighX.pdf>
+Package pdftex.def Info: NewHighX.pdf used on input line 524.
+(pdftex.def)             Requested size: 469.75499pt x 216.06346pt.
+ [7 <./NewHighX.pdf>] <DeltaDoverD-eps-converted-to.pdf, id=324, 519.9425pt x 3
+93.47pt>
+File: DeltaDoverD-eps-converted-to.pdf Graphic file (type pdf)
+
+<use DeltaDoverD-eps-converted-to.pdf>
+Package pdftex.def Info: DeltaDoverD-eps-converted-to.pdf used on input line 59
+8.
+(pdftex.def)             Requested size: 310.04001pt x 234.62488pt.
+ [8 <./DeltaDoverD-eps-converted-to.pdf>] <Kplusd.pdf, id=352, 281.17162pt x 22
+5.27061pt>
+File: Kplusd.pdf Graphic file (type pdf)
+ <use Kplusd.pdf>
+Package pdftex.def Info: Kplusd.pdf used on input line 622.
+(pdftex.def)             Requested size: 234.87749pt x 188.18793pt.
+
+<Kminusp.pdf, id=353, 276.75526pt x 226.78436pt>
+File: Kminusp.pdf Graphic file (type pdf)
+ <use Kminusp.pdf>
+Package pdftex.def Info: Kminusp.pdf used on input line 626.
+(pdftex.def)             Requested size: 234.87749pt x 192.47pt.
+
+<Kminusd.pdf, id=354, 667.65732pt x 242.17487pt>
+File: Kminusd.pdf Graphic file (type pdf)
+ <use Kminusd.pdf>
+Package pdftex.def Info: Kminusd.pdf used on input line 630.
+(pdftex.def)             Requested size: 469.75499pt x 170.39702pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 620--638
+[][][]
+ []
+
+[9 <./Kplusd.pdf> <./Kminusp.pdf> <./Kminusd.pdf>] [10] [11] (./EG12update.aux)
+ ) 
+Here is how much of TeX's memory you used:
+ 1741 strings out of 494451
+ 25036 string characters out of 6171655
+ 82898 words of memory out of 5000000
+ 4964 multiletter control sequences out of 15000+600000
+ 10426 words of font info for 36 fonts, out of 8000000 for 9000
+ 452 hyphenation exceptions out of 8191
+ 37i,8n,23p,1311b,326s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/nc
+ntrsbk/uncri8a.pfb>
+Output written on EG12update.pdf (12 pages, 1264725 bytes).
+PDF statistics:
+ 689 PDF objects out of 1000 (max. 8388607)
+ 380 compressed objects within 4 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+

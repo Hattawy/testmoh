@@ -1,0 +1,47 @@
+100 FT j 4 i 3 k 1 value -0.651783 error 3.65056
+50 j 4 i 3 k 1 value -0.65625 error 3.6629
+                   
+100 FT j 4 i 3 k 2 value -0.149609 error 1.21246
+50 j 4 i 3 k 2 value -0.15419 error 1.24012
+                   
+100 FT j 4 i 3 k 3 value -0.0107133 error 0.48032
+50 j 4 i 3 k 3 value 0.0184981 error 0.527372
+                   
+100 FT j 4 i 3 k 4 value 0.0734417 error 0.228332
+50 j 4 i 3 k 4 value 0.092428 error 0.266119
+                   
+100 FT j 3 i 2 k 1 value 0.081224 error 2.38515
+50 j 3 i 2 k 1 value -100 error 0
+                   
+100 FT j 3 i 2 k 2 value 0.13545 error 0.714488
+50 j 3 i 2 k 2 value 0.270933 error 0.839063
+                   
+100 FT j 3 i 2 k 3 value 0.203627 error 0.293291
+50 j 3 i 2 k 3 value 0.993656 error 0.393873
+                   
+100 FT j 3 i 2 k 4 value 0.209778 error 0.184876
+50 j 3 i 2 k 4 value 0.923304 error 0.104735
+                   
+100 FT j 2 i 1 k 1 value 0.553715 error 1.83174
+50 j 2 i 1 k 1 value -1.68222 error 4.77284
+                   
+100 FT j 2 i 1 k 2 value 0.343516 error 0.472612
+50 j 2 i 1 k 2 value 0.405564 error 0.769076
+                   
+100 FT j 2 i 1 k 3 value 0.355755 error 0.282046
+50 j 2 i 1 k 3 value 0.383481 error 0.333224
+                   
+100 FT j 2 i 1 k 4 value 0.174571 error 0.161427
+50 j 2 i 1 k 4 value 0.174094 error 0.166677
+                   
+100 FT j 2 i 2 k 1 value 1.25374 error 2.06228
+50 j 2 i 2 k 1 value 1.1891 error 2.58138
+                   
+100 FT j 2 i 2 k 2 value 0.445664 error 0.302216
+50 j 2 i 2 k 2 value 0.507446 error 0.349792
+                   
+100 FT j 2 i 2 k 3 value 0.314443 error 0.152299
+50 j 2 i 2 k 3 value 0.322086 error 0.220915
+                   
+100 FT j 2 i 2 k 4 value 0.19509 error 0.0871186
+50 j 2 i 2 k 4 value 0.198576 error 0.110974

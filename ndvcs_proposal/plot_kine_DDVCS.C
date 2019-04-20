@@ -1,0 +1,43 @@
+void plot_kine_DDVCS()
+{
+gSystem->Load("libPhysics");
+gROOT->SetStyle("Plain");
+gStyle->SetPalette(1);
+gStyle->SetOptStat(0);
+gStyle->SetOptFit(111);
+gStyle->SetCanvasColor(kWhite);
+gStyle->SetFrameFillColor(kWhite);
+
+ TCanvas *g= new TCanvas("c","c",1000,800);
+ g->Divide(2,3,0.001,0.001);
+
+ TFile *data = new TFile("/projet/nucleon/silvia/ndvcs_proposal/test7.root");
+ 
+ TH2F *h_e;
+ h_e = new TH2F("h_e",";p_{e} (GeV/c);#theta_{e}",180,0,180,100,0,12); 
+ g->cd(1);
+ data->cd();
+ h10->Draw("p_e:180/TMath::Pi()*acos(cz_e)>>h_e","","colz");
+
+ TH2F *h_d;
+ h_d = new TH2F("h_d",";p_{#Delta} (GeV/c);#theta_{#Delta}",180,0,180,100,0,12); 
+ g->cd(2);
+ data->cd();
+ h10->Draw("p_d:180/TMath::Pi()*acos(cz_d)>>h_d","","colz");
+
+ TH2F *h_n;
+ h_n = new TH2F("h_n",";p_{n} (GeV/c);#theta_{n}",180,0,180,100,0,12); 
+ g->cd(3);
+ h10->Draw("p_n:180/TMath::Pi()*acos(cz_n)>>h_n","","colz");
+ TH2F *h_g;
+ h_g = new TH2F("h_g",";p_{#gamma} (GeV/c);#theta_{#gamma}",180,0,180,100,0,12); 
+ g->cd(4);
+ h10->Draw("p_g:180/TMath::Pi()*acos(cz_g)>>h_g","","colz");
+ TH2F *h_pi;
+ h_pi = new TH2F("h_pi",";p_{#pi} (GeV/c);#theta_{#pi}",180,0,180,100,0,6); 
+ g->cd(5);
+ h10->Draw("p_pi:180/TMath::Pi()*acos(cz_pi)>>h_pi","","colz");
+
+ g->Print("ddvcs_kine.eps");
+
+}
