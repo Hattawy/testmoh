@@ -1,0 +1,22 @@
+
+int    Iabs(int);
+double Dabs(double);
+int    ISign(int);
+double DSign(double);
+double Sqr(double);
+double errR(double, double);
+double Vec3dot(double*, double*, int);
+double Vec4dot(double*, double*, int);
+void   get_matr(double, double, double matr[3][3]);
+void   get_invmatr(double x[3][3], double y[3][3]);
+double get_phi(double, double);
+int    fexist(const char*);
+double power(double, int);
+void   get_targ_ene(string, double*);
+void   nucl_bh(int, double, double, double, double, double, double, int, double*);
+void   nucl_ff(double, int, double*);
+//void   charge_type(int, double*);
+//double accep_func(int, double, double, double, double, double);
+//double findBdL(double, double, double);
+//void   EC_XYZ_UVW(double, double, double, double*);
+string Date();
